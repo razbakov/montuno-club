@@ -25,7 +25,7 @@ Wir bringen mit:
 - Erfahrung in der Organisation von Tanzabenden
 
 Was wir uns vorstellen:
-- Regelmäßige Salsa-Party-Nächte (Samstags)
+- Regelmäßige Salsa-Party-Nächte (samstags)
 - Gemeinsamer Pilot-Abend zum Testen des Formats
 - Flexible Raumaufteilung: Tanzfläche + Biergarten / Bar-Bereich für Nicht-Tänzer
 - Revenue-Sharing oder einfache Miete – offen für Ihr bevorzugtes Modell

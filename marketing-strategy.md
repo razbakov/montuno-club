@@ -85,6 +85,7 @@
 - 30 people guaranteed on day 1, path to 60–100 within 3 months
 
 ### Timeline
+
 | Week | Action |
 |---|---|
 | Week 1 | Send emails to N.V. Club + Max Emanuel |

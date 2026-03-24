@@ -19,7 +19,7 @@ Ich schreibe Ihnen, weil ich glaube, dass unser Konzept perfekt zu Ihrem Haus pa
 Wir organisieren bereits regelmäßige Salsa-Abende, die zuletzt rund 30 begeisterte Tänzerinnen und Tänzer angezogen haben. Diese Zahl wächst kontinuierlich – unser realistisches Ziel für die nächsten Monate sind 60 bis 100 Gäste pro Abend.
 
 Was wir uns vorstellen:
-- Regelmäßige Salsa-Party-Nächte (Samstags) im N.V. Club
+- Regelmäßige Salsa-Party-Nächte (samstags) im N.V. Club
 - Wir bringen die Community, die Musik und die Energie – Sie die Location und den Ausschank
 - Beginn mit einem Pilot-Abend, um das Format gemeinsam auszuprobieren
 - Keine Umbaumaßnahmen notwendig – Salsa braucht nur eine Tanzfläche und gute Musik
