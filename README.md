@@ -1,75 +1,11 @@
-# Nuxt Minimal Starter
+# Montuno Club
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Free, donation-based Salsa Cubana classes for beginners in Munich.
 
-## Setup
+- **Website:** https://montuno.club/
+- **When:** Every Sunday at 7 PM
+- **Where:** Buena Vista Bar, Munich
+- **Language:** English
+- **Registration:** via [WeDance.vip](https://wedance.vip)
 
-Make sure to install dependencies:
-
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Community-driven, expat-friendly. Taught by Alex (7 years experience, trained in Cuba).
