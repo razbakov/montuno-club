@@ -76,16 +76,19 @@ function toggleFaq(index: number) {
         <p class="mt-6 text-lg sm:text-xl text-wine-200 max-w-2xl mx-auto leading-relaxed">
           {{ $t('hero.description') }}
         </p>
-        <div class="mt-10 max-w-lg mx-auto">
-          <EmailCaptureForm />
-          <div class="mt-4 text-center">
-            <a
-              href="#about"
-              class="text-sm text-wine-300 hover:text-white transition-colors underline underline-offset-4"
-            >
-              {{ $t('hero.learnMore') }}
-            </a>
-          </div>
+        <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a
+            href="#join"
+            class="rounded-full bg-gold-500 px-8 py-4 text-lg font-semibold text-wine-950 hover:bg-gold-400 transition-colors shadow-lg shadow-gold-500/20"
+          >
+            {{ $t('form.submit') }}
+          </a>
+          <a
+            href="#about"
+            class="text-sm text-wine-300 hover:text-white transition-colors underline underline-offset-4"
+          >
+            {{ $t('hero.learnMore') }}
+          </a>
         </div>
       </div>
 
