@@ -5,52 +5,23 @@ export default defineEventHandler(async (event) => {
     throw createError({ statusCode: 400, statusMessage: 'Valid email required' })
   }
 
-  const accessToken = useRuntimeConfig().hubspotAccessToken
+  const portalId = '49436475'
+  const formGuid = '9796ad2b-d220-4463-8495-4e7fe1efbe9e'
 
-  if (!accessToken) {
-    throw createError({ statusCode: 500, statusMessage: 'HubSpot not configured' })
-  }
-
-  // Create or update contact in HubSpot CRM
-  const response = await $fetch(
-    'https://api.hubapi.com/crm/v3/objects/contacts',
+  await $fetch(
+    `https://api.hsforms.com/submissions/v3/integration/submit/${portalId}/${formGuid}`,
     {
       method: 'POST',
       headers: {
-        Authorization: `Bearer ${accessToken}`,
         'Content-Type': 'application/json',
       },
       body: {
-        properties: {
-          email,
-          lifecyclestage: 'subscriber',
-        },
+        fields: [
+          { name: 'email', value: email },
+        ],
       },
     },
-  ).catch(async (err) => {
-    // If contact already exists (409), that's fine — update instead
-    if (err?.response?.status === 409) {
-      const existingId = err.response._data?.message?.match(/ID: (\d+)/)?.[1]
-      if (existingId) {
-        return $fetch(
-          `https://api.hubapi.com/crm/v3/objects/contacts/${existingId}`,
-          {
-            method: 'PATCH',
-            headers: {
-              Authorization: `Bearer ${accessToken}`,
-              'Content-Type': 'application/json',
-            },
-            body: {
-              properties: {
-                lifecyclestage: 'subscriber',
-              },
-            },
-          },
-        )
-      }
-    }
-    throw err
-  })
+  )
 
-  return { ok: true, id: (response as any)?.id }
+  return { ok: true }
 })
