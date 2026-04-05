@@ -95,7 +95,9 @@
     "madeBy": "Made by"
   },
   "form": {
+    "namePlaceholder": "Your full name",
     "emailPlaceholder": "Your email address",
+    "phonePlaceholder": "Phone number (optional)",
     "submit": "Join Free",
     "submitting": "Joining...",
     "success": "You're in! Check your inbox.",

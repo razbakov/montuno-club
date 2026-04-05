@@ -95,7 +95,9 @@
     "madeBy": "Hecho por"
   },
   "form": {
+    "namePlaceholder": "Tu nombre completo",
     "emailPlaceholder": "Tu correo electrónico",
+    "phonePlaceholder": "Teléfono (opcional)",
     "submit": "Únete gratis",
     "submitting": "Enviando...",
     "success": "¡Estás dentro! Revisa tu bandeja de entrada.",

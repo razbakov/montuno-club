@@ -1,14 +1,26 @@
 import { Resend } from 'resend'
 
 export default defineEventHandler(async (event) => {
-  const { email } = await readBody<{ email: string }>(event)
+  const { name, email, phone } = await readBody<{ name: string; email: string; phone?: string }>(event)
 
   if (!email || !email.includes('@')) {
     throw createError({ statusCode: 400, statusMessage: 'Valid email required' })
   }
 
+  if (!name) {
+    throw createError({ statusCode: 400, statusMessage: 'Name required' })
+  }
+
   const portalId = '49436475'
   const formGuid = '9796ad2b-d220-4463-8495-4e7fe1efbe9e'
+
+  const fields = [
+    { name: 'email', value: email },
+    { name: 'firstname', value: name },
+  ]
+  if (phone) {
+    fields.push({ name: 'phone', value: phone })
+  }
 
   // Submit to HubSpot
   await $fetch(
@@ -18,25 +30,22 @@ export default defineEventHandler(async (event) => {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: {
-        fields: [
-          { name: 'email', value: email },
-        ],
-      },
+      body: { fields },
     },
   )
 
   // Send welcome email
+  const firstName = name.split(' ')[0]
   const resendApiKey = useRuntimeConfig().resendApiKey
   if (resendApiKey) {
     const resend = new Resend(resendApiKey)
     await resend.emails.send({
       from: 'Montuno Club <montuno@wedance.vip>',
       to: email,
-      subject: 'Welcome to Montuno Club!',
+      subject: `Welcome to Montuno Club, ${firstName}!`,
       html: `
         <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; color: #333;">
-          <h1 style="color: #722F37;">Welcome to Montuno Club!</h1>
+          <h1 style="color: #722F37;">Welcome to Montuno Club, ${firstName}!</h1>
           <p>Thanks for joining our community. We're excited to have you!</p>
           <p><strong>Here's what you need to know:</strong></p>
           <ul style="line-height: 1.8;">

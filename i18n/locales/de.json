@@ -95,7 +95,9 @@
     "madeBy": "Erstellt von"
   },
   "form": {
+    "namePlaceholder": "Dein vollständiger Name",
     "emailPlaceholder": "Deine E-Mail-Adresse",
+    "phonePlaceholder": "Telefonnummer (optional)",
     "submit": "Kostenlos beitreten",
     "submitting": "Wird gesendet...",
     "success": "Du bist dabei! Schau in dein Postfach.",

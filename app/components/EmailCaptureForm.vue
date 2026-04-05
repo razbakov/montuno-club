@@ -1,17 +1,19 @@
 <script setup lang="ts">
 const { t } = useI18n()
 
+const name = ref('')
 const email = ref('')
+const phone = ref('')
 const status = ref<'idle' | 'submitting' | 'success' | 'error'>('idle')
 
 async function submit() {
-  if (!email.value) return
+  if (!email.value || !name.value) return
   status.value = 'submitting'
 
   try {
     await $fetch('/api/subscribe', {
       method: 'POST',
-      body: { email: email.value },
+      body: { name: name.value, email: email.value, phone: phone.value },
     })
     status.value = 'success'
   } catch {
@@ -24,15 +26,28 @@ async function submit() {
   <div>
     <form
       v-if="status !== 'success'"
-      class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto"
+      class="flex flex-col gap-3 max-w-md mx-auto"
       @submit.prevent="submit"
     >
+      <input
+        v-model="name"
+        type="text"
+        required
+        :placeholder="$t('form.namePlaceholder')"
+        class="rounded-full px-6 py-4 bg-wine-900/60 border border-wine-700/50 text-white placeholder:text-wine-400 focus:outline-none focus:border-gold-500/50 transition-colors"
+      />
       <input
         v-model="email"
         type="email"
         required
         :placeholder="$t('form.emailPlaceholder')"
-        class="flex-1 rounded-full px-6 py-4 bg-wine-900/60 border border-wine-700/50 text-white placeholder:text-wine-400 focus:outline-none focus:border-gold-500/50 transition-colors"
+        class="rounded-full px-6 py-4 bg-wine-900/60 border border-wine-700/50 text-white placeholder:text-wine-400 focus:outline-none focus:border-gold-500/50 transition-colors"
+      />
+      <input
+        v-model="phone"
+        type="tel"
+        :placeholder="$t('form.phonePlaceholder')"
+        class="rounded-full px-6 py-4 bg-wine-900/60 border border-wine-700/50 text-white placeholder:text-wine-400 focus:outline-none focus:border-gold-500/50 transition-colors"
       />
       <button
         type="submit"

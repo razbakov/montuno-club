@@ -95,7 +95,9 @@
     "madeBy": "Сделано"
   },
   "form": {
+    "namePlaceholder": "Твоё полное имя",
     "emailPlaceholder": "Твой email",
+    "phonePlaceholder": "Телефон (необязательно)",
     "submit": "Присоединиться бесплатно",
     "submitting": "Отправляем...",
     "success": "Ты в деле! Проверь почту.",
