@@ -52,22 +52,28 @@ async function submit() {
     >
       <input
         v-model="name"
+        name="name"
         type="text"
         required
+        autocomplete="name"
         :placeholder="$t('form.namePlaceholder')"
         class="rounded-full px-6 py-4 bg-wine-900/60 border border-wine-700/50 text-white placeholder:text-wine-400 focus:outline-none focus:border-gold-500/50 transition-colors"
       />
       <input
         v-model="email"
+        name="email"
         type="email"
         required
+        autocomplete="email"
         :placeholder="$t('form.emailPlaceholder')"
         class="rounded-full px-6 py-4 bg-wine-900/60 border border-wine-700/50 text-white placeholder:text-wine-400 focus:outline-none focus:border-gold-500/50 transition-colors"
       />
       <input
         v-model="phone"
+        name="phone"
         type="tel"
         required
+        autocomplete="tel"
         :placeholder="$t('form.phonePlaceholder')"
         class="rounded-full px-6 py-4 bg-wine-900/60 border border-wine-700/50 text-white placeholder:text-wine-400 focus:outline-none focus:border-gold-500/50 transition-colors"
       />
