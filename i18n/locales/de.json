@@ -4,7 +4,8 @@
     "expect": "Was erwartet dich",
     "faq": "FAQ",
     "location": "Ort",
-    "joinWhatsApp": "WhatsApp-Gruppe beitreten"
+    "joinWhatsApp": "WhatsApp-Gruppe beitreten",
+    "joinFree": "Kostenlos beitreten"
   },
   "hero": {
     "subtitle": "Jeden Sonntag \u00b7 19 Uhr \u00b7 München",
@@ -92,6 +93,15 @@
     "impressum": "Impressum",
     "privacy": "Datenschutz",
     "madeBy": "Erstellt von"
+  },
+  "form": {
+    "emailPlaceholder": "Deine E-Mail-Adresse",
+    "submit": "Kostenlos beitreten",
+    "submitting": "Wird gesendet...",
+    "success": "Du bist dabei! Schau in dein Postfach.",
+    "successWhatsApp": "Tritt auch unserer WhatsApp-Gruppe bei",
+    "error": "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
+    "privacy": "Wir respektieren deine Privatsphäre. Jederzeit abmeldbar."
   },
   "seo": {
     "title": "Montuno Club — Kostenloser Salsa Cubana Kurs in München",

@@ -28,12 +28,10 @@ const links = computed(() => [
         </a>
         <LangSwitcher />
         <a
-          href="https://chat.whatsapp.com/K5Iy5CkTonv5ady2v91b8t"
-          target="_blank"
-          rel="noopener"
+          href="#join"
           class="rounded-full bg-gold-500 px-5 py-2 text-sm font-semibold text-wine-950 hover:bg-gold-400 transition-colors"
         >
-          {{ $t('nav.joinWhatsApp') }}
+          {{ $t('nav.joinFree') }}
         </a>
       </nav>
 
@@ -71,13 +69,11 @@ const links = computed(() => [
           {{ link.label }}
         </a>
         <a
-          href="https://chat.whatsapp.com/K5Iy5CkTonv5ady2v91b8t"
-          target="_blank"
-          rel="noopener"
+          href="#join"
           class="mt-2 block text-center rounded-full bg-gold-500 px-5 py-3 font-semibold text-wine-950 hover:bg-gold-400 transition-colors"
           @click="mobileOpen = false"
         >
-          {{ $t('nav.joinWhatsApp') }}
+          {{ $t('nav.joinFree') }}
         </a>
       </div>
     </Transition>

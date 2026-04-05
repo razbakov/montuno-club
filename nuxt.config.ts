@@ -51,6 +51,7 @@ export default defineNuxtConfig({
     },
   },
   runtimeConfig: {
+    hubspotAccessToken: process.env.HUBSPOT_ACCESS_TOKEN || '',
     public: {
       posthogKey: process.env.NUXT_PUBLIC_POSTHOG_KEY || '',
     },

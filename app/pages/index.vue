@@ -36,7 +36,7 @@ useSchemaOrg([
       price: '0',
       priceCurrency: 'EUR',
       availability: 'https://schema.org/InStock',
-      url: 'https://chat.whatsapp.com/K5Iy5CkTonv5ady2v91b8t',
+      url: 'https://montuno.club',
     },
     image: 'https://montuno.club/og.jpg',
     description:
@@ -76,21 +76,16 @@ function toggleFaq(index: number) {
         <p class="mt-6 text-lg sm:text-xl text-wine-200 max-w-2xl mx-auto leading-relaxed">
           {{ $t('hero.description') }}
         </p>
-        <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a
-            href="https://chat.whatsapp.com/K5Iy5CkTonv5ady2v91b8t"
-            target="_blank"
-            rel="noopener"
-            class="rounded-full bg-gold-500 px-8 py-4 text-lg font-semibold text-wine-950 hover:bg-gold-400 transition-colors shadow-lg shadow-gold-500/20"
-          >
-            {{ $t('hero.cta') }}
-          </a>
-          <a
-            href="#about"
-            class="rounded-full border border-wine-600 px-8 py-4 text-lg text-wine-200 hover:border-wine-400 hover:text-white transition-colors"
-          >
-            {{ $t('hero.learnMore') }}
-          </a>
+        <div class="mt-10 max-w-lg mx-auto">
+          <EmailCaptureForm />
+          <div class="mt-4 text-center">
+            <a
+              href="#about"
+              class="text-sm text-wine-300 hover:text-white transition-colors underline underline-offset-4"
+            >
+              {{ $t('hero.learnMore') }}
+            </a>
+          </div>
         </div>
       </div>
 
@@ -334,7 +329,7 @@ function toggleFaq(index: number) {
     </section>
 
     <!-- CTA -->
-    <section class="py-24 sm:py-32 bg-wine-900/30">
+    <section id="join" class="py-24 sm:py-32 bg-wine-900/30">
       <div class="mx-auto max-w-3xl px-4 sm:px-6 text-center">
         <h2 class="font-display text-4xl sm:text-5xl leading-tight">
           {{ $t('cta.title1') }} <span class="text-gold-400">{{ $t('cta.title2') }}</span>?
@@ -343,15 +338,8 @@ function toggleFaq(index: number) {
           {{ $t('cta.description') }}<br />
           {{ $t('cta.descLine2') }}
         </p>
-        <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a
-            href="https://chat.whatsapp.com/K5Iy5CkTonv5ady2v91b8t"
-            target="_blank"
-            rel="noopener"
-            class="rounded-full bg-gold-500 px-8 py-4 text-lg font-semibold text-wine-950 hover:bg-gold-400 transition-colors shadow-lg shadow-gold-500/20"
-          >
-            {{ $t('cta.button') }}
-          </a>
+        <div class="mt-10">
+          <EmailCaptureForm />
         </div>
       </div>
     </section>

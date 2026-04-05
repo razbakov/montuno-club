@@ -4,7 +4,8 @@
     "expect": "What to Expect",
     "faq": "FAQ",
     "location": "Location",
-    "joinWhatsApp": "Join WhatsApp Group"
+    "joinWhatsApp": "Join WhatsApp Group",
+    "joinFree": "Join Free"
   },
   "hero": {
     "subtitle": "Every Sunday \u00b7 7 PM \u00b7 Munich",
@@ -92,6 +93,15 @@
     "impressum": "Impressum",
     "privacy": "Privacy Policy",
     "madeBy": "Made by"
+  },
+  "form": {
+    "emailPlaceholder": "Your email address",
+    "submit": "Join Free",
+    "submitting": "Joining...",
+    "success": "You're in! Check your inbox.",
+    "successWhatsApp": "Join our WhatsApp group too",
+    "error": "Something went wrong. Please try again.",
+    "privacy": "We respect your privacy. Unsubscribe anytime."
   },
   "seo": {
     "title": "Montuno Club — Free Salsa Cubana Classes in Munich",

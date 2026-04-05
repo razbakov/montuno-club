@@ -4,7 +4,8 @@
     "expect": "Qué esperar",
     "faq": "Preguntas",
     "location": "Ubicación",
-    "joinWhatsApp": "Únete al grupo de WhatsApp"
+    "joinWhatsApp": "Únete al grupo de WhatsApp",
+    "joinFree": "Únete gratis"
   },
   "hero": {
     "subtitle": "Cada domingo \u00b7 19:00 \u00b7 Múnich",
@@ -92,6 +93,15 @@
     "impressum": "Aviso legal",
     "privacy": "Privacidad",
     "madeBy": "Hecho por"
+  },
+  "form": {
+    "emailPlaceholder": "Tu correo electrónico",
+    "submit": "Únete gratis",
+    "submitting": "Enviando...",
+    "success": "¡Estás dentro! Revisa tu bandeja de entrada.",
+    "successWhatsApp": "Únete también a nuestro grupo de WhatsApp",
+    "error": "Algo salió mal. Inténtalo de nuevo.",
+    "privacy": "Respetamos tu privacidad. Cancela en cualquier momento."
   },
   "seo": {
     "title": "Montuno Club — Clases de Salsa Cubana Gratis en Múnich",
