@@ -97,7 +97,7 @@
   "form": {
     "namePlaceholder": "Твоє повне ім'я",
     "emailPlaceholder": "Твій email",
-    "phonePlaceholder": "Телефон",
+    "phonePlaceholder": "Телефон (+49...)",
     "submit": "Приєднатися безкоштовно",
     "submitting": "Надсилаємо...",
     "success": "Ти з нами! Перевір пошту.",

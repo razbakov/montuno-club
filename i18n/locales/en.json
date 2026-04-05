@@ -97,7 +97,7 @@
   "form": {
     "namePlaceholder": "Your full name",
     "emailPlaceholder": "Your email address",
-    "phonePlaceholder": "Phone number",
+    "phonePlaceholder": "Phone (+49...)",
     "submit": "Join Free",
     "submitting": "Joining...",
     "success": "You're in! Check your inbox.",
