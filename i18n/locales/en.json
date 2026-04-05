@@ -1,0 +1,101 @@
+{
+  "nav": {
+    "about": "About",
+    "expect": "What to Expect",
+    "faq": "FAQ",
+    "location": "Location",
+    "joinWhatsApp": "Join WhatsApp Group"
+  },
+  "hero": {
+    "subtitle": "Every Sunday \u00b7 7 PM \u00b7 Munich",
+    "title1": "Salsa",
+    "title2": "From Zero",
+    "description": "Free, donation-based Salsa Cubana for absolute beginners. No partner needed. No experience required. Just show up and dance.",
+    "cta": "Join WhatsApp Group",
+    "learnMore": "About the class"
+  },
+  "about": {
+    "label": "About",
+    "title1": "Dance is social.",
+    "title2": "We keep it that way.",
+    "p1": "Montuno Club is a community-driven Salsa Cubana class for beginners in Munich. We believe that dance should be accessible to everyone — regardless of budget, language, or experience level.",
+    "p2": "Our class happens in a bar, not a studio. The vibe is relaxed. People grab a drink, learn a move, meet someone new, and dance. That is the whole point.",
+    "free": "Free",
+    "freeDesc": "Donation-based",
+    "lang": "EN",
+    "langDesc": "English-friendly",
+    "solo": "Solo",
+    "soloDesc": "No partner needed",
+    "exp": "7+",
+    "expDesc": "Years of experience"
+  },
+  "expect": {
+    "label": "What to Expect",
+    "title1": "Your first class in",
+    "title2": "3 steps",
+    "step1Title": "Show Up",
+    "step1Text": "Walk into Buena Vista Bar on Sunday at 7 PM. Grab a drink if you like. No sign-up stress, no dress code, no awkward waiting.",
+    "step2Title": "Learn One Move",
+    "step2Text": "Each week we teach one Salsa Cubana move from scratch. We rotate partners so you practice with different people. No one gets left out.",
+    "step3Title": "Social Dance",
+    "step3Text": "After the lesson, the music stays on. Practice what you learned, try it with different partners, or just hang out and enjoy the vibe."
+  },
+  "instructor": {
+    "label": "Your Instructor",
+    "title": "Meet",
+    "name": "Alex",
+    "p1": "Alex has been dancing Salsa Cubana for over 7 years, including training in Cuba where the dance was born. He started Montuno Club because he believes everyone deserves a low-pressure way to start dancing — no expensive studio packages required.",
+    "p2": "His teaching style focuses on having fun first. One move per class, lots of repetition with different partners, and a social atmosphere where mistakes are just part of the dance."
+  },
+  "video": {
+    "label": "See the Vibe",
+    "title1": "Feel the",
+    "title2": "energy"
+  },
+  "faq": {
+    "label": "FAQ",
+    "title1": "Common",
+    "title2": "questions",
+    "q1": "Do I need a dance partner?",
+    "a1": "No! We rotate partners throughout the class so everyone dances with everyone. Come solo or bring friends — either way works.",
+    "q2": "Is it really free?",
+    "a2": "Yes. The class is free and always will be. We accept donations to help cover costs, but there is zero pressure. Come as you are.",
+    "q3": "What should I wear?",
+    "a3": "Comfortable clothes you can move in. Any shoes work — sneakers, dance shoes, whatever feels good. No special gear needed.",
+    "q4": "I have zero dance experience. Is that okay?",
+    "a4": "That is exactly who this class is for. We teach one move per session from scratch. Absolute beginners are our people.",
+    "q5": "What happens in a typical class?",
+    "a5": "Quick warm-up, learn one new move with partner rotation, then social dancing where you practice what you learned. The whole thing is about 60 minutes.",
+    "q6": "What language is the class in?",
+    "a6": "English. Munich has a huge international community and we want everyone to feel welcome regardless of their German level."
+  },
+  "location": {
+    "label": "Location",
+    "title1": "Buena Vista",
+    "title2": "Bar",
+    "description": "We dance at Buena Vista Bar in Munich. A social venue with the right energy for learning, meeting people, and having a good time. Not a studio — on purpose.",
+    "time": "Every Sunday at 7:00 PM",
+    "address": "Buena Vista Bar, Am Einlaß 2A, 80469 Munich",
+    "price": "Free (donations welcome)"
+  },
+  "cta": {
+    "title1": "Ready to",
+    "title2": "dance",
+    "description": "No experience needed. No partner needed. No excuses needed.",
+    "descLine2": "Just show up this Sunday.",
+    "button": "Join WhatsApp Group"
+  },
+  "footer": {
+    "description": "Free, donation-based Salsa Cubana for beginners in Munich. Every Sunday at 7 PM.",
+    "connect": "Connect",
+    "legal": "Legal",
+    "impressum": "Impressum",
+    "privacy": "Privacy Policy",
+    "madeBy": "Made by"
+  },
+  "seo": {
+    "title": "Montuno Club — Free Salsa Cubana Classes in Munich",
+    "description": "Free, donation-based Salsa Cubana classes for beginners in Munich. Every Sunday at 7 PM at Buena Vista Bar. English-friendly, no partner needed.",
+    "ogDescription": "Free, donation-based Salsa Cubana for beginners in Munich. Every Sunday at 7 PM. English-friendly, no partner needed. Come dance with us!"
+  }
+}

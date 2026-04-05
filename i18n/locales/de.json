@@ -1,0 +1,101 @@
+{
+  "nav": {
+    "about": "Über uns",
+    "expect": "Was erwartet dich",
+    "faq": "FAQ",
+    "location": "Ort",
+    "joinWhatsApp": "WhatsApp-Gruppe beitreten"
+  },
+  "hero": {
+    "subtitle": "Jeden Sonntag \u00b7 19 Uhr \u00b7 München",
+    "title1": "Salsa",
+    "title2": "Von Null",
+    "description": "Kostenloser Salsa Cubana Kurs für absolute Anfänger auf Spendenbasis. Kein Partner nötig. Keine Erfahrung nötig. Einfach vorbeikommen und tanzen.",
+    "cta": "WhatsApp-Gruppe beitreten",
+    "learnMore": "Mehr erfahren"
+  },
+  "about": {
+    "label": "Über uns",
+    "title1": "Tanzen ist sozial.",
+    "title2": "Das soll so bleiben.",
+    "p1": "Montuno Club ist ein Community-getriebener Salsa Cubana Kurs für Anfänger in München. Wir glauben, dass Tanzen für alle zugänglich sein sollte — unabhängig von Budget, Sprache oder Erfahrung.",
+    "p2": "Unser Kurs findet in einer Bar statt, nicht in einem Studio. Die Atmosphäre ist entspannt. Leute holen sich einen Drink, lernen einen Move, lernen jemanden kennen und tanzen. Genau darum geht es.",
+    "free": "Gratis",
+    "freeDesc": "Auf Spendenbasis",
+    "lang": "EN",
+    "langDesc": "Auf Englisch",
+    "solo": "Solo",
+    "soloDesc": "Kein Partner nötig",
+    "exp": "7+",
+    "expDesc": "Jahre Erfahrung"
+  },
+  "expect": {
+    "label": "Was erwartet dich",
+    "title1": "Dein erster Kurs in",
+    "title2": "3 Schritten",
+    "step1Title": "Komm vorbei",
+    "step1Text": "Komm am Sonntag um 19 Uhr in die Buena Vista Bar. Hol dir einen Drink, wenn du magst. Keine Anmeldung, kein Dresscode, kein peinliches Warten.",
+    "step2Title": "Lerne einen Move",
+    "step2Text": "Jede Woche bringen wir einen Salsa Cubana Move von Grund auf bei. Wir wechseln die Partner, damit du mit verschiedenen Leuten übst. Niemand wird ausgelassen.",
+    "step3Title": "Social Dance",
+    "step3Text": "Nach der Stunde läuft die Musik weiter. Übe was du gelernt hast, tanz mit verschiedenen Partnern oder genieß einfach die Stimmung."
+  },
+  "instructor": {
+    "label": "Dein Lehrer",
+    "title": "Das ist",
+    "name": "Alex",
+    "p1": "Alex tanzt seit über 7 Jahren Salsa Cubana und hat auch in Kuba trainiert, wo der Tanz geboren wurde. Er hat Montuno Club gegründet, weil er glaubt, dass jeder einen entspannten Einstieg ins Tanzen verdient — ohne teure Studiokurse.",
+    "p2": "Sein Unterrichtsstil setzt auf Spaß zuerst. Ein Move pro Stunde, viel Wiederholung mit verschiedenen Partnern und eine gesellige Atmosphäre, in der Fehler einfach zum Tanzen dazugehören."
+  },
+  "video": {
+    "label": "Erlebe die Stimmung",
+    "title1": "Spür die",
+    "title2": "Energie"
+  },
+  "faq": {
+    "label": "FAQ",
+    "title1": "Häufige",
+    "title2": "Fragen",
+    "q1": "Brauche ich einen Tanzpartner?",
+    "a1": "Nein! Wir wechseln während des Kurses die Partner, sodass jeder mit jedem tanzt. Komm allein oder bring Freunde mit — beides geht.",
+    "q2": "Ist es wirklich kostenlos?",
+    "a2": "Ja. Der Kurs ist kostenlos und wird es immer bleiben. Wir nehmen Spenden an, um die Kosten zu decken, aber es gibt keinerlei Druck. Komm wie du bist.",
+    "q3": "Was soll ich anziehen?",
+    "a3": "Bequeme Kleidung, in der du dich gut bewegen kannst. Jede Art von Schuhen geht — Sneakers, Tanzschuhe, was sich gut anfühlt. Keine spezielle Ausrüstung nötig.",
+    "q4": "Ich habe null Tanzerfahrung. Ist das okay?",
+    "a4": "Genau für dich ist der Kurs gemacht. Wir bringen pro Stunde einen Move von Grund auf bei. Absolute Anfänger sind unser Ding.",
+    "q5": "Was passiert in einem typischen Kurs?",
+    "a5": "Kurzes Aufwärmen, einen neuen Move lernen mit Partnerwechsel, dann Social Dancing wo du das Gelernte übst. Das Ganze dauert etwa 60 Minuten.",
+    "q6": "In welcher Sprache ist der Kurs?",
+    "a6": "Englisch. München hat eine riesige internationale Community und wir möchten, dass sich jeder willkommen fühlt — unabhängig vom Deutschniveau."
+  },
+  "location": {
+    "label": "Ort",
+    "title1": "Buena Vista",
+    "title2": "Bar",
+    "description": "Wir tanzen in der Buena Vista Bar in München. Ein geselliger Ort mit der richtigen Energie zum Lernen, Leute kennenlernen und Spaß haben. Kein Studio — mit Absicht.",
+    "time": "Jeden Sonntag um 19:00 Uhr",
+    "address": "Buena Vista Bar, Am Einlaß 2A, 80469 München",
+    "price": "Kostenlos (Spenden willkommen)"
+  },
+  "cta": {
+    "title1": "Bereit zu",
+    "title2": "tanzen",
+    "description": "Keine Erfahrung nötig. Kein Partner nötig. Keine Ausreden nötig.",
+    "descLine2": "Komm einfach diesen Sonntag.",
+    "button": "WhatsApp-Gruppe beitreten"
+  },
+  "footer": {
+    "description": "Kostenloser Salsa Cubana Kurs auf Spendenbasis für Anfänger in München. Jeden Sonntag um 19 Uhr.",
+    "connect": "Verbinden",
+    "legal": "Rechtliches",
+    "impressum": "Impressum",
+    "privacy": "Datenschutz",
+    "madeBy": "Erstellt von"
+  },
+  "seo": {
+    "title": "Montuno Club — Kostenloser Salsa Cubana Kurs in München",
+    "description": "Kostenloser Salsa Cubana Kurs auf Spendenbasis für Anfänger in München. Jeden Sonntag um 19 Uhr in der Buena Vista Bar. Auf Englisch, kein Partner nötig.",
+    "ogDescription": "Kostenloser Salsa Cubana Kurs für Anfänger in München. Jeden Sonntag um 19 Uhr. Auf Englisch, kein Partner nötig. Komm tanzen!"
+  }
+}

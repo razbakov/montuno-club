@@ -1,0 +1,101 @@
+{
+  "nav": {
+    "about": "Sobre nosotros",
+    "expect": "Qué esperar",
+    "faq": "Preguntas",
+    "location": "Ubicación",
+    "joinWhatsApp": "Únete al grupo de WhatsApp"
+  },
+  "hero": {
+    "subtitle": "Cada domingo \u00b7 19:00 \u00b7 Múnich",
+    "title1": "Salsa",
+    "title2": "Desde Cero",
+    "description": "Clases gratuitas de Salsa Cubana para principiantes absolutos, basadas en donaciones. Sin pareja. Sin experiencia. Solo ven y baila.",
+    "cta": "Únete al grupo de WhatsApp",
+    "learnMore": "Sobre la clase"
+  },
+  "about": {
+    "label": "Sobre nosotros",
+    "title1": "El baile es social.",
+    "title2": "Así lo mantenemos.",
+    "p1": "Montuno Club es una clase comunitaria de Salsa Cubana para principiantes en Múnich. Creemos que el baile debe ser accesible para todos — sin importar presupuesto, idioma o nivel de experiencia.",
+    "p2": "Nuestra clase es en un bar, no en un estudio. El ambiente es relajado. La gente toma algo, aprende un paso, conoce a alguien nuevo y baila. Esa es la idea.",
+    "free": "Gratis",
+    "freeDesc": "Basado en donaciones",
+    "lang": "EN",
+    "langDesc": "En inglés",
+    "solo": "Solo",
+    "soloDesc": "Sin pareja",
+    "exp": "7+",
+    "expDesc": "Años de experiencia"
+  },
+  "expect": {
+    "label": "Qué esperar",
+    "title1": "Tu primera clase en",
+    "title2": "3 pasos",
+    "step1Title": "Ven",
+    "step1Text": "Llega a Buena Vista Bar el domingo a las 19:00. Pide algo si quieres. Sin inscripción, sin código de vestimenta, sin esperas incómodas.",
+    "step2Title": "Aprende un paso",
+    "step2Text": "Cada semana enseñamos un paso de Salsa Cubana desde cero. Rotamos parejas para que practiques con diferentes personas. Nadie se queda fuera.",
+    "step3Title": "Baile social",
+    "step3Text": "Después de la clase, la música sigue. Practica lo que aprendiste, pruébalo con diferentes parejas o simplemente disfruta del ambiente."
+  },
+  "instructor": {
+    "label": "Tu instructor",
+    "title": "Conoce a",
+    "name": "Alex",
+    "p1": "Alex lleva más de 7 años bailando Salsa Cubana, incluyendo entrenamiento en Cuba donde nació el baile. Fundó Montuno Club porque cree que todos merecen una forma relajada de empezar a bailar — sin paquetes caros de estudio.",
+    "p2": "Su estilo de enseñanza se enfoca primero en divertirse. Un paso por clase, mucha repetición con diferentes parejas y un ambiente social donde los errores son simplemente parte del baile."
+  },
+  "video": {
+    "label": "Siente el ambiente",
+    "title1": "Siente la",
+    "title2": "energía"
+  },
+  "faq": {
+    "label": "Preguntas",
+    "title1": "Preguntas",
+    "title2": "frecuentes",
+    "q1": "¿Necesito pareja de baile?",
+    "a1": "¡No! Rotamos parejas durante la clase para que todos bailen con todos. Ven solo o trae amigos — las dos opciones funcionan.",
+    "q2": "¿Es realmente gratis?",
+    "a2": "Sí. La clase es gratuita y siempre lo será. Aceptamos donaciones para cubrir costos, pero no hay ninguna presión. Ven como estés.",
+    "q3": "¿Qué debo ponerme?",
+    "a3": "Ropa cómoda con la que puedas moverte. Cualquier zapato sirve — tenis, zapatos de baile, lo que te sea cómodo. No necesitas equipo especial.",
+    "q4": "No tengo experiencia en baile. ¿Está bien?",
+    "a4": "Para eso es exactamente esta clase. Enseñamos un paso por sesión desde cero. Los principiantes absolutos son nuestra gente.",
+    "q5": "¿Qué pasa en una clase típica?",
+    "a5": "Calentamiento rápido, aprender un nuevo paso con rotación de parejas, luego baile social donde practicas lo aprendido. Todo dura unos 60 minutos.",
+    "q6": "¿En qué idioma es la clase?",
+    "a6": "Inglés. Múnich tiene una enorme comunidad internacional y queremos que todos se sientan bienvenidos sin importar su nivel de alemán."
+  },
+  "location": {
+    "label": "Ubicación",
+    "title1": "Buena Vista",
+    "title2": "Bar",
+    "description": "Bailamos en Buena Vista Bar en Múnich. Un lugar social con la energía perfecta para aprender, conocer gente y pasarla bien. No es un estudio — a propósito.",
+    "time": "Cada domingo a las 19:00",
+    "address": "Buena Vista Bar, Am Einlaß 2A, 80469 Múnich",
+    "price": "Gratis (donaciones bienvenidas)"
+  },
+  "cta": {
+    "title1": "¿Listo para",
+    "title2": "bailar",
+    "description": "Sin experiencia. Sin pareja. Sin excusas.",
+    "descLine2": "Solo ven este domingo.",
+    "button": "Únete al grupo de WhatsApp"
+  },
+  "footer": {
+    "description": "Clases gratuitas de Salsa Cubana basadas en donaciones para principiantes en Múnich. Cada domingo a las 19:00.",
+    "connect": "Conectar",
+    "legal": "Legal",
+    "impressum": "Aviso legal",
+    "privacy": "Privacidad",
+    "madeBy": "Hecho por"
+  },
+  "seo": {
+    "title": "Montuno Club — Clases de Salsa Cubana Gratis en Múnich",
+    "description": "Clases gratuitas de Salsa Cubana para principiantes en Múnich. Cada domingo a las 19:00 en Buena Vista Bar. En inglés, sin pareja.",
+    "ogDescription": "Salsa Cubana gratis para principiantes en Múnich. Cada domingo a las 19:00. En inglés, sin pareja. ¡Ven a bailar!"
+  }
+}
