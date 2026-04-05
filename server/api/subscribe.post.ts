@@ -106,6 +106,28 @@ export default defineEventHandler(async (event) => {
     }).catch(() => {
       // Don't fail the subscription if email fails
     })
+
+    // Notify admin
+    await resend.emails.send({
+      from: 'Montuno Club <montuno@wedance.vip>',
+      to: 'razbakov.aleksey@gmail.com',
+      subject: `New signup: ${name}`,
+      html: `
+        <div style="font-family: sans-serif; color: #333;">
+          <h2>New Montuno Club Signup</h2>
+          <table style="border-collapse: collapse;">
+            <tr><td style="padding: 4px 12px 4px 0; font-weight: bold;">Name</td><td>${name}</td></tr>
+            <tr><td style="padding: 4px 12px 4px 0; font-weight: bold;">Email</td><td><a href="mailto:${email}">${email}</a></td></tr>
+            <tr><td style="padding: 4px 12px 4px 0; font-weight: bold;">Phone</td><td><a href="tel:${phone}">${phone}</a></td></tr>
+            <tr><td style="padding: 4px 12px 4px 0; font-weight: bold;">Language</td><td>${body.language || '-'}</td></tr>
+            <tr><td style="padding: 4px 12px 4px 0; font-weight: bold;">Source</td><td>${body.utm_source || '-'}</td></tr>
+            <tr><td style="padding: 4px 12px 4px 0; font-weight: bold;">Medium</td><td>${body.utm_medium || '-'}</td></tr>
+            <tr><td style="padding: 4px 12px 4px 0; font-weight: bold;">Campaign</td><td>${body.utm_campaign || '-'}</td></tr>
+            <tr><td style="padding: 4px 12px 4px 0; font-weight: bold;">Referrer</td><td>${body.referrer || '-'}</td></tr>
+          </table>
+        </div>
+      `,
+    }).catch(() => {})
   }
 
   return { ok: true }
