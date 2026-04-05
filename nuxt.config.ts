@@ -51,6 +51,7 @@ export default defineNuxtConfig({
     },
   },
   runtimeConfig: {
+    resendApiKey: process.env.RESEND_API_KEY || '',
     public: {
       posthogKey: process.env.NUXT_PUBLIC_POSTHOG_KEY || '',
     },
