@@ -1,7 +1,7 @@
 import { Resend } from 'resend'
 
 export default defineEventHandler(async (event) => {
-  const { name, email, phone } = await readBody<{ name: string; email: string; phone?: string }>(event)
+  const { name, email, phone } = await readBody<{ name: string; email: string; phone: string }>(event)
 
   if (!email || !email.includes('@')) {
     throw createError({ statusCode: 400, statusMessage: 'Valid email required' })
@@ -14,13 +14,15 @@ export default defineEventHandler(async (event) => {
   const portalId = '49436475'
   const formGuid = '9796ad2b-d220-4463-8495-4e7fe1efbe9e'
 
+  if (!phone) {
+    throw createError({ statusCode: 400, statusMessage: 'Phone required' })
+  }
+
   const fields = [
     { name: 'email', value: email },
     { name: 'firstname', value: name },
+    { name: 'phone', value: phone },
   ]
-  if (phone) {
-    fields.push({ name: 'phone', value: phone })
-  }
 
   // Submit to HubSpot
   await $fetch(

@@ -7,7 +7,7 @@ const phone = ref('')
 const status = ref<'idle' | 'submitting' | 'success' | 'error'>('idle')
 
 async function submit() {
-  if (!email.value || !name.value) return
+  if (!email.value || !name.value || !phone.value) return
   status.value = 'submitting'
 
   try {
@@ -46,6 +46,7 @@ async function submit() {
       <input
         v-model="phone"
         type="tel"
+        required
         :placeholder="$t('form.phonePlaceholder')"
         class="rounded-full px-6 py-4 bg-wine-900/60 border border-wine-700/50 text-white placeholder:text-wine-400 focus:outline-none focus:border-gold-500/50 transition-colors"
       />

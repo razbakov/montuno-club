@@ -97,7 +97,7 @@
   "form": {
     "namePlaceholder": "Твоё полное имя",
     "emailPlaceholder": "Твой email",
-    "phonePlaceholder": "Телефон (необязательно)",
+    "phonePlaceholder": "Телефон",
     "submit": "Присоединиться бесплатно",
     "submitting": "Отправляем...",
     "success": "Ты в деле! Проверь почту.",
