@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const { t, locale } = useI18n()
 const route = useRoute()
+const { $posthog } = useNuxtApp()
 
 const name = ref('')
 const email = ref('')
@@ -29,8 +30,15 @@ async function submit() {
       },
     })
     status.value = 'success'
+    $posthog()?.capture('form_submitted', {
+      language: locale.value,
+      utm_source: query.utm_source || '',
+      utm_medium: query.utm_medium || '',
+      utm_campaign: query.utm_campaign || '',
+    })
   } catch {
     status.value = 'error'
+    $posthog()?.capture('form_error')
   }
 }
 </script>
