@@ -1,5 +1,6 @@
 <script setup lang="ts">
-const { t } = useI18n()
+const { t, locale } = useI18n()
+const route = useRoute()
 
 const name = ref('')
 const email = ref('')
@@ -10,10 +11,22 @@ async function submit() {
   if (!email.value || !name.value || !phone.value) return
   status.value = 'submitting'
 
+  const query = route.query
   try {
     await $fetch('/api/subscribe', {
       method: 'POST',
-      body: { name: name.value, email: email.value, phone: phone.value },
+      body: {
+        name: name.value,
+        email: email.value,
+        phone: phone.value,
+        language: locale.value,
+        utm_source: query.utm_source || '',
+        utm_medium: query.utm_medium || '',
+        utm_campaign: query.utm_campaign || '',
+        utm_term: query.utm_term || '',
+        utm_content: query.utm_content || '',
+        referrer: document.referrer || '',
+      },
     })
     status.value = 'success'
   } catch {

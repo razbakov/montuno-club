@@ -1,7 +1,19 @@
 import { Resend } from 'resend'
 
 export default defineEventHandler(async (event) => {
-  const { name, email, phone } = await readBody<{ name: string; email: string; phone: string }>(event)
+  const body = await readBody<{
+    name: string
+    email: string
+    phone: string
+    language?: string
+    utm_source?: string
+    utm_medium?: string
+    utm_campaign?: string
+    utm_term?: string
+    utm_content?: string
+    referrer?: string
+  }>(event)
+  const { name, email, phone } = body
 
   if (!email || !email.includes('@')) {
     throw createError({ statusCode: 400, statusMessage: 'Valid email required' })
@@ -24,6 +36,29 @@ export default defineEventHandler(async (event) => {
     { name: 'phone', value: phone },
   ]
 
+  // HubSpot context for tracking
+  const context: Record<string, unknown> = {}
+  if (body.utm_source || body.utm_medium || body.utm_campaign) {
+    context.hutk = undefined
+    context.pageUri = 'https://montuno.club'
+    context.pageName = 'Montuno Club'
+  }
+
+  const hsBody: Record<string, unknown> = { fields }
+  // UTM parameters via HubSpot context
+  if (body.utm_source) {
+    hsBody.context = {
+      ...context,
+      hutk: undefined,
+      pageUri: `https://montuno.club?utm_source=${body.utm_source}&utm_medium=${body.utm_medium || ''}&utm_campaign=${body.utm_campaign || ''}&utm_term=${body.utm_term || ''}&utm_content=${body.utm_content || ''}`,
+    }
+  }
+
+  // Add language and referrer as hidden fields
+  if (body.language) {
+    fields.push({ name: 'hs_language', value: body.language })
+  }
+
   // Submit to HubSpot
   await $fetch(
     `https://api.hsforms.com/submissions/v3/integration/submit/${portalId}/${formGuid}`,
@@ -32,7 +67,7 @@ export default defineEventHandler(async (event) => {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: { fields },
+      body: hsBody,
     },
   )
 
