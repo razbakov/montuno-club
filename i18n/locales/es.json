@@ -105,6 +105,26 @@
     "error": "Algo salió mal. Inténtalo de nuevo.",
     "privacy": "Respetamos tu privacidad. Cancela en cualquier momento."
   },
+  "join": {
+    "title1": "Bienvenido a",
+    "title2": "Montuno Club!",
+    "subtitle": "Inscríbete para clases gratuitas de Salsa Cubana cada domingo",
+    "namePlaceholder": "Tu nombre",
+    "emailPlaceholder": "Tu email",
+    "submit": "Unirme gratis",
+    "submitting": "Enviando...",
+    "success": "¡Estás dentro!",
+    "successSub": "Revisa tu email para más detalles.",
+    "error": "¡Ups!",
+    "errorSub": "Algo salió mal. Inténtalo de nuevo.",
+    "privacy": "Respetamos tu privacidad. Cancela cuando quieras.",
+    "or": "o",
+    "scanQr": "Escanea con tu teléfono",
+    "bottomInfo": "Cada domingo a las 19h \u00b7 Buena Vista Bar, Múnich \u00b7 Gratis y en inglés",
+    "seo": {
+      "title": "Únete a Montuno Club"
+    }
+  },
   "seo": {
     "title": "Montuno Club — Clases de Salsa Cubana Gratis en Múnich",
     "description": "Clases gratuitas de Salsa Cubana para principiantes en Múnich. Cada domingo a las 19:00 en Buena Vista Bar. En inglés, sin pareja.",

@@ -105,6 +105,26 @@
     "error": "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
     "privacy": "Wir respektieren deine Privatsphäre. Jederzeit abmeldbar."
   },
+  "join": {
+    "title1": "Willkommen beim",
+    "title2": "Montuno Club!",
+    "subtitle": "Melde dich an für kostenlose Salsa Cubana Kurse jeden Sonntag",
+    "namePlaceholder": "Dein Name",
+    "emailPlaceholder": "Deine E-Mail",
+    "submit": "Kostenlos beitreten",
+    "submitting": "Wird gesendet...",
+    "success": "Du bist dabei!",
+    "successSub": "Schau in dein Postfach für Details.",
+    "error": "Ups!",
+    "errorSub": "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
+    "privacy": "Wir respektieren deine Privatsphäre. Jederzeit abmeldbar.",
+    "or": "oder",
+    "scanQr": "Mit dem Handy scannen",
+    "bottomInfo": "Jeden Sonntag um 19 Uhr \u00b7 Buena Vista Bar, München \u00b7 Kostenlos & auf Englisch",
+    "seo": {
+      "title": "Montuno Club beitreten"
+    }
+  },
   "seo": {
     "title": "Montuno Club — Kostenloser Salsa Cubana Kurs in München",
     "description": "Kostenloser Salsa Cubana Kurs auf Spendenbasis für Anfänger in München. Jeden Sonntag um 19 Uhr in der Buena Vista Bar. Auf Englisch, kein Partner nötig.",
