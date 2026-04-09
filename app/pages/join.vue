@@ -50,7 +50,7 @@ onUnmounted(() => {
   if (interval) clearInterval(interval)
 })
 
-const currentClass = computed<ClassInfo>(() => {
+const currentClassIndex = computed(() => {
   const h = now.value.getHours()
   const m = now.value.getMinutes()
   const minutes = h * 60 + m
@@ -59,11 +59,13 @@ const currentClass = computed<ClassInfo>(() => {
   // 18:45–19:44 → beginner (7 PM)
   // 19:45+       → intermediate (8 PM)
   // before 17:30 → taster (default for early setup)
-  if (minutes < 18 * 60 + 45) return classes[0]
-  if (minutes < 19 * 60 + 45) return classes[1]
-  return classes[2]
+  if (minutes < 18 * 60 + 45) return 0
+  if (minutes < 19 * 60 + 45) return 1
+  return 2
 })
 
+const currentClass = computed<ClassInfo>(() => classes[currentClassIndex.value])
+const upcomingClasses = computed(() => classes.slice(currentClassIndex.value))
 const checkInUrl = computed(() => currentClass.value.wedanceUrl)
 const discoverUrl = 'https://montuno.club'
 </script>
@@ -74,35 +76,67 @@ const discoverUrl = 'https://montuno.club'
   >
     <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(244,195,79,0.16),_transparent_30%),radial-gradient(circle_at_bottom_right,_rgba(111,24,46,0.45),_transparent_40%)]" />
     <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-gold-300/40 to-transparent" />
-    <div class="absolute right-4 top-4 z-20 rounded-full border border-white/10 bg-black/15 px-3 py-2 backdrop-blur sm:right-6 sm:top-6">
-      <LangSwitcher />
+    <div class="absolute left-4 top-4 z-20 sm:left-6 sm:top-6">
+      <LangSwitcher variant="buttons" />
     </div>
 
     <div
       class="relative mx-auto flex min-h-screen w-full max-w-5xl flex-col justify-center px-5 py-5 sm:px-8 sm:py-6"
     >
-      <div
-        class="mx-auto inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs text-wine-100/80 backdrop-blur sm:text-sm"
-      >
-        <img
-          src="/favicon-icon.png"
-          alt="Montuno Club"
-          class="h-8 w-8 rounded-full ring-1 ring-gold-400/30 sm:h-9 sm:w-9"
-        />
-        <span class="font-medium tracking-[0.2em] uppercase">Montuno Club</span>
-      </div>
+      <div class="relative md:pr-64">
+        <div
+          class="inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs text-wine-100/80 backdrop-blur sm:text-sm"
+        >
+          <img
+            src="/favicon-icon.png"
+            alt="Montuno Club"
+            class="h-8 w-8 rounded-full ring-1 ring-gold-400/30 sm:h-9 sm:w-9"
+          />
+          <span class="font-medium tracking-[0.2em] uppercase">Montuno Club</span>
+        </div>
 
-      <div class="mt-4 text-center">
-        <p class="text-xs font-semibold uppercase tracking-[0.38em] text-gold-300/85">
-          {{ $t('join.eyebrow') }}
-        </p>
-        <h1 class="mt-3 font-display text-3xl leading-[0.95] sm:text-4xl lg:text-5xl">
-          {{ $t('join.title1') }}
-          <span class="block text-gold-400">{{ $t('join.title2') }}</span>
-        </h1>
-        <p class="mx-auto mt-3 max-w-xl text-sm text-wine-100/80 sm:text-base">
-          {{ $t('join.subtitle') }}
-        </p>
+        <div class="mt-4 max-w-2xl">
+          <p class="text-xs font-semibold uppercase tracking-[0.38em] text-gold-300/85">
+            {{ $t('join.eyebrow') }}
+          </p>
+          <h1 class="mt-3 font-display text-5xl leading-[0.88] sm:text-6xl md:text-7xl">
+            {{ $t('hero.title1') }}
+            <span class="block text-gold-400">{{ $t('hero.title2') }}</span>
+          </h1>
+          <p class="mt-3 max-w-lg text-sm text-wine-100/80 sm:text-base">
+            {{ $t('join.subtitle') }}
+          </p>
+        </div>
+
+        <div
+          data-kiosk-role="schedule"
+          class="mt-4 rounded-[1.75rem] border border-white/10 bg-black/20 p-4 backdrop-blur md:absolute md:right-0 md:top-0 md:mt-0 md:w-56"
+        >
+          <p class="text-[11px] font-semibold uppercase tracking-[0.28em] text-gold-300/80">
+            {{ $t('join.tonight') }}
+          </p>
+          <div class="mt-3 space-y-2">
+            <div
+              v-for="(session, index) in upcomingClasses"
+              :key="session.key"
+              class="rounded-2xl border px-3 py-2.5 transition-colors"
+              :class="index === 0
+                ? 'border-gold-300/40 bg-gold-400/12 text-white'
+                : 'border-white/10 bg-white/5 text-wine-100/78'"
+            >
+              <div class="flex items-center gap-2 text-xs uppercase tracking-[0.2em]">
+                <span
+                  class="h-2 w-2 rounded-full"
+                  :class="index === 0 ? 'bg-gold-300' : 'bg-white/35'"
+                />
+                <span>{{ session.time }}</span>
+              </div>
+              <p class="mt-1 text-sm font-medium">
+                {{ $t(`join.classes.${session.key}`) }}
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="mt-4 flex justify-center text-sm text-wine-100/90">

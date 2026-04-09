@@ -34,6 +34,16 @@ describe('join kiosk', () => {
   test('kiosk page includes a language switcher', () => {
     const source = readFileSync(resolve(process.cwd(), 'app/pages/join.vue'), 'utf8')
 
-    expect(source).toContain('<LangSwitcher')
+    expect(source).toContain('<LangSwitcher variant="buttons"')
+  })
+
+  test('kiosk hero uses the bigger salsa from zero title and floating schedule', () => {
+    const source = readFileSync(resolve(process.cwd(), 'app/pages/join.vue'), 'utf8')
+
+    expect(source).toContain("$t('hero.title1')")
+    expect(source).toContain("$t('hero.title2')")
+    expect(source).toContain('currentClassIndex')
+    expect(source).toContain('upcomingClasses')
+    expect(source).toContain('data-kiosk-role="schedule"')
   })
 })
