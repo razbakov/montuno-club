@@ -74,6 +74,9 @@ const discoverUrl = 'https://montuno.club'
   >
     <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(244,195,79,0.16),_transparent_30%),radial-gradient(circle_at_bottom_right,_rgba(111,24,46,0.45),_transparent_40%)]" />
     <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-gold-300/40 to-transparent" />
+    <div class="absolute right-4 top-4 z-20 rounded-full border border-white/10 bg-black/15 px-3 py-2 backdrop-blur sm:right-6 sm:top-6">
+      <LangSwitcher />
+    </div>
 
     <div
       class="relative mx-auto flex min-h-screen w-full max-w-5xl flex-col justify-center px-5 py-5 sm:px-8 sm:py-6"

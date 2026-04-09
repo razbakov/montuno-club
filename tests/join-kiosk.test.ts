@@ -30,4 +30,10 @@ describe('join kiosk', () => {
     expect(source).not.toContain("{{ $t('join.everySunday') }}")
     expect(source).not.toContain("{{ $t('join.englishFriendly') }}")
   })
+
+  test('kiosk page includes a language switcher', () => {
+    const source = readFileSync(resolve(process.cwd(), 'app/pages/join.vue'), 'utf8')
+
+    expect(source).toContain('<LangSwitcher')
+  })
 })
