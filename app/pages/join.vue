@@ -74,25 +74,30 @@ const discoverUrl = 'https://montuno.club'
   <div
     class="kiosk-page relative min-h-screen overflow-hidden bg-wine-950 text-white"
   >
-    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(244,195,79,0.16),_transparent_30%),radial-gradient(circle_at_bottom_right,_rgba(111,24,46,0.45),_transparent_40%)]" />
+    <img
+      src="/images/group.jpg"
+      alt="Salsa Cubana class at Buena Vista Bar Munich"
+      class="absolute inset-0 h-full w-full object-cover"
+    />
+    <div class="absolute inset-0 bg-gradient-to-b from-wine-950/85 via-wine-950/72 to-wine-950" />
     <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-gold-300/40 to-transparent" />
-    <div class="absolute left-4 top-4 z-20 sm:left-6 sm:top-6">
-      <LangSwitcher variant="buttons" />
-    </div>
 
     <div
       class="relative mx-auto flex min-h-screen w-full max-w-5xl flex-col justify-center px-5 py-5 sm:px-8 sm:py-6"
     >
       <div class="relative md:pr-64">
-        <div
-          class="inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs text-wine-100/80 backdrop-blur sm:text-sm"
-        >
-          <img
-            src="/favicon-icon.png"
-            alt="Montuno Club"
-            class="h-8 w-8 rounded-full ring-1 ring-gold-400/30 sm:h-9 sm:w-9"
-          />
-          <span class="font-medium tracking-[0.2em] uppercase">Montuno Club</span>
+        <div class="flex items-center justify-between gap-4">
+          <div
+            class="inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs text-wine-100/80 backdrop-blur sm:text-sm"
+          >
+            <img
+              src="/favicon-icon.png"
+              alt="Montuno Club"
+              class="h-8 w-8 rounded-full ring-1 ring-gold-400/30 sm:h-9 sm:w-9"
+            />
+            <span class="font-medium tracking-[0.2em] uppercase">Montuno Club</span>
+          </div>
+          <LangSwitcher variant="buttons" />
         </div>
 
         <div class="mt-4 max-w-2xl">
@@ -136,13 +141,6 @@ const discoverUrl = 'https://montuno.club'
               </p>
             </div>
           </div>
-        </div>
-      </div>
-
-      <div class="mt-4 flex justify-center text-sm text-wine-100/90">
-        <div class="rounded-full border border-gold-400/25 bg-gold-400/10 px-4 py-2 text-center">
-          {{ $t('join.tonight') }}: {{ $t(`join.classes.${currentClass.key}`) }}
-          &middot; {{ currentClass.time }} &middot; {{ $t('join.noPartner') }}
         </div>
       </div>
 

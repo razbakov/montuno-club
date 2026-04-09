@@ -29,6 +29,7 @@ describe('join kiosk', () => {
     expect(source).toContain('md:grid-cols-')
     expect(source).not.toContain("{{ $t('join.everySunday') }}")
     expect(source).not.toContain("{{ $t('join.englishFriendly') }}")
+    expect(source).not.toContain("{{ $t('join.tonight') }}: {{ $t(`join.classes.${currentClass.key}`) }}")
   })
 
   test('kiosk page includes a language switcher', () => {
@@ -45,5 +46,7 @@ describe('join kiosk', () => {
     expect(source).toContain('currentClassIndex')
     expect(source).toContain('upcomingClasses')
     expect(source).toContain('data-kiosk-role="schedule"')
+    expect(source).toContain('/images/group.jpg')
+    expect(source).toContain('flex items-center justify-between')
   })
 })
