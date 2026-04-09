@@ -76,75 +76,66 @@ const discoverUrl = 'https://montuno.club'
     <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-gold-300/40 to-transparent" />
 
     <div
-      class="relative mx-auto flex min-h-screen w-full max-w-4xl flex-col justify-center px-6 py-8 sm:px-10 sm:py-10"
+      class="relative mx-auto flex min-h-screen w-full max-w-5xl flex-col justify-center px-5 py-5 sm:px-8 sm:py-6"
     >
       <div
-        class="mx-auto inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-wine-100/80 backdrop-blur"
+        class="mx-auto inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs text-wine-100/80 backdrop-blur sm:text-sm"
       >
         <img
           src="/favicon-icon.png"
           alt="Montuno Club"
-          class="h-9 w-9 rounded-full ring-1 ring-gold-400/30"
+          class="h-8 w-8 rounded-full ring-1 ring-gold-400/30 sm:h-9 sm:w-9"
         />
         <span class="font-medium tracking-[0.2em] uppercase">Montuno Club</span>
       </div>
 
-      <div class="mt-6 text-center">
+      <div class="mt-4 text-center">
         <p class="text-xs font-semibold uppercase tracking-[0.38em] text-gold-300/85">
           {{ $t('join.eyebrow') }}
         </p>
-        <h1 class="mt-4 font-display text-4xl leading-[0.95] sm:text-5xl lg:text-6xl">
+        <h1 class="mt-3 font-display text-3xl leading-[0.95] sm:text-4xl lg:text-5xl">
           {{ $t('join.title1') }}
           <span class="block text-gold-400">{{ $t('join.title2') }}</span>
         </h1>
-        <p class="mx-auto mt-4 max-w-2xl text-base text-wine-100/80 sm:text-lg">
+        <p class="mx-auto mt-3 max-w-xl text-sm text-wine-100/80 sm:text-base">
           {{ $t('join.subtitle') }}
         </p>
       </div>
 
-      <div class="mt-6 flex flex-wrap justify-center gap-3 text-sm text-wine-100/90">
-        <div class="rounded-full border border-gold-400/25 bg-gold-400/10 px-4 py-2">
+      <div class="mt-4 flex justify-center text-sm text-wine-100/90">
+        <div class="rounded-full border border-gold-400/25 bg-gold-400/10 px-4 py-2 text-center">
           {{ $t('join.tonight') }}: {{ $t(`join.classes.${currentClass.key}`) }}
-          &middot; {{ currentClass.time }}
-        </div>
-        <div class="rounded-full border border-white/10 bg-white/5 px-4 py-2">
-          {{ $t('join.everySunday') }}
-        </div>
-        <div class="rounded-full border border-white/10 bg-white/5 px-4 py-2">
-          {{ $t('join.englishFriendly') }}
-        </div>
-        <div class="rounded-full border border-white/10 bg-white/5 px-4 py-2">
-          {{ $t('join.noPartner') }}
+          &middot; {{ currentClass.time }} &middot; {{ $t('join.noPartner') }}
         </div>
       </div>
 
-      <div class="mt-8 grid gap-4 lg:grid-cols-[minmax(0,1.45fr)_minmax(0,0.85fr)]">
+      <div class="mt-5 grid gap-3 md:grid-cols-[minmax(0,1.35fr)_minmax(0,0.82fr)]">
         <a
           data-kiosk-role="discover"
           :href="discoverUrl"
           target="_blank"
-          class="group rounded-[2rem] border border-gold-400/25 bg-white/[0.08] p-6 shadow-[0_24px_80px_rgba(12,7,9,0.45)] backdrop-blur transition-all hover:border-gold-300/60 hover:bg-white/[0.12] sm:p-8"
+          class="group rounded-[2rem] border border-gold-400/25 bg-white/[0.08] p-5 shadow-[0_24px_80px_rgba(12,7,9,0.45)] backdrop-blur transition-all hover:border-gold-300/60 hover:bg-white/[0.12] sm:p-6"
         >
-          <div class="flex h-full flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
-            <div class="max-w-lg text-left">
+          <div class="flex h-full flex-col gap-4 md:flex-row md:items-center md:justify-between">
+            <div class="max-w-md text-left">
               <p class="text-xs font-semibold uppercase tracking-[0.35em] text-gold-300">
                 {{ $t('join.primaryEyebrow') }}
               </p>
-              <h2 class="mt-3 font-display text-3xl leading-tight text-white sm:text-4xl">
+              <h2 class="mt-2 font-display text-2xl leading-tight text-white sm:text-3xl">
                 {{ $t('join.primaryTitle') }}
               </h2>
-              <p class="mt-4 text-base leading-relaxed text-wine-100/82 sm:text-lg">
+              <p class="mt-3 text-sm leading-relaxed text-wine-100/82 sm:text-base">
                 {{ $t('join.primarySub') }}
               </p>
               <div
-                class="mt-5 inline-flex items-center rounded-full border border-gold-300/25 bg-gold-400/10 px-4 py-2 text-sm font-medium text-gold-100"
+                class="mt-4 inline-flex items-center rounded-full border border-gold-300/25 bg-gold-400/10 px-4 py-2 text-sm font-medium text-gold-100"
               >
                 {{ $t('join.primaryHint') }}
               </div>
             </div>
 
-            <div class="mx-auto rounded-[2rem] bg-white p-4 shadow-[0_14px_50px_rgba(0,0,0,0.28)] lg:mx-0">
-              <KioskQrCode :url="discoverUrl" :size="156" />
+            <div class="mx-auto rounded-[1.75rem] bg-white p-3 shadow-[0_14px_50px_rgba(0,0,0,0.28)] md:mx-0">
+              <KioskQrCode :url="discoverUrl" :size="132" />
             </div>
           </div>
         </a>
@@ -153,36 +144,36 @@ const discoverUrl = 'https://montuno.club'
           data-kiosk-role="check-in"
           :href="checkInUrl"
           target="_blank"
-          class="group rounded-[2rem] border border-white/10 bg-wine-900/75 p-5 backdrop-blur transition-all hover:border-white/20 hover:bg-wine-900 sm:p-6"
+          class="group rounded-[2rem] border border-white/10 bg-wine-900/75 p-4 backdrop-blur transition-all hover:border-white/20 hover:bg-wine-900 sm:p-5"
         >
-          <div class="flex items-start justify-between gap-4">
+          <div class="flex items-start justify-between gap-3">
             <div class="text-left">
               <p class="text-xs font-semibold uppercase tracking-[0.32em] text-wine-300">
                 {{ $t('join.checkInEyebrow') }}
               </p>
-              <h2 class="mt-3 font-display text-2xl leading-tight text-gold-300 sm:text-3xl">
+              <h2 class="mt-2 font-display text-xl leading-tight text-gold-300 sm:text-2xl">
                 {{ $t('join.checkIn') }}
               </h2>
-              <p class="mt-3 text-sm leading-relaxed text-wine-200/80 sm:text-base">
+              <p class="mt-2 text-sm leading-relaxed text-wine-200/80">
                 {{ $t('join.checkInSub') }}
               </p>
             </div>
 
-            <div class="shrink-0 rounded-2xl bg-white p-3 shadow-[0_12px_36px_rgba(0,0,0,0.25)]">
-              <KioskQrCode :url="checkInUrl" :size="96" />
+            <div class="shrink-0 rounded-2xl bg-white p-2.5 shadow-[0_12px_36px_rgba(0,0,0,0.25)]">
+              <KioskQrCode :url="checkInUrl" :size="82" />
             </div>
           </div>
 
-          <div class="mt-5 inline-flex rounded-full border border-gold-400/20 bg-gold-400/10 px-4 py-2 text-sm text-gold-100/90">
+          <div class="mt-4 inline-flex rounded-full border border-gold-400/20 bg-gold-400/10 px-3 py-1.5 text-sm text-gold-100/90">
             {{ $t(`join.classes.${currentClass.key}`) }} &middot; {{ currentClass.time }}
           </div>
-          <p class="mt-4 text-xs uppercase tracking-[0.24em] text-wine-400">
+          <p class="mt-3 text-[11px] uppercase tracking-[0.22em] text-wine-400">
             {{ $t('join.checkInHint') }}
           </p>
         </a>
       </div>
 
-      <p class="mt-6 text-center text-sm text-wine-300/70">
+      <p class="mt-4 text-center text-xs text-wine-300/65 sm:text-sm">
         {{ $t('join.bottomInfo') }}
       </p>
     </div>

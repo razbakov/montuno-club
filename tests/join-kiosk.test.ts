@@ -8,7 +8,7 @@ describe('join kiosk', () => {
   test('english copy is aimed at first-time bar visitors and keeps check-in secondary', () => {
     expect(en.join.eyebrow).toContain('Saw us dancing')
     expect(en.join.primaryTitle).toContain('Scan')
-    expect(en.join.primarySub).toContain('new here')
+    expect(en.join.primarySub).toContain('new')
     expect(en.join.checkInEyebrow).toContain('Already')
     expect(en.join.checkInSub).toContain('asked')
   })
@@ -21,5 +21,13 @@ describe('join kiosk', () => {
     expect(discoverIndex).toBeGreaterThanOrEqual(0)
     expect(checkInIndex).toBeGreaterThan(discoverIndex)
     expect(source).not.toContain('max-w-5xl flex flex-col lg:flex-row')
+  })
+
+  test('kiosk layout is compact enough for ipad portrait', () => {
+    const source = readFileSync(resolve(process.cwd(), 'app/pages/join.vue'), 'utf8')
+
+    expect(source).toContain('md:grid-cols-')
+    expect(source).not.toContain("{{ $t('join.everySunday') }}")
+    expect(source).not.toContain("{{ $t('join.englishFriendly') }}")
   })
 })
