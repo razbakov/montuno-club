@@ -20,17 +20,24 @@ Implemented:
 - Reordered the page so the primary QR block is the newcomer/discovery path
 - Reduced the visual weight of the student check-in block
 - Added a Bun test scaffold in `tests/join-kiosk.test.ts` to lock the intended hierarchy and messaging direction
+- Added the missing `join.*` translation keys in `i18n/locales/en.json`
+- Added matching kiosk keys in `de.json`, `es.json`, `ru.json`, and `uk.json` to avoid runtime gaps
+- Brought `bun test tests/join-kiosk.test.ts` back to green
+- Verified `bun run build` passes on this branch
 
-Not finished:
-- `app/pages/join.vue` now references new `join.*` translation keys that do not exist yet
-- Locale files have not been updated
-- Tests have not been brought back to green
-- Build verification has not been run after the refactor
+Still worth reviewing:
+- Check the `/join` page on an actual iPad-sized viewport at Buena Vista Bar
+- Fine-tune QR size, spacing, and copy density if the real device needs it
 
 ## Files Touched
 
 - `app/pages/join.vue`
 - `tests/join-kiosk.test.ts`
+- `i18n/locales/en.json`
+- `i18n/locales/de.json`
+- `i18n/locales/es.json`
+- `i18n/locales/ru.json`
+- `i18n/locales/uk.json`
 
 Unrelated worktree item not touched:
 - `AGENTS.md` is untracked and should be ignored for this task unless intentionally added later
@@ -49,7 +56,7 @@ Secondary CTA:
 - Student check-in
 - This should be explicitly framed as something Alex tells existing students to use
 
-## Known Gaps
+## Remaining Notes
 
 The new page markup expects keys like:
 - `join.eyebrow`
@@ -65,9 +72,12 @@ The new page markup expects keys like:
 - `join.checkInEyebrow`
 - `join.checkInHint`
 
-These need to be added at minimum in:
+These are now present in:
 - `i18n/locales/en.json`
-- likely also `de.json`, `es.json`, `ru.json`, `uk.json`
+- `i18n/locales/de.json`
+- `i18n/locales/es.json`
+- `i18n/locales/ru.json`
+- `i18n/locales/uk.json`
 
 ## Test State
 
@@ -79,15 +89,13 @@ Current expectation of the test:
 - The old equal-weight two-column kiosk layout should be gone
 
 Current state:
-- The test is expected to fail until locale keys are added
+- The test passes after the locale keys were added
 
 ## Recommended Next Steps
 
-1. Add the missing `join.*` copy to `i18n/locales/en.json`
-2. Update the other locale files or temporarily align them to avoid runtime gaps
-3. Run `bun test tests/join-kiosk.test.ts`
-4. Run `bun run build`
-5. Review the page on an actual iPad-sized viewport and fine-tune QR size, spacing, and copy density
+1. Review the `/join` page on an iPad-sized viewport or the real kiosk device
+2. Fine-tune QR size, spacing, and copy density if needed for standing-distance readability
+3. Decide whether the non-English kiosk copy should stay localized or temporarily fall back to English for onsite consistency
 
 ## Suggested Copy Direction
 
@@ -99,4 +107,3 @@ Primary message should sound like:
 Secondary message should sound like:
 - Already a student?
 - Alex will ask you to scan here to check in for today’s class
-
