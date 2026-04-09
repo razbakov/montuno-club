@@ -108,18 +108,16 @@
   "join": {
     "title1": "Bienvenido a",
     "title2": "Montuno Club!",
-    "subtitle": "Inscríbete para clases gratuitas de Salsa Cubana cada domingo",
-    "namePlaceholder": "Tu nombre",
-    "emailPlaceholder": "Tu email",
-    "submit": "Unirme gratis",
-    "submitting": "Enviando...",
-    "success": "¡Estás dentro!",
-    "successSub": "Revisa tu email para más detalles.",
-    "error": "¡Ups!",
-    "errorSub": "Algo salió mal. Inténtalo de nuevo.",
-    "privacy": "Respetamos tu privacidad. Cancela cuando quieras.",
+    "checkIn": "¡Estoy aquí!",
+    "checkInSub": "¿Ya registrado? Haz check-in para la clase de hoy",
+    "discover": "Quiero saber más",
+    "discoverSub": "¿Primera vez? Descubre nuestras clases gratuitas de salsa",
     "or": "o",
-    "scanQr": "Escanea con tu teléfono",
+    "classes": {
+      "taster": "Clase de prueba gratuita",
+      "beginner": "Curso para principiantes",
+      "intermediate": "Taller intermedio"
+    },
     "bottomInfo": "Cada domingo a las 19h \u00b7 Buena Vista Bar, Múnich \u00b7 Gratis y en inglés",
     "seo": {
       "title": "Únete a Montuno Club"

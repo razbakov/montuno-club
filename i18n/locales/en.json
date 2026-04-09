@@ -108,18 +108,16 @@
   "join": {
     "title1": "Welcome to",
     "title2": "Montuno Club!",
-    "subtitle": "Sign up for free Salsa Cubana classes every Sunday",
-    "namePlaceholder": "Your name",
-    "emailPlaceholder": "Your email",
-    "submit": "Join Free",
-    "submitting": "Joining...",
-    "success": "You're in!",
-    "successSub": "Check your email for details.",
-    "error": "Oops!",
-    "errorSub": "Something went wrong. Please try again.",
-    "privacy": "We respect your privacy. Unsubscribe anytime.",
+    "checkIn": "I'm Here!",
+    "checkInSub": "Already registered? Check in for today's class",
+    "discover": "Tell Me More",
+    "discoverSub": "First time? Learn about our free salsa classes",
     "or": "or",
-    "scanQr": "Scan with your phone",
+    "classes": {
+      "taster": "Free Taster",
+      "beginner": "Beginner Course",
+      "intermediate": "Intermediate Workshop"
+    },
     "bottomInfo": "Every Sunday at 7 PM \u00b7 Buena Vista Bar, Munich \u00b7 Free & English-friendly",
     "seo": {
       "title": "Join Montuno Club"
