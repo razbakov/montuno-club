@@ -1,4 +1,10 @@
 <script setup lang="ts">
+const props = withDefaults(defineProps<{
+  variant?: 'dropdown' | 'buttons'
+}>(), {
+  variant: 'dropdown',
+})
+
 const { locale, locales, setLocale } = useI18n()
 const open = ref(false)
 
@@ -8,7 +14,23 @@ const currentLocale = computed(() =>
 </script>
 
 <template>
-  <div class="relative">
+  <div
+    v-if="props.variant === 'buttons'"
+    class="flex items-center gap-2"
+  >
+    <button
+      v-for="loc in locales"
+      :key="typeof loc === 'string' ? loc : loc.code"
+      class="min-w-[3rem] rounded-full border px-3 py-2 text-sm font-semibold uppercase tracking-[0.18em] transition-colors"
+      :class="locale === (typeof loc === 'string' ? loc : loc.code)
+        ? 'border-gold-300 bg-gold-400 text-wine-950'
+        : 'border-white/15 bg-white/5 text-wine-100 hover:border-white/30 hover:bg-white/10'"
+      @click="setLocale(typeof loc === 'string' ? loc : loc.code)"
+    >
+      {{ typeof loc === 'string' ? loc.toUpperCase() : loc.code.toUpperCase() }}
+    </button>
+  </div>
+  <div v-else class="relative">
     <button
       class="flex items-center gap-1 text-sm text-wine-200 hover:text-white transition-colors"
       @click="open = !open"
