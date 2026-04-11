@@ -1,48 +1,26 @@
-# Montuno Club
+# Montuno Club Website
 
-Salsa Cubana classes in Munich. Community-driven, expat-friendly, taught in English.
+Nuxt codebase for the public `montuno.club` website.
 
-- **Website:** https://montuno.club/
-- **Venue:** Buena Vista Bar, Am Einlass 2A, Munich
-- **Registration:** via [WeDance.vip](https://wedance.vip)
-- **Issue tracker:** GitHub Issues (repo: razbakov/montuno-club)
+- **Code repo:** `~/Projects/montuno-club`
+- **Org workspace:** `~/Orgs/MontunoClub`
+- **Production URL:** `https://montuno.club/`
+- **Deploy target:** Vercel
 
-### Sunday Schedule
+## Working Agreements
 
-| Time | Class | Price |
-|------|-------|-------|
-| 6:00 PM | Salsa From Zero — Free Taster | Free (donations welcome) |
-| 7:00 PM | Azucar — 8-Week Beginner Course | EUR 40/month |
-| 8:00 PM | Intermediate Workshop | EUR 10/class |
+- Prefer `bun` for local commands and dependency management.
+- Keep this repo focused on source code, deployment config, assets, and tests.
+- Governance, roles, domains, coordination, backlog, and inbox artifacts live in `~/Orgs/MontunoClub`.
 
-## Structure
+## Code Structure
 
-- Logbook: `logbook/`
-- Primary driver: `logbook/primary-driver.md`
-- Organization canvas: `logbook/canvas.md`
-- Strategy: `logbook/strategy.md`
-- Values: `logbook/values.md`
-- Policies: `logbook/policies/`
-- Requirements: `logbook/requirements/`
-- Domains: `domains/<domain-name>/`
-- Domain description: `domains/<domain-name>/description.md`
-- Domain governance backlog: `domains/<domain-name>/backlog/`
-- Domain operations backlog: `domains/<domain-name>/operations/`
-- Domain metrics: `domains/<domain-name>/metrics/`
-- Roles: `roles/<role-name>.md`
-- Coordination: `coordination/`
-- Domain map: `coordination/domain-map.md`
-- Agents: `.claude/agents/`
+- App source: `app/`
+- API routes: `server/api/`
+- Locales: `i18n/locales/`
+- Public assets: `public/`
+- Tests: `tests/`
 
-## Team
+## Cross-Repo Rule
 
-| Role | Keeper | Domain |
-|------|--------|--------|
-| Instructor & Founder | Alex | Teaching |
-| Content & Growth Lead | Content & Growth Lead (AI) | Community & Growth |
-| Coordinator | Coordinator (AI) | Cross-domain |
-
-## Agents
-
-- **coordinator** (`.claude/agents/coordinator.md`) — synthesizes status across domains, recommends priorities. Dispatch first when asking "what should we work on next?" and last after a sprint to synthesize results.
-- **content-growth-lead** (`.claude/agents/content-growth-lead.md`) — creates social media content, email campaigns, event promotion. Dispatch when content or community outreach is needed.
+If a task changes organizational decisions, update `~/Orgs/MontunoClub`. If it changes product behavior or deployment, update this repo.
