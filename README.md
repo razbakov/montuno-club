@@ -1,11 +1,30 @@
-# Montuno Club
+# Montuno Club Website
 
-Free, donation-based Salsa Cubana classes for beginners in Munich.
+Nuxt application for the public `montuno.club` website.
 
-- **Website:** https://montuno.club/
-- **When:** Every Sunday at 7 PM
-- **Where:** Buena Vista Bar, Munich
-- **Language:** English
-- **Registration:** via [WeDance.vip](https://wedance.vip)
+- Production: `https://montuno.club/`
+- Deployment: Vercel
+- Package manager: `bun`
+- Registration platform: [WeDance.vip](https://wedance.vip)
+- Org workspace: `~/Orgs/MontunoClub`
 
-Community-driven, expat-friendly. Taught by Alex (7 years experience, trained in Cuba).
+## Scope
+
+This repository contains only website source code, assets, deployment config, and tests.
+
+Governance, roles, domains, coordination, inbox material, and agent definitions live in `~/Orgs/MontunoClub`.
+
+## Development
+
+```bash
+bun install
+bun run dev
+```
+
+## Main Directories
+
+- `app/` — Nuxt pages, components, styles, plugins
+- `server/` — server routes
+- `public/` — static assets
+- `i18n/locales/` — translations
+- `tests/` — Bun tests
