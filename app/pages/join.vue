@@ -19,19 +19,19 @@ interface ClassInfo {
 const classes: ClassInfo[] = [
   {
     key: 'taster',
-    time: '18:00',
+    time: '17:00',
     wedanceUrl:
       'https://wedance.vip/events/yZBzg4uX4aAgEW0ltrjI?utm_source=kiosk&utm_medium=ipad',
   },
   {
     key: 'beginner',
-    time: '19:00',
+    time: '18:00',
     wedanceUrl:
       'https://wedance.vip/events/PLGFjfZG0Lra4ccM7LdE?utm_source=kiosk&utm_medium=ipad',
   },
   {
     key: 'intermediate',
-    time: '20:00',
+    time: '19:00',
     wedanceUrl:
       'https://wedance.vip/events/3SCGluX6xdhegMUGo7jc?utm_source=kiosk&utm_medium=ipad',
   },
@@ -55,12 +55,12 @@ const currentClassIndex = computed(() => {
   const m = now.value.getMinutes()
   const minutes = h * 60 + m
 
-  // 17:30–18:44 → taster (6 PM)
-  // 18:45–19:44 → beginner (7 PM)
-  // 19:45+       → intermediate (8 PM)
-  // before 17:30 → taster (default for early setup)
-  if (minutes < 18 * 60 + 45) return 0
-  if (minutes < 19 * 60 + 45) return 1
+  // 16:30–17:44 → taster (5 PM)
+  // 17:45–18:44 → beginner (6 PM)
+  // 18:45+       → intermediate (7 PM)
+  // before 16:30 → taster (default for early setup)
+  if (minutes < 17 * 60 + 45) return 0
+  if (minutes < 18 * 60 + 45) return 1
   return 2
 })
 

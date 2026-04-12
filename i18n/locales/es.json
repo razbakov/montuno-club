@@ -8,7 +8,7 @@
     "joinFree": "Únete gratis"
   },
   "hero": {
-    "subtitle": "Cada domingo \u00b7 19:00 \u00b7 Múnich",
+    "subtitle": "Cada domingo \u00b7 18:00 \u00b7 Múnich",
     "title1": "Salsa",
     "title2": "Desde Cero",
     "description": "Clases gratuitas de Salsa Cubana para principiantes absolutos, basadas en donaciones. Sin pareja. Sin experiencia. Solo ven y baila.",
@@ -35,7 +35,7 @@
     "title1": "Tu primera clase en",
     "title2": "3 pasos",
     "step1Title": "Ven",
-    "step1Text": "Llega a Buena Vista Bar el domingo a las 19:00. Pide algo si quieres. Sin inscripción, sin código de vestimenta, sin esperas incómodas.",
+    "step1Text": "Llega a Buena Vista Bar el domingo a las 18:00. Pide algo si quieres. Sin inscripción, sin código de vestimenta, sin esperas incómodas.",
     "step2Title": "Aprende un paso",
     "step2Text": "Cada semana enseñamos un paso de Salsa Cubana desde cero. Rotamos parejas para que practiques con diferentes personas. Nadie se queda fuera.",
     "step3Title": "Baile social",
@@ -75,7 +75,7 @@
     "title1": "Buena Vista",
     "title2": "Bar",
     "description": "Bailamos en Buena Vista Bar en Múnich. Un lugar social con la energía perfecta para aprender, conocer gente y pasarla bien. No es un estudio — a propósito.",
-    "time": "Cada domingo a las 19:00",
+    "time": "Cada domingo a las 18:00",
     "address": "Buena Vista Bar, Am Einlaß 2A, 80469 Múnich",
     "price": "Gratis (donaciones bienvenidas)"
   },
@@ -87,7 +87,7 @@
     "button": "Únete al grupo de WhatsApp"
   },
   "footer": {
-    "description": "Clases gratuitas de Salsa Cubana basadas en donaciones para principiantes en Múnich. Cada domingo a las 19:00.",
+    "description": "Clases gratuitas de Salsa Cubana basadas en donaciones para principiantes en Múnich. Cada domingo a las 18:00.",
     "connect": "Conectar",
     "legal": "Legal",
     "impressum": "Aviso legal",
@@ -130,14 +130,14 @@
       "beginner": "Curso para principiantes",
       "intermediate": "Taller intermedio"
     },
-    "bottomInfo": "Cada domingo a las 19h \u00b7 Buena Vista Bar, Múnich \u00b7 Gratis y en inglés",
+    "bottomInfo": "Cada domingo a las 18h \u00b7 Buena Vista Bar, Múnich \u00b7 Gratis y en inglés",
     "seo": {
       "title": "Únete a Montuno Club"
     }
   },
   "seo": {
     "title": "Montuno Club — Clases de Salsa Cubana Gratis en Múnich",
-    "description": "Clases gratuitas de Salsa Cubana para principiantes en Múnich. Cada domingo a las 19:00 en Buena Vista Bar. En inglés, sin pareja.",
-    "ogDescription": "Salsa Cubana gratis para principiantes en Múnich. Cada domingo a las 19:00. En inglés, sin pareja. ¡Ven a bailar!"
+    "description": "Clases gratuitas de Salsa Cubana para principiantes en Múnich. Cada domingo a las 18:00 en Buena Vista Bar. En inglés, sin pareja.",
+    "ogDescription": "Salsa Cubana gratis para principiantes en Múnich. Cada domingo a las 18:00. En inglés, sin pareja. ¡Ven a bailar!"
   }
 }

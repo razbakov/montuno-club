@@ -8,7 +8,7 @@
     "joinFree": "Kostenlos beitreten"
   },
   "hero": {
-    "subtitle": "Jeden Sonntag \u00b7 19 Uhr \u00b7 München",
+    "subtitle": "Jeden Sonntag \u00b7 18 Uhr \u00b7 München",
     "title1": "Salsa",
     "title2": "Von Null",
     "description": "Kostenloser Salsa Cubana Kurs für absolute Anfänger auf Spendenbasis. Kein Partner nötig. Keine Erfahrung nötig. Einfach vorbeikommen und tanzen.",
@@ -35,7 +35,7 @@
     "title1": "Dein erster Kurs in",
     "title2": "3 Schritten",
     "step1Title": "Komm vorbei",
-    "step1Text": "Komm am Sonntag um 19 Uhr in die Buena Vista Bar. Hol dir einen Drink, wenn du magst. Keine Anmeldung, kein Dresscode, kein peinliches Warten.",
+    "step1Text": "Komm am Sonntag um 18 Uhr in die Buena Vista Bar. Hol dir einen Drink, wenn du magst. Keine Anmeldung, kein Dresscode, kein peinliches Warten.",
     "step2Title": "Lerne einen Move",
     "step2Text": "Jede Woche bringen wir einen Salsa Cubana Move von Grund auf bei. Wir wechseln die Partner, damit du mit verschiedenen Leuten übst. Niemand wird ausgelassen.",
     "step3Title": "Social Dance",
@@ -75,7 +75,7 @@
     "title1": "Buena Vista",
     "title2": "Bar",
     "description": "Wir tanzen in der Buena Vista Bar in München. Ein geselliger Ort mit der richtigen Energie zum Lernen, Leute kennenlernen und Spaß haben. Kein Studio — mit Absicht.",
-    "time": "Jeden Sonntag um 19:00 Uhr",
+    "time": "Jeden Sonntag um 18:00 Uhr",
     "address": "Buena Vista Bar, Am Einlaß 2A, 80469 München",
     "price": "Kostenlos (Spenden willkommen)"
   },
@@ -87,7 +87,7 @@
     "button": "WhatsApp-Gruppe beitreten"
   },
   "footer": {
-    "description": "Kostenloser Salsa Cubana Kurs auf Spendenbasis für Anfänger in München. Jeden Sonntag um 19 Uhr.",
+    "description": "Kostenloser Salsa Cubana Kurs auf Spendenbasis für Anfänger in München. Jeden Sonntag um 18 Uhr.",
     "connect": "Verbinden",
     "legal": "Rechtliches",
     "impressum": "Impressum",
@@ -130,14 +130,14 @@
       "beginner": "Anfängerkurs",
       "intermediate": "Mittelstufe Workshop"
     },
-    "bottomInfo": "Jeden Sonntag um 19 Uhr \u00b7 Buena Vista Bar, München \u00b7 Kostenlos & auf Englisch",
+    "bottomInfo": "Jeden Sonntag um 18 Uhr \u00b7 Buena Vista Bar, München \u00b7 Kostenlos & auf Englisch",
     "seo": {
       "title": "Montuno Club beitreten"
     }
   },
   "seo": {
     "title": "Montuno Club — Kostenloser Salsa Cubana Kurs in München",
-    "description": "Kostenloser Salsa Cubana Kurs auf Spendenbasis für Anfänger in München. Jeden Sonntag um 19 Uhr in der Buena Vista Bar. Auf Englisch, kein Partner nötig.",
-    "ogDescription": "Kostenloser Salsa Cubana Kurs für Anfänger in München. Jeden Sonntag um 19 Uhr. Auf Englisch, kein Partner nötig. Komm tanzen!"
+    "description": "Kostenloser Salsa Cubana Kurs auf Spendenbasis für Anfänger in München. Jeden Sonntag um 18 Uhr in der Buena Vista Bar. Auf Englisch, kein Partner nötig.",
+    "ogDescription": "Kostenloser Salsa Cubana Kurs für Anfänger in München. Jeden Sonntag um 18 Uhr. Auf Englisch, kein Partner nötig. Komm tanzen!"
   }
 }

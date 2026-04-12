@@ -8,7 +8,7 @@
     "joinFree": "Join Free"
   },
   "hero": {
-    "subtitle": "Every Sunday \u00b7 7 PM \u00b7 Munich",
+    "subtitle": "Every Sunday \u00b7 6 PM \u00b7 Munich",
     "title1": "Salsa",
     "title2": "From Zero",
     "description": "Free, donation-based Salsa Cubana for absolute beginners. No partner needed. No experience required. Just show up and dance.",
@@ -35,7 +35,7 @@
     "title1": "Your first class in",
     "title2": "3 steps",
     "step1Title": "Show Up",
-    "step1Text": "Walk into Buena Vista Bar on Sunday at 7 PM. Grab a drink if you like. No sign-up stress, no dress code, no awkward waiting.",
+    "step1Text": "Walk into Buena Vista Bar on Sunday at 6 PM. Grab a drink if you like. No sign-up stress, no dress code, no awkward waiting.",
     "step2Title": "Learn One Move",
     "step2Text": "Each week we teach one Salsa Cubana move from scratch. We rotate partners so you practice with different people. No one gets left out.",
     "step3Title": "Social Dance",
@@ -75,7 +75,7 @@
     "title1": "Buena Vista",
     "title2": "Bar",
     "description": "We dance at Buena Vista Bar in Munich. A social venue with the right energy for learning, meeting people, and having a good time. Not a studio — on purpose.",
-    "time": "Every Sunday at 7:00 PM",
+    "time": "Every Sunday at 6:00 PM",
     "address": "Buena Vista Bar, Am Einlaß 2A, 80469 Munich",
     "price": "Free (donations welcome)"
   },
@@ -87,7 +87,7 @@
     "button": "Join WhatsApp Group"
   },
   "footer": {
-    "description": "Free, donation-based Salsa Cubana for beginners in Munich. Every Sunday at 7 PM.",
+    "description": "Free, donation-based Salsa Cubana for beginners in Munich. Every Sunday at 6 PM.",
     "connect": "Connect",
     "legal": "Legal",
     "impressum": "Impressum",
@@ -130,14 +130,14 @@
       "beginner": "Beginner Course",
       "intermediate": "Intermediate Workshop"
     },
-    "bottomInfo": "Every Sunday at 7 PM \u00b7 Buena Vista Bar, Munich \u00b7 Free & English-friendly",
+    "bottomInfo": "Every Sunday at 6 PM \u00b7 Buena Vista Bar, Munich \u00b7 Free & English-friendly",
     "seo": {
       "title": "Join Montuno Club"
     }
   },
   "seo": {
     "title": "Montuno Club — Free Salsa Cubana Classes in Munich",
-    "description": "Free, donation-based Salsa Cubana classes for beginners in Munich. Every Sunday at 7 PM at Buena Vista Bar. English-friendly, no partner needed.",
-    "ogDescription": "Free, donation-based Salsa Cubana for beginners in Munich. Every Sunday at 7 PM. English-friendly, no partner needed. Come dance with us!"
+    "description": "Free, donation-based Salsa Cubana classes for beginners in Munich. Every Sunday at 6 PM at Buena Vista Bar. English-friendly, no partner needed.",
+    "ogDescription": "Free, donation-based Salsa Cubana for beginners in Munich. Every Sunday at 6 PM. English-friendly, no partner needed. Come dance with us!"
   }
 }

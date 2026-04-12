@@ -13,8 +13,8 @@ useSeoMeta({
 useSchemaOrg([
   defineEvent({
     name: 'Salsa From Zero — Free Beginner Class',
-    startDate: '2026-04-06T19:00:00+02:00',
-    endDate: '2026-04-06T20:00:00+02:00',
+    startDate: '2026-04-06T18:00:00+02:00',
+    endDate: '2026-04-06T19:00:00+02:00',
     eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
     eventStatus: 'https://schema.org/EventScheduled',
     location: {
