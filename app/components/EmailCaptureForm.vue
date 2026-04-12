@@ -34,9 +34,13 @@ async function submit() {
     status.value = 'success'
     $posthog()?.capture('form_submitted', {
       language: locale.value,
+      promo_code: promoCode.value || undefined,
       utm_source: query.utm_source || '',
       utm_medium: query.utm_medium || '',
       utm_campaign: query.utm_campaign || '',
+      utm_term: query.utm_term || '',
+      utm_content: query.utm_content || '',
+      referrer: document.referrer || '',
     })
   } catch {
     status.value = 'error'

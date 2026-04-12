@@ -44,7 +44,15 @@ export default defineEventHandler(async (event) => {
     context.pageName = 'Montuno Club'
   }
 
-  const hsBody: Record<string, unknown> = { fields }
+  const hsBody: Record<string, unknown> = {
+    fields,
+    legalConsentOptions: {
+      consent: {
+        consentToProcess: true,
+        text: 'I agree to receive marketing communications from Montuno Club.',
+      },
+    },
+  }
   // UTM parameters via HubSpot context
   if (body.utm_source) {
     hsBody.context = {
@@ -57,6 +65,14 @@ export default defineEventHandler(async (event) => {
   // Add language and referrer as hidden fields
   if (body.language) {
     fields.push({ name: 'hs_language', value: body.language })
+  }
+
+  if (body.promo_code) {
+    fields.push({ name: 'promo_code', value: body.promo_code })
+  }
+
+  if (body.referrer) {
+    fields.push({ name: 'referrer', value: body.referrer })
   }
 
   // Submit to HubSpot
