@@ -98,6 +98,7 @@
     "namePlaceholder": "Dein vollständiger Name",
     "emailPlaceholder": "Deine E-Mail-Adresse",
     "phonePlaceholder": "Telefon (+49...)",
+    "promoCodePlaceholder": "Aktionscode (optional)",
     "submit": "Kostenlos beitreten",
     "submitting": "Wird gesendet...",
     "success": "Du bist dabei! Schau in dein Postfach.",

@@ -98,6 +98,7 @@
     "namePlaceholder": "Your full name",
     "emailPlaceholder": "Your email address",
     "phonePlaceholder": "Phone (+49...)",
+    "promoCodePlaceholder": "Promo code (optional)",
     "submit": "Join Free",
     "submitting": "Joining...",
     "success": "You're in! Check your inbox.",

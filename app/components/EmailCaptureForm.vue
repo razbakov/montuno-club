@@ -6,6 +6,7 @@ const { $posthog } = useNuxtApp()
 const name = ref('')
 const email = ref('')
 const phone = ref('')
+const promoCode = ref('')
 const status = ref<'idle' | 'submitting' | 'success' | 'error'>('idle')
 
 async function submit() {
@@ -20,6 +21,7 @@ async function submit() {
         name: name.value,
         email: email.value,
         phone: phone.value,
+        promo_code: promoCode.value,
         language: locale.value,
         utm_source: query.utm_source || '',
         utm_medium: query.utm_medium || '',
@@ -75,6 +77,13 @@ async function submit() {
         required
         autocomplete="tel"
         :placeholder="$t('form.phonePlaceholder')"
+        class="rounded-full px-6 py-4 bg-wine-900/60 border border-wine-700/50 text-white placeholder:text-wine-400 focus:outline-none focus:border-gold-500/50 transition-colors"
+      />
+      <input
+        v-model="promoCode"
+        name="promo_code"
+        type="text"
+        :placeholder="$t('form.promoCodePlaceholder')"
         class="rounded-full px-6 py-4 bg-wine-900/60 border border-wine-700/50 text-white placeholder:text-wine-400 focus:outline-none focus:border-gold-500/50 transition-colors"
       />
       <button

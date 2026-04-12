@@ -12,6 +12,7 @@ export default defineEventHandler(async (event) => {
     utm_term?: string
     utm_content?: string
     referrer?: string
+    promo_code?: string
   }>(event)
   const { name, email, phone } = body
 
@@ -85,7 +86,7 @@ export default defineEventHandler(async (event) => {
           <p>Thanks for joining our community. We're excited to have you!</p>
           <p><strong>Here's what you need to know:</strong></p>
           <ul style="line-height: 1.8;">
-            <li>Every Sunday at 7:00 PM</li>
+            <li>Every Sunday at 6:00 PM</li>
             <li>Buena Vista Bar, Am Einla\u00DF 2A, 80469 Munich</li>
             <li>Free (donations welcome)</li>
             <li>No partner needed, no experience required</li>
@@ -123,6 +124,7 @@ export default defineEventHandler(async (event) => {
             <tr><td style="padding: 4px 12px 4px 0; font-weight: bold;">Medium</td><td>${body.utm_medium || '-'}</td></tr>
             <tr><td style="padding: 4px 12px 4px 0; font-weight: bold;">Campaign</td><td>${body.utm_campaign || '-'}</td></tr>
             <tr><td style="padding: 4px 12px 4px 0; font-weight: bold;">Referrer</td><td>${body.referrer || '-'}</td></tr>
+            <tr><td style="padding: 4px 12px 4px 0; font-weight: bold;">Promo Code</td><td>${body.promo_code || '-'}</td></tr>
           </table>
         </div>
       `,

@@ -98,6 +98,7 @@
     "namePlaceholder": "Tu nombre completo",
     "emailPlaceholder": "Tu correo electrónico",
     "phonePlaceholder": "Teléfono (+49...)",
+    "promoCodePlaceholder": "Código promocional (opcional)",
     "submit": "Únete gratis",
     "submitting": "Enviando...",
     "success": "¡Estás dentro! Revisa tu bandeja de entrada.",

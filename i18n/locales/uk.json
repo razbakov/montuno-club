@@ -98,6 +98,7 @@
     "namePlaceholder": "Твоє повне ім'я",
     "emailPlaceholder": "Твій email",
     "phonePlaceholder": "Телефон (+49...)",
+    "promoCodePlaceholder": "Промокод (необов'язково)",
     "submit": "Приєднатися безкоштовно",
     "submitting": "Надсилаємо...",
     "success": "Ти з нами! Перевір пошту.",

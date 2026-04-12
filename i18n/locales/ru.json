@@ -98,6 +98,7 @@
     "namePlaceholder": "Твоё полное имя",
     "emailPlaceholder": "Твой email",
     "phonePlaceholder": "Телефон (+49...)",
+    "promoCodePlaceholder": "Промокод (необязательно)",
     "submit": "Присоединиться бесплатно",
     "submitting": "Отправляем...",
     "success": "Ты в деле! Проверь почту.",
