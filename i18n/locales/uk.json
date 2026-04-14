@@ -89,7 +89,9 @@
     "casinoBeginner": "Касіно для початківців",
     "casinoBeginnerNote": "2-місячний курс",
     "casinoIntermediate": "Касіно середній рівень",
-    "venue": "Buena Vista Bar, Am Einlaß 2A, Мюнхен"
+    "venue": "Buena Vista Bar, Am Einlaß 2A, Мюнхен",
+    "specialEvent": "Special",
+    "ruedaFlashmob": "Rueda Flashmob"
   },
   "event": {
     "label": "Найближча подія",

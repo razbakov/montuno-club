@@ -89,7 +89,9 @@
     "casinoBeginner": "Casino Beginner",
     "casinoBeginnerNote": "2-month course",
     "casinoIntermediate": "Casino Intermediate",
-    "venue": "Buena Vista Bar, Am Einla\u00df 2A, Munich"
+    "venue": "Buena Vista Bar, Am Einla\u00df 2A, Munich",
+    "specialEvent": "Special",
+    "ruedaFlashmob": "Rueda Flashmob"
   },
   "event": {
     "label": "Upcoming Event",
