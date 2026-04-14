@@ -31,7 +31,7 @@ const classes: ClassInfo[] = [
   },
   {
     key: 'intermediate',
-    time: '19:00',
+    time: '20:00',
     wedanceUrl:
       'https://wedance.vip/events/3SCGluX6xdhegMUGo7jc?utm_source=kiosk&utm_medium=ipad',
   },

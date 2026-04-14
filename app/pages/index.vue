@@ -13,8 +13,8 @@ useSeoMeta({
 useSchemaOrg([
   defineEvent({
     name: 'Salsa From Zero — Free Beginner Class',
-    startDate: '2026-04-06T18:00:00+02:00',
-    endDate: '2026-04-06T19:00:00+02:00',
+    startDate: '2026-04-13T18:00:00+02:00',
+    endDate: '2026-04-13T19:00:00+02:00',
     eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
     eventStatus: 'https://schema.org/EventScheduled',
     location: {
@@ -22,7 +22,9 @@ useSchemaOrg([
       name: 'Buena Vista Bar',
       address: {
         type: 'PostalAddress',
+        streetAddress: 'Am Einlaß 2A',
         addressLocality: 'Munich',
+        postalCode: '80469',
         addressCountry: 'DE',
       },
     },
@@ -41,6 +43,37 @@ useSchemaOrg([
     image: 'https://montuno.club/og.jpg',
     description:
       'Free, donation-based Salsa Cubana class for absolute beginners. No partner needed. English-friendly.',
+  }),
+  defineEvent({
+    name: 'La Frida Cubana — Cuban Night by Montuno Club',
+    startDate: '2026-04-27T19:00:00+02:00',
+    endDate: '2026-04-27T23:00:00+02:00',
+    eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+    eventStatus: 'https://schema.org/EventScheduled',
+    location: {
+      type: 'Place',
+      name: 'Frida',
+      address: {
+        type: 'PostalAddress',
+        addressLocality: 'Munich',
+        addressCountry: 'DE',
+      },
+    },
+    organizer: {
+      type: 'Organization',
+      name: 'Montuno Club',
+      url: 'https://montuno.club',
+    },
+    offers: {
+      type: 'Offer',
+      price: '10',
+      priceCurrency: 'EUR',
+      availability: 'https://schema.org/InStock',
+      url: 'https://montuno.club',
+    },
+    image: 'https://montuno.club/og.jpg',
+    description:
+      'A Cuban evening at Frida Munich. Free Havana Club welcome shot, domino table, Cuban jazz and son music. DJ Alösha. Organized by Montuno Club.',
   }),
 ])
 
@@ -84,7 +117,7 @@ function toggleFaq(index: number) {
             {{ $t('form.submit') }}
           </a>
           <a
-            href="#about"
+            href="#schedule"
             class="text-sm text-wine-300 hover:text-white transition-colors underline underline-offset-4"
           >
             {{ $t('hero.learnMore') }}
@@ -133,6 +166,161 @@ function toggleFaq(index: number) {
             <div class="rounded-2xl bg-wine-900/50 border border-wine-800/50 p-6 text-center">
               <p class="text-3xl font-bold text-gold-400">{{ $t('about.exp') }}</p>
               <p class="mt-1 text-sm text-wine-300">{{ $t('about.expDesc') }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Schedule -->
+    <section id="schedule" class="py-24 sm:py-32 bg-wine-900/30">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6">
+        <div class="text-center mb-16">
+          <p class="text-sm font-medium uppercase tracking-[0.2em] text-gold-500 mb-4">{{ $t('schedule.label') }}</p>
+          <h2 class="font-display text-3xl sm:text-4xl">
+            {{ $t('schedule.title1') }} <span class="text-gold-400">{{ $t('schedule.title2') }}</span>
+          </h2>
+          <p class="mt-4 text-wine-200 max-w-2xl mx-auto">{{ $t('schedule.description') }}</p>
+        </div>
+
+        <div class="overflow-x-auto">
+          <table class="w-full text-left">
+            <thead>
+              <tr class="border-b border-wine-800/50">
+                <th class="pb-4 pr-6 text-sm font-semibold uppercase tracking-wider text-gold-500">{{ $t('schedule.day') }}</th>
+                <th class="pb-4 pr-6 text-sm font-semibold uppercase tracking-wider text-gold-500">{{ $t('schedule.time') }}</th>
+                <th class="pb-4 pr-6 text-sm font-semibold uppercase tracking-wider text-gold-500">{{ $t('schedule.class') }}</th>
+                <th class="pb-4 text-sm font-semibold uppercase tracking-wider text-gold-500">{{ $t('schedule.instructor') }}</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-wine-800/30">
+              <tr class="group">
+                <td class="py-5 pr-6 text-wine-200 font-medium">{{ $t('schedule.thursday') }}</td>
+                <td class="py-5 pr-6 text-wine-300">20:00</td>
+                <td class="py-5 pr-6">
+                  <span class="font-medium text-white">{{ $t('schedule.repartoFromZero') }}</span>
+                </td>
+                <td class="py-5 text-wine-300">Yunior</td>
+              </tr>
+              <tr class="group">
+                <td class="py-5 pr-6 text-wine-200 font-medium">{{ $t('schedule.sunday') }}</td>
+                <td class="py-5 pr-6 text-wine-300">18:00</td>
+                <td class="py-5 pr-6">
+                  <span class="font-medium text-white">{{ $t('schedule.salsaFromZero') }}</span>
+                  <span class="ml-2 inline-block rounded-full bg-gold-500/20 px-2.5 py-0.5 text-xs font-semibold text-gold-400">{{ $t('schedule.salsaFromZeroFree') }}</span>
+                </td>
+                <td class="py-5 text-wine-300">Al&ouml;sha, Celeste</td>
+              </tr>
+              <tr class="group">
+                <td class="py-5 pr-6 text-wine-200 font-medium">{{ $t('schedule.sunday') }}</td>
+                <td class="py-5 pr-6 text-wine-300">19:00</td>
+                <td class="py-5 pr-6">
+                  <span class="font-medium text-white">{{ $t('schedule.casinoBeginner') }}</span>
+                  <span class="ml-2 text-xs text-wine-400">({{ $t('schedule.casinoBeginnerNote') }})</span>
+                </td>
+                <td class="py-5 text-wine-300">Al&ouml;sha, Celeste</td>
+              </tr>
+              <tr class="group">
+                <td class="py-5 pr-6 text-wine-200 font-medium">{{ $t('schedule.sunday') }}</td>
+                <td class="py-5 pr-6 text-wine-300">20:00</td>
+                <td class="py-5 pr-6">
+                  <span class="font-medium text-white">{{ $t('schedule.casinoIntermediate') }}</span>
+                </td>
+                <td class="py-5 text-wine-300">Al&ouml;sha, Celeste &amp; Sasha</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="mt-8 flex items-center gap-2 text-sm text-wine-400">
+          <svg class="w-4 h-4 text-gold-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+          </svg>
+          <span>{{ $t('schedule.venue') }}</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- La Frida Cubana Event -->
+    <section id="events" class="py-24 sm:py-32">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6">
+        <div class="text-center mb-16">
+          <p class="text-sm font-medium uppercase tracking-[0.2em] text-gold-500 mb-4">{{ $t('event.label') }}</p>
+          <h2 class="font-display text-4xl sm:text-5xl lg:text-6xl leading-tight">
+            {{ $t('event.title1') }} <span class="text-gold-400">{{ $t('event.title2') }}</span>
+          </h2>
+        </div>
+
+        <div class="mx-auto max-w-4xl rounded-2xl bg-wine-900/50 border border-wine-800/40 overflow-hidden">
+          <div class="p-8 sm:p-12">
+            <p class="text-wine-200 leading-relaxed text-lg mb-8">
+              {{ $t('event.description') }}
+            </p>
+
+            <div class="grid sm:grid-cols-2 gap-6 mb-8">
+              <div class="flex items-start gap-3">
+                <svg class="w-5 h-5 mt-0.5 text-gold-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+                <span class="text-wine-200">{{ $t('event.date') }}</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <svg class="w-5 h-5 mt-0.5 text-gold-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span class="text-wine-200">{{ $t('event.time') }}</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <svg class="w-5 h-5 mt-0.5 text-gold-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                <span class="text-wine-200">{{ $t('event.venue') }}</span>
+              </div>
+              <div class="flex items-start gap-3">
+                <svg class="w-5 h-5 mt-0.5 text-gold-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                </svg>
+                <span class="text-wine-200">{{ $t('event.entry') }}</span>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
+              <div class="rounded-xl bg-wine-950/60 border border-wine-800/30 p-4 text-center">
+                <svg class="w-6 h-6 mx-auto mb-2 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                </svg>
+                <p class="text-sm text-wine-200">{{ $t('event.highlights.shot') }}</p>
+              </div>
+              <div class="rounded-xl bg-wine-950/60 border border-wine-800/30 p-4 text-center">
+                <svg class="w-6 h-6 mx-auto mb-2 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+                </svg>
+                <p class="text-sm text-wine-200">{{ $t('event.highlights.domino') }}</p>
+              </div>
+              <div class="rounded-xl bg-wine-950/60 border border-wine-800/30 p-4 text-center">
+                <svg class="w-6 h-6 mx-auto mb-2 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+                </svg>
+                <p class="text-sm text-wine-200">{{ $t('event.highlights.music') }}</p>
+              </div>
+              <div class="rounded-xl bg-wine-950/60 border border-wine-800/30 p-4 text-center">
+                <svg class="w-6 h-6 mx-auto mb-2 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+                </svg>
+                <p class="text-sm text-wine-200">{{ $t('event.highlights.dj') }}</p>
+              </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+              <p class="text-sm text-wine-400">{{ $t('event.organizer') }}</p>
+              <a
+                href="#join"
+                class="rounded-full bg-gold-500 px-8 py-3 font-semibold text-wine-950 hover:bg-gold-400 transition-colors shadow-lg shadow-gold-500/20"
+              >
+                {{ $t('event.cta') }}
+              </a>
             </div>
           </div>
         </div>

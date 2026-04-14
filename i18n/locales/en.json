@@ -1,19 +1,21 @@
 {
   "nav": {
     "about": "About",
+    "schedule": "Schedule",
     "expect": "What to Expect",
     "faq": "FAQ",
     "location": "Location",
+    "events": "Events",
     "joinWhatsApp": "Join WhatsApp Group",
     "joinFree": "Join Free"
   },
   "hero": {
-    "subtitle": "Every Sunday \u00b7 6 PM \u00b7 Munich",
+    "subtitle": "Salsa Cubana \u00b7 Classes & Events \u00b7 Munich",
     "title1": "Salsa",
-    "title2": "From Zero",
-    "description": "Free, donation-based Salsa Cubana for absolute beginners. No partner needed. No experience required. Just show up and dance.",
+    "title2": "Cubana",
+    "description": "Weekly classes for every level at Buena Vista Bar. From free beginner sessions to 3-month courses. No partner needed. Just show up and dance.",
     "cta": "Join WhatsApp Group",
-    "learnMore": "About the class"
+    "learnMore": "See the schedule"
   },
   "about": {
     "label": "About",
@@ -70,14 +72,52 @@
     "q6": "What language is the class in?",
     "a6": "English. Munich has a huge international community and we want everyone to feel welcome regardless of their German level."
   },
+  "schedule": {
+    "label": "Weekly Schedule",
+    "title1": "Class",
+    "title2": "Schedule",
+    "description": "Four classes every week at Buena Vista Bar. Something for every level — from your first step to advanced casino moves.",
+    "day": "Day",
+    "time": "Time",
+    "class": "Class",
+    "instructor": "Instructor",
+    "thursday": "Thursday",
+    "sunday": "Sunday",
+    "repartoFromZero": "Reparto from Zero",
+    "salsaFromZero": "Salsa from Zero",
+    "salsaFromZeroFree": "FREE",
+    "casinoBeginner": "Casino Beginner",
+    "casinoBeginnerNote": "3-month course",
+    "casinoIntermediate": "Casino Intermediate",
+    "venue": "Buena Vista Bar, Am Einla\u00df 2A, Munich"
+  },
+  "event": {
+    "label": "Upcoming Event",
+    "title1": "La Frida",
+    "title2": "Cubana",
+    "date": "Monday, 27 April 2026",
+    "time": "19:00 \u2013 23:00",
+    "venue": "Frida, Munich",
+    "entry": "10 EUR",
+    "dj": "DJ Al\u00f6sha",
+    "description": "A Cuban evening at Frida Munich. Free Havana Club welcome shot, domino table, and the best Cuban jazz and son music. Organized by Montuno Club.",
+    "highlights": {
+      "shot": "Free Havana Club welcome shot",
+      "domino": "Domino table",
+      "music": "Cuban jazz & son music",
+      "dj": "DJ Al\u00f6sha"
+    },
+    "organizer": "Organized by Montuno Club",
+    "cta": "Join Free"
+  },
   "location": {
     "label": "Location",
     "title1": "Buena Vista",
     "title2": "Bar",
     "description": "We dance at Buena Vista Bar in Munich. A social venue with the right energy for learning, meeting people, and having a good time. Not a studio — on purpose.",
-    "time": "Every Sunday at 6:00 PM",
-    "address": "Buena Vista Bar, Am Einlaß 2A, 80469 Munich",
-    "price": "Free (donations welcome)"
+    "time": "Classes every Thursday & Sunday",
+    "address": "Buena Vista Bar, Am Einla\u00df 2A, 80469 Munich",
+    "price": "Free beginner class (other classes vary)"
   },
   "cta": {
     "title1": "Ready to",
@@ -87,7 +127,7 @@
     "button": "Join WhatsApp Group"
   },
   "footer": {
-    "description": "Free, donation-based Salsa Cubana for beginners in Munich. Every Sunday at 6 PM.",
+    "description": "Salsa Cubana classes and events in Munich. Free beginner classes, casino courses, and Cuban parties.",
     "connect": "Connect",
     "legal": "Legal",
     "impressum": "Impressum",
@@ -137,8 +177,8 @@
     }
   },
   "seo": {
-    "title": "Montuno Club — Free Salsa Cubana Classes in Munich",
-    "description": "Free, donation-based Salsa Cubana classes for beginners in Munich. Every Sunday at 6 PM at Buena Vista Bar. English-friendly, no partner needed.",
-    "ogDescription": "Free, donation-based Salsa Cubana for beginners in Munich. Every Sunday at 6 PM. English-friendly, no partner needed. Come dance with us!"
+    "title": "Montuno Club — Salsa Cubana Classes & Events in Munich",
+    "description": "Salsa Cubana classes for every level in Munich. Free beginner sessions, casino courses, and Cuban events at Buena Vista Bar. English-friendly, no partner needed.",
+    "ogDescription": "Salsa Cubana classes and events in Munich. Free beginner sessions every Sunday, casino courses, and Cuban parties. English-friendly, no partner needed. Come dance with us!"
   }
 }
