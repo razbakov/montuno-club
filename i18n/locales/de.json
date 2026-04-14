@@ -89,7 +89,9 @@
     "casinoBeginner": "Casino Anfänger",
     "casinoBeginnerNote": "2-Monats-Kurs",
     "casinoIntermediate": "Casino Mittelstufe",
-    "venue": "Buena Vista Bar, Am Einlaß 2A, München"
+    "venue": "Buena Vista Bar, Am Einlaß 2A, München",
+    "specialEvent": "Special",
+    "ruedaFlashmob": "Rueda Flashmob"
   },
   "event": {
     "label": "Nächstes Event",

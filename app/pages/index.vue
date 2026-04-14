@@ -1,6 +1,10 @@
 <script setup lang="ts">
 const { t } = useI18n()
 
+function openUrl(url: string) {
+  window.open(url, '_blank', 'noopener')
+}
+
 useSeoMeta({
   title: () => t('seo.title'),
   ogTitle: () => t('seo.title'),
@@ -194,39 +198,48 @@ function toggleFaq(index: number) {
               </tr>
             </thead>
             <tbody class="divide-y divide-wine-800/30">
-              <tr class="group">
+              <tr class="group cursor-pointer hover:bg-gold-500/10 transition-colors bg-gold-500/5" @click="openUrl('https://wedance.vip/events/jR184tzxxbgabZ7JzIo4')">
+                <td class="py-5 pr-6 text-gold-400 font-medium">{{ $t('schedule.specialEvent') }}</td>
+                <td class="py-5 pr-6 text-wine-300">18 Apr · 12:00</td>
+                <td class="py-5 pr-6">
+                  <span class="font-medium text-white group-hover:text-gold-400 transition-colors">{{ $t('schedule.ruedaFlashmob') }}</span>
+                  <span class="ml-2 inline-block rounded-full bg-gold-500/20 px-2.5 py-0.5 text-xs font-semibold text-gold-400">{{ $t('schedule.salsaFromZeroFree') }}</span>
+                </td>
+                <td class="py-5 text-wine-300">Alösha</td>
+              </tr>
+              <tr class="group cursor-pointer hover:bg-wine-800/20 transition-colors" @click="openUrl('https://wedance.vip/events/YdiOgSeaGTrwy3XxuNLW')">
                 <td class="py-5 pr-6 text-wine-200 font-medium">{{ $t('schedule.thursday') }}</td>
                 <td class="py-5 pr-6 text-wine-300">20:00</td>
                 <td class="py-5 pr-6">
-                  <span class="font-medium text-white">{{ $t('schedule.repartoFromZero') }}</span>
+                  <span class="font-medium text-white group-hover:text-gold-400 transition-colors">{{ $t('schedule.repartoFromZero') }}</span>
                 </td>
                 <td class="py-5 text-wine-300">Yunior</td>
               </tr>
-              <tr class="group">
+              <tr class="group cursor-pointer hover:bg-wine-800/20 transition-colors" @click="openUrl('https://wedance.vip/events/OJqIEHlQqudtz0gL2F7L')">
                 <td class="py-5 pr-6 text-wine-200 font-medium">{{ $t('schedule.sunday') }}</td>
                 <td class="py-5 pr-6 text-wine-300">18:00</td>
                 <td class="py-5 pr-6">
-                  <span class="font-medium text-white">{{ $t('schedule.salsaFromZero') }}</span>
+                  <span class="font-medium text-white group-hover:text-gold-400 transition-colors">{{ $t('schedule.salsaFromZero') }}</span>
                   <span class="ml-2 inline-block rounded-full bg-gold-500/20 px-2.5 py-0.5 text-xs font-semibold text-gold-400">{{ $t('schedule.salsaFromZeroFree') }}</span>
                 </td>
-                <td class="py-5 text-wine-300">Al&ouml;sha, Celeste</td>
+                <td class="py-5 text-wine-300">Alösha, Celeste</td>
               </tr>
-              <tr class="group">
+              <tr class="group cursor-pointer hover:bg-wine-800/20 transition-colors" @click="openUrl('https://wedance.vip/events/wUaku5z3EKlM0UOISPVB')">
                 <td class="py-5 pr-6 text-wine-200 font-medium">{{ $t('schedule.sunday') }}</td>
                 <td class="py-5 pr-6 text-wine-300">19:00</td>
                 <td class="py-5 pr-6">
-                  <span class="font-medium text-white">{{ $t('schedule.casinoBeginner') }}</span>
+                  <span class="font-medium text-white group-hover:text-gold-400 transition-colors">{{ $t('schedule.casinoBeginner') }}</span>
                   <span class="ml-2 text-xs text-wine-400">({{ $t('schedule.casinoBeginnerNote') }})</span>
                 </td>
-                <td class="py-5 text-wine-300">Al&ouml;sha, Celeste</td>
+                <td class="py-5 text-wine-300">Alösha, Celeste</td>
               </tr>
-              <tr class="group">
+              <tr class="group cursor-pointer hover:bg-wine-800/20 transition-colors" @click="openUrl('https://wedance.vip/events/SvrZGLcSIpgU2hUs09Dv')">
                 <td class="py-5 pr-6 text-wine-200 font-medium">{{ $t('schedule.sunday') }}</td>
                 <td class="py-5 pr-6 text-wine-300">20:00</td>
                 <td class="py-5 pr-6">
-                  <span class="font-medium text-white">{{ $t('schedule.casinoIntermediate') }}</span>
+                  <span class="font-medium text-white group-hover:text-gold-400 transition-colors">{{ $t('schedule.casinoIntermediate') }}</span>
                 </td>
-                <td class="py-5 text-wine-300">Al&ouml;sha, Celeste &amp; Sasha</td>
+                <td class="py-5 text-wine-300">Alösha, Celeste &amp; Sasha</td>
               </tr>
             </tbody>
           </table>

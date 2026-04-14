@@ -89,7 +89,9 @@
     "casinoBeginner": "Casino Principiante",
     "casinoBeginnerNote": "Curso de 2 meses",
     "casinoIntermediate": "Casino Intermedio",
-    "venue": "Buena Vista Bar, Am Einlaß 2A, Múnich"
+    "venue": "Buena Vista Bar, Am Einlaß 2A, Múnich",
+    "specialEvent": "Special",
+    "ruedaFlashmob": "Rueda Flashmob"
   },
   "event": {
     "label": "Próximo evento",
