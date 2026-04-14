@@ -313,7 +313,15 @@ function toggleFaq(index: number) {
               </div>
             </div>
 
-            <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+            <!-- Dress Code -->
+            <div class="mt-6 rounded-xl overflow-hidden border border-wine-800/40">
+              <img src="/images/dresscode-frida.png" alt="Dress code: Cuba 80s — Red & Blue" class="w-full h-48 object-cover" />
+              <div class="px-5 py-3 bg-wine-900/60 text-center">
+                <p class="text-sm font-semibold text-gold-400 uppercase tracking-wider">{{ $t('event.dresscode') }}</p>
+              </div>
+            </div>
+
+            <div class="mt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
               <p class="text-sm text-wine-400">{{ $t('event.organizer') }}</p>
               <a
                 :href="$t('event.ctaUrl')"
