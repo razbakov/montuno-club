@@ -1,19 +1,21 @@
 {
   "nav": {
     "about": "Über uns",
+    "schedule": "Kursplan",
     "expect": "Was erwartet dich",
     "faq": "FAQ",
     "location": "Ort",
+    "events": "Events",
     "joinWhatsApp": "WhatsApp-Gruppe beitreten",
     "joinFree": "Kostenlos beitreten"
   },
   "hero": {
-    "subtitle": "Jeden Sonntag \u00b7 18 Uhr \u00b7 München",
+    "subtitle": "Salsa Cubana \u00b7 Kurse & Events \u00b7 München",
     "title1": "Salsa",
-    "title2": "Von Null",
-    "description": "Kostenloser Salsa Cubana Kurs für absolute Anfänger auf Spendenbasis. Kein Partner nötig. Keine Erfahrung nötig. Einfach vorbeikommen und tanzen.",
+    "title2": "Cubana",
+    "description": "Wöchentliche Kurse für jedes Level in der Buena Vista Bar. Von kostenlosen Anfängerstunden bis zu 2-Monats-Kursen. Kein Partner nötig. Einfach vorbeikommen und tanzen.",
     "cta": "WhatsApp-Gruppe beitreten",
-    "learnMore": "Mehr erfahren"
+    "learnMore": "Zum Kursplan"
   },
   "about": {
     "label": "Über uns",
@@ -70,14 +72,54 @@
     "q6": "In welcher Sprache ist der Kurs?",
     "a6": "Englisch. München hat eine riesige internationale Community und wir möchten, dass sich jeder willkommen fühlt — unabhängig vom Deutschniveau."
   },
+  "schedule": {
+    "label": "Wöchentlicher Kursplan",
+    "title1": "Kurs-",
+    "title2": "plan",
+    "description": "Vier Kurse pro Woche in der Buena Vista Bar. Für jedes Level — vom ersten Schritt bis zu fortgeschrittenen Casino-Moves.",
+    "day": "Tag",
+    "time": "Uhrzeit",
+    "class": "Kurs",
+    "instructor": "Lehrer",
+    "thursday": "Donnerstag",
+    "sunday": "Sonntag",
+    "repartoFromZero": "Reparto von Null",
+    "salsaFromZero": "Salsa von Null",
+    "salsaFromZeroFree": "GRATIS",
+    "casinoBeginner": "Casino Anfänger",
+    "casinoBeginnerNote": "2-Monats-Kurs",
+    "casinoIntermediate": "Casino Mittelstufe",
+    "venue": "Buena Vista Bar, Am Einlaß 2A, München"
+  },
+  "event": {
+    "label": "Nächstes Event",
+    "title1": "La Frida",
+    "title2": "Cubana",
+    "date": "Montag, 27. April 2026",
+    "time": "19:00 – 23:00",
+    "venue": "Frida, München",
+    "entry": "10 EUR",
+    "dj": "DJ Alösha",
+    "description": "Ein kubanischer Abend in der Frida München. Timba, Reparto, Son, kubanische Rumba. Gratis Havana Club Begrüßungsshot, Domino-Tisch. Organisiert vom Montuno Club.",
+    "highlights": {
+      "shot": "Gratis Havana Club Begrüßungsshot",
+      "domino": "Domino-Tisch",
+      "music": "Timba · Reparto · Son · Kubanische Rumba",
+      "dj": "DJ Alösha"
+    },
+    "dresscode": "Dresscode: Kuba 80er — Rot & Blau",
+    "organizer": "Organisiert vom Montuno Club",
+    "cta": "Anmelden — 10 EUR",
+    "ctaUrl": "https://wedance.vip/events/wCz9k7mAxsNEKaMmsMjP"
+  },
   "location": {
     "label": "Ort",
     "title1": "Buena Vista",
     "title2": "Bar",
     "description": "Wir tanzen in der Buena Vista Bar in München. Ein geselliger Ort mit der richtigen Energie zum Lernen, Leute kennenlernen und Spaß haben. Kein Studio — mit Absicht.",
-    "time": "Jeden Sonntag um 18:00 Uhr",
+    "time": "Kurse jeden Donnerstag & Sonntag",
     "address": "Buena Vista Bar, Am Einlaß 2A, 80469 München",
-    "price": "Kostenlos (Spenden willkommen)"
+    "price": "Gratis Anfängerkurs (andere Kurse variieren)"
   },
   "cta": {
     "title1": "Bereit zu",
@@ -87,7 +129,7 @@
     "button": "WhatsApp-Gruppe beitreten"
   },
   "footer": {
-    "description": "Kostenloser Salsa Cubana Kurs auf Spendenbasis für Anfänger in München. Jeden Sonntag um 18 Uhr.",
+    "description": "Salsa Cubana Kurse und Events in München. Kostenlose Anfängerkurse, Casino-Kurse und kubanische Partys.",
     "connect": "Verbinden",
     "legal": "Rechtliches",
     "impressum": "Impressum",
@@ -137,8 +179,8 @@
     }
   },
   "seo": {
-    "title": "Montuno Club — Kostenloser Salsa Cubana Kurs in München",
-    "description": "Kostenloser Salsa Cubana Kurs auf Spendenbasis für Anfänger in München. Jeden Sonntag um 18 Uhr in der Buena Vista Bar. Auf Englisch, kein Partner nötig.",
-    "ogDescription": "Kostenloser Salsa Cubana Kurs für Anfänger in München. Jeden Sonntag um 18 Uhr. Auf Englisch, kein Partner nötig. Komm tanzen!"
+    "title": "Montuno Club — Salsa Cubana Kurse & Events in München",
+    "description": "Salsa Cubana Kurse für jedes Level in München. Kostenlose Anfängerstunden, Casino-Kurse und kubanische Events in der Buena Vista Bar. Auf Englisch, kein Partner nötig.",
+    "ogDescription": "Salsa Cubana Kurse und Events in München. Kostenlose Anfängerstunden jeden Sonntag, Casino-Kurse und kubanische Partys. Auf Englisch, kein Partner nötig. Komm tanzen!"
   }
 }

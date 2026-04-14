@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     url: 'https://montuno.club',
     name: 'Montuno Club',
     description:
-      'Free, donation-based Salsa Cubana classes for beginners in Munich. Every Sunday at 7 PM at Buena Vista Bar. English-friendly, no partner needed.',
+      'Salsa Cubana classes and events in Munich. Free beginner sessions, casino courses, and Cuban parties at Buena Vista Bar. English-friendly, no partner needed.',
     defaultLocale: 'en',
   },
   i18n: {
