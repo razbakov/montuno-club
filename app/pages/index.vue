@@ -316,7 +316,9 @@ function toggleFaq(index: number) {
             <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
               <p class="text-sm text-wine-400">{{ $t('event.organizer') }}</p>
               <a
-                href="#join"
+                :href="$t('event.ctaUrl')"
+                target="_blank"
+                rel="noopener"
                 class="rounded-full bg-gold-500 px-8 py-3 font-semibold text-wine-950 hover:bg-gold-400 transition-colors shadow-lg shadow-gold-500/20"
               >
                 {{ $t('event.cta') }}

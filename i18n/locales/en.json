@@ -13,7 +13,7 @@
     "subtitle": "Salsa Cubana \u00b7 Classes & Events \u00b7 Munich",
     "title1": "Salsa",
     "title2": "Cubana",
-    "description": "Weekly classes for every level at Buena Vista Bar. From free beginner sessions to 3-month courses. No partner needed. Just show up and dance.",
+    "description": "Weekly classes for every level at Buena Vista Bar. From free beginner sessions to 2-month courses. No partner needed. Just show up and dance.",
     "cta": "Join WhatsApp Group",
     "learnMore": "See the schedule"
   },
@@ -87,7 +87,7 @@
     "salsaFromZero": "Salsa from Zero",
     "salsaFromZeroFree": "FREE",
     "casinoBeginner": "Casino Beginner",
-    "casinoBeginnerNote": "3-month course",
+    "casinoBeginnerNote": "2-month course",
     "casinoIntermediate": "Casino Intermediate",
     "venue": "Buena Vista Bar, Am Einla\u00df 2A, Munich"
   },
@@ -100,15 +100,16 @@
     "venue": "Frida, Munich",
     "entry": "10 EUR",
     "dj": "DJ Al\u00f6sha",
-    "description": "A Cuban evening at Frida Munich. Free Havana Club welcome shot, domino table, and the best Cuban jazz and son music. Organized by Montuno Club.",
+    "description": "A Cuban evening at Frida Munich. Timba, reparto, son, Cuban rumba. Free Havana Club welcome shot, domino table. Organized by Montuno Club.",
     "highlights": {
       "shot": "Free Havana Club welcome shot",
       "domino": "Domino table",
-      "music": "Cuban jazz & son music",
+      "music": "Timba \u00b7 Reparto \u00b7 Son \u00b7 Cuban Rumba",
       "dj": "DJ Al\u00f6sha"
     },
     "organizer": "Organized by Montuno Club",
-    "cta": "Join Free"
+    "cta": "Register \u2014 10 EUR",
+    "ctaUrl": "https://wedance.vip/events/wCz9k7mAxsNEKaMmsMjP"
   },
   "location": {
     "label": "Location",

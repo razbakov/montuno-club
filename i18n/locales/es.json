@@ -13,7 +13,7 @@
     "subtitle": "Salsa Cubana \u00b7 Clases y Eventos \u00b7 Múnich",
     "title1": "Salsa",
     "title2": "Cubana",
-    "description": "Clases semanales para todos los niveles en Buena Vista Bar. Desde sesiones gratuitas para principiantes hasta cursos de 3 meses. Sin pareja. Solo ven y baila.",
+    "description": "Clases semanales para todos los niveles en Buena Vista Bar. Desde sesiones gratuitas para principiantes hasta cursos de 2 meses. Sin pareja. Solo ven y baila.",
     "cta": "Únete al grupo de WhatsApp",
     "learnMore": "Ver el horario"
   },
@@ -87,7 +87,7 @@
     "salsaFromZero": "Salsa desde Cero",
     "salsaFromZeroFree": "GRATIS",
     "casinoBeginner": "Casino Principiante",
-    "casinoBeginnerNote": "Curso de 3 meses",
+    "casinoBeginnerNote": "Curso de 2 meses",
     "casinoIntermediate": "Casino Intermedio",
     "venue": "Buena Vista Bar, Am Einlaß 2A, Múnich"
   },
@@ -100,15 +100,16 @@
     "venue": "Frida, Múnich",
     "entry": "10 EUR",
     "dj": "DJ Alösha",
-    "description": "Una noche cubana en Frida Múnich. Shot de bienvenida Havana Club gratis, mesa de dominó y la mejor música de jazz y son cubano. Organizado por Montuno Club.",
+    "description": "Una noche cubana en Frida Múnich. Timba, reparto, son, rumba cubana. Shot de bienvenida Havana Club gratis, mesa de dominó. Organizado por Montuno Club.",
     "highlights": {
       "shot": "Shot de bienvenida Havana Club gratis",
       "domino": "Mesa de dominó",
-      "music": "Jazz cubano y son",
+      "music": "Timba · Reparto · Son · Rumba Cubana",
       "dj": "DJ Alösha"
     },
     "organizer": "Organizado por Montuno Club",
-    "cta": "Únete gratis"
+    "cta": "Registrarse — 10 EUR",
+    "ctaUrl": "https://wedance.vip/events/wCz9k7mAxsNEKaMmsMjP"
   },
   "location": {
     "label": "Ubicación",

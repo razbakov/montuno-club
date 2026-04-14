@@ -13,7 +13,7 @@
     "subtitle": "Salsa Cubana \u00b7 Kurse & Events \u00b7 München",
     "title1": "Salsa",
     "title2": "Cubana",
-    "description": "Wöchentliche Kurse für jedes Level in der Buena Vista Bar. Von kostenlosen Anfängerstunden bis zu 3-Monats-Kursen. Kein Partner nötig. Einfach vorbeikommen und tanzen.",
+    "description": "Wöchentliche Kurse für jedes Level in der Buena Vista Bar. Von kostenlosen Anfängerstunden bis zu 2-Monats-Kursen. Kein Partner nötig. Einfach vorbeikommen und tanzen.",
     "cta": "WhatsApp-Gruppe beitreten",
     "learnMore": "Zum Kursplan"
   },
@@ -87,7 +87,7 @@
     "salsaFromZero": "Salsa von Null",
     "salsaFromZeroFree": "GRATIS",
     "casinoBeginner": "Casino Anfänger",
-    "casinoBeginnerNote": "3-Monats-Kurs",
+    "casinoBeginnerNote": "2-Monats-Kurs",
     "casinoIntermediate": "Casino Mittelstufe",
     "venue": "Buena Vista Bar, Am Einlaß 2A, München"
   },
@@ -100,15 +100,16 @@
     "venue": "Frida, München",
     "entry": "10 EUR",
     "dj": "DJ Alösha",
-    "description": "Ein kubanischer Abend in der Frida München. Gratis Havana Club Begrüßungsshot, Domino-Tisch und die beste kubanische Jazz- und Son-Musik. Organisiert vom Montuno Club.",
+    "description": "Ein kubanischer Abend in der Frida München. Timba, Reparto, Son, kubanische Rumba. Gratis Havana Club Begrüßungsshot, Domino-Tisch. Organisiert vom Montuno Club.",
     "highlights": {
       "shot": "Gratis Havana Club Begrüßungsshot",
       "domino": "Domino-Tisch",
-      "music": "Kubanischer Jazz & Son",
+      "music": "Timba · Reparto · Son · Kubanische Rumba",
       "dj": "DJ Alösha"
     },
     "organizer": "Organisiert vom Montuno Club",
-    "cta": "Kostenlos beitreten"
+    "cta": "Anmelden — 10 EUR",
+    "ctaUrl": "https://wedance.vip/events/wCz9k7mAxsNEKaMmsMjP"
   },
   "location": {
     "label": "Ort",

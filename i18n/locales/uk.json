@@ -13,7 +13,7 @@
     "subtitle": "Сальса Кубана \u00b7 Заняття та події \u00b7 Мюнхен",
     "title1": "Сальса",
     "title2": "Кубана",
-    "description": "Щотижневі заняття для будь-якого рівня в Buena Vista Bar. Від безкоштовних занять для початківців до 3-місячних курсів. Без пари. Просто приходь і танцюй.",
+    "description": "Щотижневі заняття для будь-якого рівня в Buena Vista Bar. Від безкоштовних занять для початківців до 2-місячних курсів. Без пари. Просто приходь і танцюй.",
     "cta": "Приєднатися до WhatsApp",
     "learnMore": "Дивитися розклад"
   },
@@ -87,7 +87,7 @@
     "salsaFromZero": "Сальса з нуля",
     "salsaFromZeroFree": "БЕЗКОШТОВНО",
     "casinoBeginner": "Касіно для початківців",
-    "casinoBeginnerNote": "3-місячний курс",
+    "casinoBeginnerNote": "2-місячний курс",
     "casinoIntermediate": "Касіно середній рівень",
     "venue": "Buena Vista Bar, Am Einlaß 2A, Мюнхен"
   },
@@ -100,15 +100,16 @@
     "venue": "Frida, Мюнхен",
     "entry": "10 EUR",
     "dj": "DJ Alösha",
-    "description": "Кубинський вечір у Frida Мюнхен. Безкоштовний привітальний шот Havana Club, стіл для доміно та найкраща кубинська джазова і сон-музика. Організовано Montuno Club.",
+    "description": "Кубинський вечір у Frida Мюнхен. Тімба, репарто, сон, кубинська румба. Безкоштовний привітальний шот Havana Club, стіл для доміно. Організовано Montuno Club.",
     "highlights": {
       "shot": "Безкоштовний шот Havana Club",
       "domino": "Стіл для доміно",
-      "music": "Кубинський джаз і сон",
+      "music": "Тімба · Репарто · Сон · Кубинська румба",
       "dj": "DJ Alösha"
     },
     "organizer": "Організовано Montuno Club",
-    "cta": "Приєднатися безкоштовно"
+    "cta": "Реєстрація — 10 EUR",
+    "ctaUrl": "https://wedance.vip/events/wCz9k7mAxsNEKaMmsMjP"
   },
   "location": {
     "label": "Місце",
