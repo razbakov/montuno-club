@@ -11,6 +11,11 @@ export default defineNuxtPlugin(() => {
     capture_pageleave: true,
   })
 
+  // Capture the initial pageview. `router.afterEach` only fires on route
+  // changes, so without this, bounce visitors (land once + leave) are
+  // invisible in analytics — which is most of the traffic on a landing page.
+  posthog.capture('$pageview')
+
   const router = useRouter()
   router.afterEach((to) => {
     posthog.capture('$pageview', { $current_url: to.fullPath })

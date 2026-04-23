@@ -53,7 +53,10 @@ export default defineNuxtConfig({
   runtimeConfig: {
     resendApiKey: process.env.RESEND_API_KEY || '',
     public: {
-      posthogKey: process.env.NUXT_PUBLIC_POSTHOG_KEY || '',
+      // Trim to defend against env values pasted with a trailing newline, which
+      // silently breaks PostHog (the SDK rejects the malformed token and drops
+      // every event). See razbakov/montuno-club#9.
+      posthogKey: (process.env.NUXT_PUBLIC_POSTHOG_KEY || '').trim(),
     },
   },
   ogImage: { enabled: false },
