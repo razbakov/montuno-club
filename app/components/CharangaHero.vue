@@ -18,19 +18,18 @@ const ticketUrl = 'https://www.tickettailor.com/events/montunoclub/2183096'
         <!-- Text -->
         <div class="order-2 lg:order-1">
           <p class="mb-4 text-xs sm:text-sm font-semibold uppercase tracking-[0.25em] text-gold-400">
-            GIRA 35 ANIVERSARIO · WORLD TOUR 2026
+            {{ $t('charanga.eyebrow') }}
           </p>
           <h2
             class="font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl leading-[0.95] tracking-tight"
           >
-            La <span class="text-gold-400">Charanga Habanera</span>
+            {{ $t('charanga.titleLeading') }}<span class="text-gold-400">{{ $t('charanga.titleHighlight') }}</span>
           </h2>
           <p class="mt-5 text-lg sm:text-xl text-wine-100 font-medium">
-            Live in München · Samstag, 23. Mai 2026 · 19:30
+            {{ $t('charanga.subtitle') }}
           </p>
           <p class="mt-5 text-base sm:text-lg text-wine-200 leading-relaxed max-w-xl">
-            Eines der größten Timba-Konzerte, die München je gesehen hat.
-            Nur 200 Plätze. Super Early Bird ab 50 €.
+            {{ $t('charanga.body') }}
           </p>
 
           <div class="mt-8 flex flex-col sm:flex-row sm:items-center gap-4">
@@ -40,7 +39,7 @@ const ticketUrl = 'https://www.tickettailor.com/events/montunoclub/2183096'
               rel="noopener noreferrer"
               class="inline-flex items-center justify-center rounded-full bg-gold-500 px-8 py-4 text-base sm:text-lg font-semibold text-wine-950 hover:bg-gold-400 transition-colors shadow-lg shadow-gold-500/30 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold-300 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a0a0a]"
             >
-              Tickets sichern
+              {{ $t('charanga.cta') }}
               <svg
                 class="ml-2 w-5 h-5"
                 fill="none"
@@ -59,7 +58,7 @@ const ticketUrl = 'https://www.tickettailor.com/events/montunoclub/2183096'
           </div>
 
           <p class="mt-5 text-xs sm:text-sm text-wine-400 tracking-wide">
-            Powered by Mercazón · Produced by Hummo Productions
+            {{ $t('charanga.credits') }}
           </p>
         </div>
 
@@ -70,7 +69,7 @@ const ticketUrl = 'https://www.tickettailor.com/events/montunoclub/2183096'
           >
             <img
               src="/images/charanga-habanera.jpg"
-              alt="La Charanga Habanera — Timba-Konzert live in München, 23. Mai 2026"
+              :alt="$t('charanga.imageAlt')"
               class="absolute inset-0 w-full h-full object-cover"
               loading="eager"
               fetchpriority="high"
