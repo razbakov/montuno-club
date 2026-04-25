@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const ticketUrl = 'https://www.tickettailor.com/events/montunoclub/2183096'
+const ticketUrl = 'https://www.tickettailor.com/checkout/view-event/id/8158745/chk/f2b9/?modal_widget=true&widget=true'
 </script>
 
 <template>
