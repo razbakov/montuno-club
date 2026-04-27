@@ -1,5 +1,11 @@
 # Montuno Club Website
 
+## Framework
+
+@/Users/razbakov/Projects/ikigai-team/CLAUDE.md
+
+---
+
 Nuxt codebase for the public `montuno.club` website.
 
 - **Code repo:** `~/Projects/montuno-club`
