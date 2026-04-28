@@ -98,6 +98,23 @@
     "djWhatsappDesc": "Únete al grupo de WhatsApp de DJ Alösha para las próximas fiestas",
     "djWhatsappCta": "Unirse a WhatsApp"
   },
+  "thursdayEvent": {
+    "label": "Este jueves — Especial",
+    "title1": "Jueves",
+    "title2": "de Timba",
+    "date": "Jueves 30 de abril",
+    "time": "19:00 → open end",
+    "venue": "Frida, Múnich",
+    "entry": "5€ online · 8€ en la puerta · bono 1€ para la barra",
+    "description": "Clase + Timba party en Frida Schwabing. Salsa desde cero, casino intermedio y nos quedamos bailando hasta cerrar. Sin pareja, sin experiencia.",
+    "instructors": "con Alösha & Michelle",
+    "slotSalsa": "19:00 — Salsa desde cero",
+    "slotCasino": "20:00 — Casino intermedio",
+    "slotParty": "21:00 — Timba Party · open end",
+    "slotVoucher": "Bono 1€ para la barra",
+    "cta": "Entradas — 5€ online",
+    "ctaUrl": "https://www.tickettailor.com/checkout/view-event/id/8179200/chk/fdc8/?modal_widget=true&widget=true"
+  },
   "event": {
     "label": "Próximo evento",
     "title1": "La Frida",

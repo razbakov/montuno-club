@@ -98,6 +98,23 @@
     "djWhatsappDesc": "Tritt der WhatsApp-Gruppe von DJ Alösha bei für die nächsten Partys",
     "djWhatsappCta": "WhatsApp beitreten"
   },
+  "thursdayEvent": {
+    "label": "Diesen Donnerstag — Special",
+    "title1": "Jueves",
+    "title2": "de Timba",
+    "date": "Donnerstag, 30. April",
+    "time": "19:00 → open end",
+    "venue": "Frida, München",
+    "entry": "5€ online · 8€ an der Tür · 1€ Getränkegutschein",
+    "description": "Tanzkurs + Timba-Party im Frida Schwabing. Salsa für Anfänger, Casino Intermediate, danach Party bis spät. Ohne Partner, ohne Vorkenntnisse.",
+    "instructors": "mit Alösha & Michelle",
+    "slotSalsa": "19:00 — Salsa für Anfänger",
+    "slotCasino": "20:00 — Casino Intermediate",
+    "slotParty": "21:00 — Timba Party · open end",
+    "slotVoucher": "1€ Getränkegutschein",
+    "cta": "Tickets — 5€ online",
+    "ctaUrl": "https://www.tickettailor.com/checkout/view-event/id/8179200/chk/fdc8/?modal_widget=true&widget=true"
+  },
   "event": {
     "label": "Nächstes Event",
     "title1": "La Frida",

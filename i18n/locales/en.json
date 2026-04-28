@@ -98,6 +98,23 @@
     "djWhatsappDesc": "Join DJ Alösha's WhatsApp group for the next parties",
     "djWhatsappCta": "Join WhatsApp"
   },
+  "thursdayEvent": {
+    "label": "This Thursday — Special",
+    "title1": "Jueves",
+    "title2": "de Timba",
+    "date": "Thursday 30 April",
+    "time": "19:00 → open end",
+    "venue": "Frida, Munich",
+    "entry": "5€ online · 8€ at the door · 1€ drink voucher",
+    "description": "Cuban dance class + Timba party at Frida Schwabing. Salsa from zero, casino intermediate, then we keep dancing till close. No partner needed.",
+    "instructors": "with Alösha & Michelle",
+    "slotSalsa": "19:00 — Salsa from zero",
+    "slotCasino": "20:00 — Casino intermediate",
+    "slotParty": "21:00 — Timba Party · open end",
+    "slotVoucher": "1€ drink voucher",
+    "cta": "Get tickets — 5€ online",
+    "ctaUrl": "https://www.tickettailor.com/checkout/view-event/id/8179200/chk/fdc8/?modal_widget=true&widget=true"
+  },
   "event": {
     "label": "Upcoming Event",
     "title1": "La Frida",

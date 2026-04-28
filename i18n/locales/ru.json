@@ -98,6 +98,23 @@
     "djWhatsappDesc": "Вступай в WhatsApp-группу DJ Alösha — узнавай о следующих вечеринках",
     "djWhatsappCta": "Вступить в WhatsApp"
   },
+  "thursdayEvent": {
+    "label": "В этот четверг — Спецсобытие",
+    "title1": "Jueves",
+    "title2": "de Timba",
+    "date": "Четверг, 30 апреля",
+    "time": "19:00 → open end",
+    "venue": "Frida, Мюнхен",
+    "entry": "5€ онлайн · 8€ на входе · ваучер 1€ на бар",
+    "description": "Кубинский класс + Timba-вечеринка в Frida Schwabing. Salsa с нуля, Casino intermedio, и танцуем до закрытия. Без пары, без опыта.",
+    "instructors": "с Alösha и Michelle",
+    "slotSalsa": "19:00 — Salsa с нуля",
+    "slotCasino": "20:00 — Casino intermedio",
+    "slotParty": "21:00 — Timba Party · open end",
+    "slotVoucher": "Ваучер 1€ на бар",
+    "cta": "Билеты — 5€ онлайн",
+    "ctaUrl": "https://www.tickettailor.com/checkout/view-event/id/8179200/chk/fdc8/?modal_widget=true&widget=true"
+  },
   "event": {
     "label": "Ближайшее событие",
     "title1": "La Frida",
