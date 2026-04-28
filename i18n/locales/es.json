@@ -92,8 +92,11 @@
     "venue": "Buena Vista Bar, Am Einlaß 2A, Múnich",
     "specialEvent": "Special",
     "ruedaFlashmob": "Rueda Flashmob",
-    "fridaThursday": "Salsa + Casino + Timba · Frida",
-    "fridaThursdayPrice": "5€"
+    "fridaThursday": "Salsa + Casino + Timba Party · Frida",
+    "fridaThursdayPrice": "5€",
+    "djWhatsappTitle": "Recibe avisos de las fiestas",
+    "djWhatsappDesc": "Únete al grupo de WhatsApp de DJ Alösha para las próximas fiestas",
+    "djWhatsappCta": "Unirse a WhatsApp"
   },
   "event": {
     "label": "Próximo evento",
@@ -102,7 +105,7 @@
     "date": "Todos los lunes en Frida",
     "time": "19:00 – 23:00",
     "venue": "Frida, Múnich",
-    "entry": "10 EUR",
+    "entry": "5€ online · 8€ en la puerta · bono 1€ para la barra",
     "dj": "DJ Alösha",
     "description": "Una noche cubana en Frida Múnich. Timba, reparto, son, rumba cubana. Shot de bienvenida Havana Club gratis, mesa de dominó. Organizado por Montuno Club.",
     "highlights": {
@@ -113,8 +116,8 @@
     },
     "dresscode": "Código de vestir: Cuba 80s — Rojo y Azul",
     "organizer": "Organizado por Montuno Club",
-    "cta": "Registrarse — 10 EUR",
-    "ctaUrl": "https://wedance.vip/events/wCz9k7mAxsNEKaMmsMjP"
+    "cta": "Entradas — 5€ online",
+    "ctaUrl": "https://buytickets.at/montunoclub/2189767"
   },
   "location": {
     "label": "Ubicación",

@@ -92,8 +92,11 @@
     "venue": "Buena Vista Bar, Am Einla\u00df 2A, Munich",
     "specialEvent": "Special",
     "ruedaFlashmob": "Rueda Flashmob",
-    "fridaThursday": "Salsa + Casino + Timba · Frida",
-    "fridaThursdayPrice": "5€"
+    "fridaThursday": "Salsa + Casino + Timba Party · Frida",
+    "fridaThursdayPrice": "5€",
+    "djWhatsappTitle": "Get party announcements",
+    "djWhatsappDesc": "Join DJ Alösha's WhatsApp group for the next parties",
+    "djWhatsappCta": "Join WhatsApp"
   },
   "event": {
     "label": "Upcoming Event",
@@ -102,7 +105,7 @@
     "date": "Every Monday at Frida",
     "time": "19:00 \u2013 23:00",
     "venue": "Frida, Munich",
-    "entry": "10 EUR",
+    "entry": "5€ online · 8€ at the door · 1€ drink voucher",
     "dj": "DJ Al\u00f6sha",
     "description": "A Cuban evening at Frida Munich. Timba, reparto, son, Cuban rumba. Free Havana Club welcome shot, domino table. Organized by Montuno Club.",
     "highlights": {
@@ -113,8 +116,8 @@
     },
     "dresscode": "Dress code: Cuba 80s — Red & Blue",
     "organizer": "Organized by Montuno Club",
-    "cta": "Register \u2014 10 EUR",
-    "ctaUrl": "https://wedance.vip/events/wCz9k7mAxsNEKaMmsMjP"
+    "cta": "Get tickets \u2014 5\u20ac online",
+    "ctaUrl": "https://buytickets.at/montunoclub/2189767"
   },
   "location": {
     "label": "Location",

@@ -92,8 +92,11 @@
     "venue": "Buena Vista Bar, Am Einlaß 2A, Мюнхен",
     "specialEvent": "Special",
     "ruedaFlashmob": "Rueda Flashmob",
-    "fridaThursday": "Сальса + Casino + Timba · Frida",
-    "fridaThursdayPrice": "5€"
+    "fridaThursday": "Сальса + Casino + Timba Party · Frida",
+    "fridaThursdayPrice": "5€",
+    "djWhatsappTitle": "Анонси вечірок",
+    "djWhatsappDesc": "Долучайся до WhatsApp-групи DJ Alösha — дізнавайся про наступні вечірки",
+    "djWhatsappCta": "Доєднатися"
   },
   "event": {
     "label": "Найближча подія",
@@ -102,7 +105,7 @@
     "date": "Щопонеділка у Frida",
     "time": "19:00 – 23:00",
     "venue": "Frida, Мюнхен",
-    "entry": "10 EUR",
+    "entry": "5€ онлайн · 8€ на вході · ваучер 1€ на бар",
     "dj": "DJ Alösha",
     "description": "Кубинський вечір у Frida Мюнхен. Тімба, репарто, сон, кубинська румба. Безкоштовний привітальний шот Havana Club, стіл для доміно. Організовано Montuno Club.",
     "highlights": {
@@ -113,8 +116,8 @@
     },
     "dresscode": "Дрес-код: Куба 80-х — Червоний і Синій",
     "organizer": "Організовано Montuno Club",
-    "cta": "Реєстрація — 10 EUR",
-    "ctaUrl": "https://wedance.vip/events/wCz9k7mAxsNEKaMmsMjP"
+    "cta": "Квитки — 5€ онлайн",
+    "ctaUrl": "https://buytickets.at/montunoclub/2189767"
   },
   "location": {
     "label": "Місце",
