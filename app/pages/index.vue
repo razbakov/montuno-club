@@ -289,6 +289,19 @@ function toggleFaq(index: number) {
         </div>
 
         <div class="mx-auto max-w-4xl rounded-2xl bg-wine-900/60 border-2 border-gold-500/40 overflow-hidden shadow-xl shadow-gold-500/10">
+          <a
+            :href="$t('thursdayEvent.ctaUrl')"
+            target="_blank"
+            rel="noopener"
+            class="block group"
+          >
+            <img
+              src="/images/jueves-de-timba.png"
+              alt="Jueves de Timba — Cuban dance class + Timba party at Frida, Munich. Thursday 30 April."
+              class="w-full h-auto group-hover:opacity-95 transition-opacity"
+              loading="lazy"
+            />
+          </a>
           <div class="p-8 sm:p-12">
             <p class="text-wine-200 leading-relaxed text-lg mb-8">
               {{ $t('thursdayEvent.description') }}
