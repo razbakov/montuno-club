@@ -91,13 +91,15 @@
     "casinoIntermediate": "Касіно середній рівень",
     "venue": "Buena Vista Bar, Am Einlaß 2A, Мюнхен",
     "specialEvent": "Special",
-    "ruedaFlashmob": "Rueda Flashmob"
+    "ruedaFlashmob": "Rueda Flashmob",
+    "fridaThursday": "Сальса + Casino + Timba · Frida",
+    "fridaThursdayPrice": "5€"
   },
   "event": {
     "label": "Найближча подія",
     "title1": "La Frida",
     "title2": "Cubana",
-    "date": "Понеділок, 27 квітня 2026",
+    "date": "Щопонеділка у Frida",
     "time": "19:00 – 23:00",
     "venue": "Frida, Мюнхен",
     "entry": "10 EUR",

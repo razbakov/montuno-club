@@ -91,13 +91,15 @@
     "casinoIntermediate": "Casino Mittelstufe",
     "venue": "Buena Vista Bar, Am Einlaß 2A, München",
     "specialEvent": "Special",
-    "ruedaFlashmob": "Rueda Flashmob"
+    "ruedaFlashmob": "Rueda Flashmob",
+    "fridaThursday": "Salsa + Casino + Timba · Frida",
+    "fridaThursdayPrice": "5€"
   },
   "event": {
     "label": "Nächstes Event",
     "title1": "La Frida",
     "title2": "Cubana",
-    "date": "Montag, 27. April 2026",
+    "date": "Jeden Montag im Frida",
     "time": "19:00 – 23:00",
     "venue": "Frida, München",
     "entry": "10 EUR",

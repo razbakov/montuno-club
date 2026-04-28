@@ -91,13 +91,15 @@
     "casinoIntermediate": "Casino Intermedio",
     "venue": "Buena Vista Bar, Am Einlaß 2A, Múnich",
     "specialEvent": "Special",
-    "ruedaFlashmob": "Rueda Flashmob"
+    "ruedaFlashmob": "Rueda Flashmob",
+    "fridaThursday": "Salsa + Casino + Timba · Frida",
+    "fridaThursdayPrice": "5€"
   },
   "event": {
     "label": "Próximo evento",
     "title1": "La Frida",
     "title2": "Cubana",
-    "date": "Lunes, 27 de abril de 2026",
+    "date": "Todos los lunes en Frida",
     "time": "19:00 – 23:00",
     "venue": "Frida, Múnich",
     "entry": "10 EUR",

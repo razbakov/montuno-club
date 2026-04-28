@@ -16,19 +16,19 @@ useSeoMeta({
 
 useSchemaOrg([
   defineEvent({
-    name: 'Salsa From Zero — Free Beginner Class',
-    startDate: '2026-04-13T18:00:00+02:00',
-    endDate: '2026-04-13T19:00:00+02:00',
+    name: 'Jueves de Timba — Salsa + Casino + Timba Party at Frida',
+    startDate: '2026-04-30T19:00:00+02:00',
+    endDate: '2026-05-01T02:00:00+02:00',
     eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
     eventStatus: 'https://schema.org/EventScheduled',
     location: {
       type: 'Place',
-      name: 'Buena Vista Bar',
+      name: 'Frida Restaurant & Bar',
       address: {
         type: 'PostalAddress',
-        streetAddress: 'Am Einlaß 2A',
+        streetAddress: 'Leopoldstr. 13',
         addressLocality: 'Munich',
-        postalCode: '80469',
+        postalCode: '80802',
         addressCountry: 'DE',
       },
     },
@@ -39,27 +39,30 @@ useSchemaOrg([
     },
     offers: {
       type: 'Offer',
-      price: '0',
+      price: '5',
       priceCurrency: 'EUR',
       availability: 'https://schema.org/InStock',
-      url: 'https://montuno.club',
+      url: 'https://buytickets.at/montunoclub/2189721',
+      validFrom: '2026-04-28T00:00:00+02:00',
     },
     image: 'https://montuno.club/og.jpg',
     description:
-      'Free, donation-based Salsa Cubana class for absolute beginners. No partner needed. English-friendly.',
+      'Cuban dance class + Timba party at Frida Munich. 19:00 Salsa from zero. 20:00 Casino intermediate. 21:00 Timba party with DJ Alösha. With Alösha & Michelle. 1€ drink voucher included.',
   }),
   defineEvent({
     name: 'La Frida Cubana — Cuban Night by Montuno Club',
-    startDate: '2026-04-27T19:00:00+02:00',
-    endDate: '2026-04-27T23:00:00+02:00',
+    startDate: '2026-05-04T19:00:00+02:00',
+    endDate: '2026-05-04T23:00:00+02:00',
     eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
     eventStatus: 'https://schema.org/EventScheduled',
     location: {
       type: 'Place',
-      name: 'Frida',
+      name: 'Frida Restaurant & Bar',
       address: {
         type: 'PostalAddress',
+        streetAddress: 'Leopoldstr. 13',
         addressLocality: 'Munich',
+        postalCode: '80802',
         addressCountry: 'DE',
       },
     },
@@ -77,7 +80,7 @@ useSchemaOrg([
     },
     image: 'https://montuno.club/og.jpg',
     description:
-      'A Cuban evening at Frida Munich. Free Havana Club welcome shot, domino table, Cuban jazz and son music. DJ Alösha. Organized by Montuno Club.',
+      'Weekly Cuban evening at Frida Munich, every Monday. Free Havana Club welcome shot, domino table, Cuban jazz and son music. DJ Alösha. Organized by Montuno Club.',
   }),
 ])
 
@@ -201,14 +204,14 @@ function toggleFaq(index: number) {
               </tr>
             </thead>
             <tbody class="divide-y divide-wine-800/30">
-              <tr class="group cursor-pointer hover:bg-gold-500/10 transition-colors bg-gold-500/5" @click="openUrl('https://wedance.vip/events/jR184tzxxbgabZ7JzIo4')">
+              <tr class="group cursor-pointer hover:bg-gold-500/10 transition-colors bg-gold-500/5" @click="openUrl('https://www.tickettailor.com/checkout/view-event/id/8179200/chk/fdc8/?modal_widget=true&amp;widget=true')">
                 <td class="py-5 pr-6 text-gold-400 font-medium">{{ $t('schedule.specialEvent') }}</td>
-                <td class="py-5 pr-6 text-wine-300">18 Apr · 12:00</td>
+                <td class="py-5 pr-6 text-wine-300">Thu 30 Apr · 19:00</td>
                 <td class="py-5 pr-6">
-                  <span class="font-medium text-white group-hover:text-gold-400 transition-colors">{{ $t('schedule.ruedaFlashmob') }}</span>
-                  <span class="ml-2 inline-block rounded-full bg-gold-500/20 px-2.5 py-0.5 text-xs font-semibold text-gold-400">{{ $t('schedule.salsaFromZeroFree') }}</span>
+                  <span class="font-medium text-white group-hover:text-gold-400 transition-colors">{{ $t('schedule.fridaThursday') }}</span>
+                  <span class="ml-2 inline-block rounded-full bg-gold-500/20 px-2.5 py-0.5 text-xs font-semibold text-gold-400">{{ $t('schedule.fridaThursdayPrice') }}</span>
                 </td>
-                <td class="py-5 text-wine-300">Alösha</td>
+                <td class="py-5 text-wine-300">Alösha &amp; Michelle</td>
               </tr>
               <tr class="group cursor-pointer hover:bg-wine-800/20 transition-colors" @click="openUrl('https://wedance.vip/events/YdiOgSeaGTrwy3XxuNLW')">
                 <td class="py-5 pr-6 text-wine-200 font-medium">{{ $t('schedule.thursday') }}</td>
