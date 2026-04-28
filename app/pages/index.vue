@@ -325,7 +325,7 @@ function toggleFaq(index: number) {
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
-                <span class="text-wine-200">{{ $t('thursdayEvent.venue') }}</span>
+                <a href="https://maps.google.com/?q=Frida+Restaurant+%26+Bar%2C+Leopoldstr.+13%2C+80802+M%C3%BCnchen" target="_blank" rel="noopener" class="text-wine-200 underline underline-offset-4 decoration-wine-700 hover:text-gold-400 hover:decoration-gold-400 transition-colors">{{ $t('thursdayEvent.venue') }}</a>
               </div>
               <div class="flex items-start gap-3">
                 <svg class="w-5 h-5 mt-0.5 text-gold-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -405,7 +405,7 @@ function toggleFaq(index: number) {
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
-                <span class="text-wine-200">{{ $t('event.venue') }}</span>
+                <a href="https://maps.google.com/?q=Frida+Restaurant+%26+Bar%2C+Leopoldstr.+13%2C+80802+M%C3%BCnchen" target="_blank" rel="noopener" class="text-wine-200 underline underline-offset-4 decoration-wine-700 hover:text-gold-400 hover:decoration-gold-400 transition-colors">{{ $t('event.venue') }}</a>
               </div>
               <div class="flex items-start gap-3">
                 <svg class="w-5 h-5 mt-0.5 text-gold-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
