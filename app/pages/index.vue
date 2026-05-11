@@ -16,9 +16,9 @@ useSeoMeta({
 
 useSchemaOrg([
   defineEvent({
-    name: 'Jueves de Timba — Salsa + Casino + Timba Party at Frida',
-    startDate: '2026-04-30T19:00:00+02:00',
-    endDate: '2026-05-01T02:00:00+02:00',
+    name: 'La Frida Cubana · Bachata Dominicana Edition',
+    startDate: '2026-05-11T19:00:00+02:00',
+    endDate: '2026-05-11T23:00:00+02:00',
     eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
     eventStatus: 'https://schema.org/EventScheduled',
     location: {
@@ -39,48 +39,14 @@ useSchemaOrg([
     },
     offers: {
       type: 'Offer',
-      price: '5',
-      priceCurrency: 'EUR',
-      availability: 'https://schema.org/InStock',
-      url: 'https://buytickets.at/montunoclub/2189721',
-      validFrom: '2026-04-28T00:00:00+02:00',
-    },
-    image: 'https://montuno.club/og.jpg',
-    description:
-      'Cuban dance class + Timba party at Frida Munich. 19:00 Salsa from zero. 20:00 Casino intermediate. 21:00 Timba party with DJ Alösha. With Alösha & Michelle. 1€ drink voucher included.',
-  }),
-  defineEvent({
-    name: 'La Frida Cubana — Cuban Night by Montuno Club',
-    startDate: '2026-05-04T19:00:00+02:00',
-    endDate: '2026-05-04T23:00:00+02:00',
-    eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
-    eventStatus: 'https://schema.org/EventScheduled',
-    location: {
-      type: 'Place',
-      name: 'Frida Restaurant & Bar',
-      address: {
-        type: 'PostalAddress',
-        streetAddress: 'Leopoldstr. 13',
-        addressLocality: 'Munich',
-        postalCode: '80802',
-        addressCountry: 'DE',
-      },
-    },
-    organizer: {
-      type: 'Organization',
-      name: 'Montuno Club',
-      url: 'https://montuno.club',
-    },
-    offers: {
-      type: 'Offer',
-      price: '5',
+      price: '3',
       priceCurrency: 'EUR',
       availability: 'https://schema.org/InStock',
       url: 'https://buytickets.at/montunoclub/2189767',
     },
     image: 'https://montuno.club/og.jpg',
     description:
-      'Weekly Cuban evening at Frida Munich, every Monday. Free Havana Club welcome shot, domino table, Cuban jazz and son music. DJ Alösha. 1€ drink voucher included with every ticket. Organized by Montuno Club.',
+      'Cuban Mondays at Frida Munich. 19:00 free Bachata Dominicana workshop. 20:00 Cuban party with DJ Alösha — timba, reparto, son, Cuban rumba, every third song = bachata. Free entry until 20:00, then 3€ online / 5€ at the door. Domino table, free Havana Club welcome shot.',
   }),
 ])
 
@@ -204,15 +170,6 @@ function toggleFaq(index: number) {
               </tr>
             </thead>
             <tbody class="divide-y divide-wine-800/30">
-              <tr class="group cursor-pointer hover:bg-gold-500/10 transition-colors bg-gold-500/5" @click="openUrl('https://www.tickettailor.com/checkout/view-event/id/8179200/chk/fdc8/?modal_widget=true&amp;widget=true')">
-                <td class="py-5 pr-6 text-gold-400 font-medium">{{ $t('schedule.thursday') }}</td>
-                <td class="py-5 pr-6 text-wine-300">19:00 · 30 Apr</td>
-                <td class="py-5 pr-6">
-                  <span class="font-medium text-white group-hover:text-gold-400 transition-colors">{{ $t('schedule.fridaThursday') }}</span>
-                  <span class="ml-2 inline-block rounded-full bg-gold-500/20 px-2.5 py-0.5 text-xs font-semibold text-gold-400">{{ $t('schedule.fridaThursdayPrice') }}</span>
-                </td>
-                <td class="py-5 text-wine-300">Alösha &amp; Michelle</td>
-              </tr>
               <tr class="group cursor-pointer hover:bg-wine-800/20 transition-colors" @click="openUrl('https://wedance.vip/MontunoClub?view=events#tabs')">
                 <td class="py-5 pr-6 text-wine-200 font-medium">{{ $t('schedule.sunday') }}</td>
                 <td class="py-5 pr-6 text-wine-300">18:00</td>
@@ -274,103 +231,6 @@ function toggleFaq(index: number) {
       </div>
     </section>
 
-    <!-- Jueves de Timba — Thursday Special Event -->
-    <section id="thursday-event" class="py-24 sm:py-32 bg-gradient-to-b from-wine-950 via-wine-900/40 to-wine-950">
-      <div class="mx-auto max-w-6xl px-4 sm:px-6">
-        <div class="text-center mb-12">
-          <p class="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-[0.25em] text-gold-400 mb-4 px-4 py-1.5 rounded-full bg-gold-500/15 border border-gold-500/30">
-            <span class="w-2 h-2 rounded-full bg-gold-400 animate-pulse"></span>
-            {{ $t('thursdayEvent.label') }}
-          </p>
-          <h2 class="font-display text-4xl sm:text-5xl lg:text-6xl leading-tight">
-            {{ $t('thursdayEvent.title1') }} <span class="text-gold-400">{{ $t('thursdayEvent.title2') }}</span>
-          </h2>
-          <p class="mt-3 text-wine-200 text-base sm:text-lg">{{ $t('thursdayEvent.instructors') }}</p>
-        </div>
-
-        <div class="mx-auto max-w-4xl rounded-2xl bg-wine-900/60 border-2 border-gold-500/40 overflow-hidden shadow-xl shadow-gold-500/10">
-          <a
-            :href="$t('thursdayEvent.ctaUrl')"
-            target="_blank"
-            rel="noopener"
-            class="block group"
-          >
-            <img
-              src="/images/jueves-de-timba.png"
-              alt="Jueves de Timba — Cuban dance class + Timba party at Frida, Munich. Thursday 30 April."
-              class="w-full h-auto group-hover:opacity-95 transition-opacity"
-              loading="lazy"
-            />
-          </a>
-          <div class="p-8 sm:p-12">
-            <p class="text-wine-200 leading-relaxed text-lg mb-8">
-              {{ $t('thursdayEvent.description') }}
-            </p>
-
-            <div class="grid sm:grid-cols-2 gap-6 mb-8">
-              <div class="flex items-start gap-3">
-                <svg class="w-5 h-5 mt-0.5 text-gold-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                </svg>
-                <span class="text-wine-200">{{ $t('thursdayEvent.date') }}</span>
-              </div>
-              <div class="flex items-start gap-3">
-                <svg class="w-5 h-5 mt-0.5 text-gold-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <span class="text-wine-200">{{ $t('thursdayEvent.time') }}</span>
-              </div>
-              <div class="flex items-start gap-3">
-                <svg class="w-5 h-5 mt-0.5 text-gold-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-                <a href="https://maps.google.com/?q=Frida+Restaurant+%26+Bar%2C+Leopoldstr.+13%2C+80802+M%C3%BCnchen" target="_blank" rel="noopener" class="text-wine-200 underline underline-offset-4 decoration-wine-700 hover:text-gold-400 hover:decoration-gold-400 transition-colors">{{ $t('thursdayEvent.venue') }}</a>
-              </div>
-              <div class="flex items-start gap-3">
-                <svg class="w-5 h-5 mt-0.5 text-gold-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
-                </svg>
-                <span class="text-wine-200">{{ $t('thursdayEvent.entry') }}</span>
-              </div>
-            </div>
-
-            <!-- Schedule slots -->
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
-              <div class="rounded-xl bg-wine-950/60 border border-gold-500/20 p-4 text-center">
-                <p class="text-sm font-semibold text-white">{{ $t('thursdayEvent.slotSalsa') }}</p>
-              </div>
-              <div class="rounded-xl bg-wine-950/60 border border-gold-500/20 p-4 text-center">
-                <p class="text-sm font-semibold text-white">{{ $t('thursdayEvent.slotCasino') }}</p>
-              </div>
-              <div class="rounded-xl bg-gold-500/15 border border-gold-500/40 p-4 text-center">
-                <p class="text-sm font-semibold text-gold-300">{{ $t('thursdayEvent.slotParty') }}</p>
-              </div>
-            </div>
-
-            <div class="rounded-xl bg-wine-950/40 border border-wine-800/30 p-4 mb-8 flex items-center justify-center gap-2">
-              <svg class="w-5 h-5 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-              </svg>
-              <p class="text-sm text-wine-200">{{ $t('thursdayEvent.slotVoucher') }}</p>
-            </div>
-
-            <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
-              <p class="text-sm text-wine-400">{{ $t('thursdayEvent.instructors') }}</p>
-              <a
-                :href="$t('thursdayEvent.ctaUrl')"
-                target="_blank"
-                rel="noopener"
-                class="rounded-full bg-gold-500 px-8 py-3 font-semibold text-wine-950 hover:bg-gold-400 transition-colors shadow-lg shadow-gold-500/30"
-              >
-                {{ $t('thursdayEvent.cta') }}
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- La Frida Cubana Event -->
     <section id="events" class="py-24 sm:py-32">
       <div class="mx-auto max-w-6xl px-4 sm:px-6">
@@ -383,6 +243,16 @@ function toggleFaq(index: number) {
 
         <div class="mx-auto max-w-4xl rounded-2xl bg-wine-900/50 border border-wine-800/40 overflow-hidden">
           <div class="p-8 sm:p-12">
+            <!-- This Week's Special Edition -->
+            <div class="mb-8 rounded-2xl border-2 border-gold-500/40 bg-gold-500/10 p-5 sm:p-6">
+              <p class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-gold-400 mb-2">
+                <span class="w-2 h-2 rounded-full bg-gold-400 animate-pulse"></span>
+                {{ $t('event.weeklyLabel') }}
+              </p>
+              <h3 class="font-display text-2xl sm:text-3xl text-white">{{ $t('event.weeklyTitle') }}</h3>
+              <p class="mt-2 text-wine-200 text-sm sm:text-base">{{ $t('event.weeklyDesc') }}</p>
+            </div>
+
             <p class="text-wine-200 leading-relaxed text-lg mb-8">
               {{ $t('event.description') }}
             </p>
@@ -442,11 +312,13 @@ function toggleFaq(index: number) {
               </div>
             </div>
 
-            <!-- Dress Code -->
-            <div class="mt-6 rounded-xl overflow-hidden border border-wine-800/40">
-              <img src="/images/dresscode-frida.png" alt="Dress code: Cuba 80s — Red & Blue" class="w-full h-48 object-cover" />
-              <div class="px-5 py-3 bg-wine-900/60 text-center">
-                <p class="text-sm font-semibold text-gold-400 uppercase tracking-wider">{{ $t('event.dresscode') }}</p>
+            <!-- Schedule slots -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+              <div class="rounded-xl bg-gold-500/10 border border-gold-500/30 p-4 text-center">
+                <p class="text-sm font-semibold text-gold-300">{{ $t('event.slotWorkshop') }}</p>
+              </div>
+              <div class="rounded-xl bg-wine-950/60 border border-gold-500/20 p-4 text-center">
+                <p class="text-sm font-semibold text-white">{{ $t('event.slotParty') }}</p>
               </div>
             </div>
 

@@ -10,7 +10,7 @@
     "joinFree": "Kostenlos beitreten"
   },
   "hero": {
-    "subtitle": "Salsa Cubana \u00b7 Kurse & Events \u00b7 München",
+    "subtitle": "Salsa Cubana · Kurse & Events · München",
     "title1": "Salsa",
     "title2": "Cubana",
     "description": "Wöchentliche Kurse für jedes Level in der Buena Vista Bar. Von kostenlosen Anfängerstunden bis zu 2-Monats-Kursen. Kein Partner nötig. Einfach vorbeikommen und tanzen.",
@@ -76,12 +76,11 @@
     "label": "Wöchentlicher Kursplan",
     "title1": "Kurs-",
     "title2": "plan",
-    "description": "Vier Kurse pro Woche in der Buena Vista Bar. Für jedes Level — vom ersten Schritt bis zu fortgeschrittenen Casino-Moves.",
+    "description": "Sonntags-Kurse in der Buena Vista Bar. Für jedes Level — vom ersten Schritt bis zu fortgeschrittenen Casino-Moves.",
     "day": "Tag",
     "time": "Uhrzeit",
     "class": "Kurs",
     "instructor": "Lehrer",
-    "thursday": "Donnerstag",
     "sunday": "Sonntag",
     "repartoFromZero": "Reparto von Null",
     "salsaFromZero": "Salsa von Null",
@@ -92,48 +91,33 @@
     "venue": "Buena Vista Bar, Am Einlaß 2A, München",
     "specialEvent": "Special",
     "ruedaFlashmob": "Rueda Flashmob",
-    "fridaThursday": "Salsa + Casino + Timba Party · Frida",
-    "fridaThursdayPrice": "5€",
     "djWhatsappTitle": "Party-Updates erhalten",
     "djWhatsappDesc": "Tritt der WhatsApp-Gruppe von DJ Alösha bei für die nächsten Partys",
     "djWhatsappCta": "WhatsApp beitreten"
   },
-  "thursdayEvent": {
-    "label": "Diesen Donnerstag — Special",
-    "title1": "Jueves",
-    "title2": "de Timba",
-    "date": "Donnerstag, 30. April",
-    "time": "19:00 → open end",
-    "venue": "Frida Restaurant & Bar · Leopoldstr. 13, 80802 München",
-    "entry": "5€ online · 8€ an der Tür · 1€ Getränkegutschein",
-    "description": "Tanzkurs + Timba-Party im Frida Schwabing. Salsa für Anfänger, Casino Intermediate, danach Party bis spät. Ohne Partner, ohne Vorkenntnisse.",
-    "instructors": "mit Alösha & Michelle",
-    "slotSalsa": "19:00 — Salsa für Anfänger",
-    "slotCasino": "20:00 — Casino Intermediate",
-    "slotParty": "21:00 — Timba Party · open end",
-    "slotVoucher": "1€ Getränkegutschein",
-    "cta": "Tickets — 5€ online",
-    "ctaUrl": "https://www.tickettailor.com/checkout/view-event/id/8179200/chk/fdc8/?modal_widget=true&widget=true"
-  },
   "event": {
-    "label": "Nächstes Event",
+    "label": "Jeden Montag bei Frida",
     "title1": "La Frida",
     "title2": "Cubana",
-    "date": "Jeden Montag im Frida",
+    "date": "Jeden Montag bei Frida",
     "time": "19:00 – 23:00",
     "venue": "Frida Restaurant & Bar · Leopoldstr. 13, 80802 München",
-    "entry": "5€ online · 8€ an der Tür · 1€ Getränkegutschein",
+    "entry": "GRATIS bis 20:00 · 3€ online · 5€ an der Tür ab 20:00",
     "dj": "DJ Alösha",
-    "description": "Ein kubanischer Abend in der Frida München. Timba, Reparto, Son, kubanische Rumba. Gratis Havana Club Begrüßungsshot, Domino-Tisch. Organisiert vom Montuno Club.",
+    "description": "Kubanische Montage im Frida Schwabing. Gratis Workshop um 19:00, danach Cuban Party mit DJ Alösha — Timba, Reparto, Son, Cuban Rumba. Domino-Tisch, gratis Havana Club Begrüßungs-Shot. Organisiert von Montuno Club.",
+    "weeklyLabel": "Diese Woche — Special Edition",
+    "weeklyTitle": "Bachata Dominicana Edition · Mo 11. Mai",
+    "weeklyDesc": "19:00 gratis Bachata Dominicana Workshop · 20:00 Cuban Party, jedes dritte Lied = Bachata. Ohne Partner, ohne Level.",
+    "slotWorkshop": "19:00 — Gratis Workshop",
+    "slotParty": "20:00 — Cuban Party · DJ Alösha",
     "highlights": {
-      "shot": "Gratis Havana Club Begrüßungsshot",
+      "shot": "Gratis Havana Club Begrüßungs-Shot",
       "domino": "Domino-Tisch",
-      "music": "Timba · Reparto · Son · Kubanische Rumba",
+      "music": "Timba · Reparto · Son · Cuban Rumba",
       "dj": "DJ Alösha"
     },
-    "dresscode": "Dresscode: Kuba 80er — Rot & Blau",
-    "organizer": "Organisiert vom Montuno Club",
-    "cta": "Tickets — 5€ online",
+    "organizer": "Organisiert von Montuno Club",
+    "cta": "Tickets sichern — 3€ online",
     "ctaUrl": "https://www.tickettailor.com/events/montunoclub/2189767/select-date?modal_widget=true&widget=true"
   },
   "location": {
@@ -141,7 +125,7 @@
     "title1": "Buena Vista",
     "title2": "Bar",
     "description": "Wir tanzen in der Buena Vista Bar in München. Ein geselliger Ort mit der richtigen Energie zum Lernen, Leute kennenlernen und Spaß haben. Kein Studio — mit Absicht.",
-    "time": "Kurse jeden Donnerstag & Sonntag",
+    "time": "Kurse jeden Sonntag",
     "address": "Buena Vista Bar, Am Einlaß 2A, 80469 München",
     "price": "Gratis Anfängerkurs (andere Kurse variieren)"
   },
@@ -197,7 +181,7 @@
       "beginner": "Anfängerkurs",
       "intermediate": "Mittelstufe Workshop"
     },
-    "bottomInfo": "Jeden Sonntag um 18 Uhr \u00b7 Buena Vista Bar, München \u00b7 Kostenlos & auf Englisch",
+    "bottomInfo": "Jeden Sonntag um 18 Uhr · Buena Vista Bar, München · Kostenlos & auf Englisch",
     "seo": {
       "title": "Montuno Club beitreten"
     }

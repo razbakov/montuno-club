@@ -10,7 +10,7 @@
     "joinFree": "Únete gratis"
   },
   "hero": {
-    "subtitle": "Salsa Cubana \u00b7 Clases y Eventos \u00b7 Múnich",
+    "subtitle": "Salsa Cubana · Clases y Eventos · Múnich",
     "title1": "Salsa",
     "title2": "Cubana",
     "description": "Clases semanales para todos los niveles en Buena Vista Bar. Desde sesiones gratuitas para principiantes hasta cursos de 2 meses. Sin pareja. Solo ven y baila.",
@@ -76,12 +76,11 @@
     "label": "Horario semanal",
     "title1": "Horario de",
     "title2": "clases",
-    "description": "Cuatro clases cada semana en Buena Vista Bar. Algo para cada nivel — desde tu primer paso hasta movimientos avanzados de casino.",
+    "description": "Clases los domingos en Buena Vista Bar. Para todos los niveles — desde el primer paso hasta el casino avanzado.",
     "day": "Día",
     "time": "Hora",
     "class": "Clase",
     "instructor": "Instructor",
-    "thursday": "Jueves",
     "sunday": "Domingo",
     "repartoFromZero": "Reparto desde Cero",
     "salsaFromZero": "Salsa desde Cero",
@@ -92,48 +91,33 @@
     "venue": "Buena Vista Bar, Am Einlaß 2A, Múnich",
     "specialEvent": "Special",
     "ruedaFlashmob": "Rueda Flashmob",
-    "fridaThursday": "Salsa + Casino + Timba Party · Frida",
-    "fridaThursdayPrice": "5€",
     "djWhatsappTitle": "Recibe avisos de las fiestas",
     "djWhatsappDesc": "Únete al grupo de WhatsApp de DJ Alösha para las próximas fiestas",
     "djWhatsappCta": "Unirse a WhatsApp"
   },
-  "thursdayEvent": {
-    "label": "Este jueves — Especial",
-    "title1": "Jueves",
-    "title2": "de Timba",
-    "date": "Jueves 30 de abril",
-    "time": "19:00 → open end",
-    "venue": "Frida Restaurant & Bar · Leopoldstr. 13, 80802 München",
-    "entry": "5€ online · 8€ en la puerta · bono 1€ para la barra",
-    "description": "Clase + Timba party en Frida Schwabing. Salsa desde cero, casino intermedio y nos quedamos bailando hasta cerrar. Sin pareja, sin experiencia.",
-    "instructors": "con Alösha & Michelle",
-    "slotSalsa": "19:00 — Salsa desde cero",
-    "slotCasino": "20:00 — Casino intermedio",
-    "slotParty": "21:00 — Timba Party · open end",
-    "slotVoucher": "Bono 1€ para la barra",
-    "cta": "Entradas — 5€ online",
-    "ctaUrl": "https://www.tickettailor.com/checkout/view-event/id/8179200/chk/fdc8/?modal_widget=true&widget=true"
-  },
   "event": {
-    "label": "Próximo evento",
+    "label": "Cada lunes en Frida",
     "title1": "La Frida",
     "title2": "Cubana",
-    "date": "Todos los lunes en Frida",
+    "date": "Cada lunes en Frida",
     "time": "19:00 – 23:00",
     "venue": "Frida Restaurant & Bar · Leopoldstr. 13, 80802 München",
-    "entry": "5€ online · 8€ en la puerta · bono 1€ para la barra",
+    "entry": "GRATIS hasta las 20:00 · 3€ online · 5€ en la puerta desde las 20:00",
     "dj": "DJ Alösha",
-    "description": "Una noche cubana en Frida Múnich. Timba, reparto, son, rumba cubana. Shot de bienvenida Havana Club gratis, mesa de dominó. Organizado por Montuno Club.",
+    "description": "Lunes cubanos en Frida Schwabing. Workshop gratis a las 19:00, después fiesta cubana con DJ Alösha — timba, reparto, son, rumba cubana. Mesa de dominó, shot gratis de Havana Club. Organizado por Montuno Club.",
+    "weeklyLabel": "Esta semana — Edición Especial",
+    "weeklyTitle": "Bachata Dominicana Edition · Lun 11 mayo",
+    "weeklyDesc": "19:00 workshop gratis de Bachata Dominicana · 20:00 fiesta cubana, cada tercer tema = bachata. Sin pareja, sin nivel mínimo.",
+    "slotWorkshop": "19:00 — Workshop gratis",
+    "slotParty": "20:00 — Fiesta cubana · DJ Alösha",
     "highlights": {
-      "shot": "Shot de bienvenida Havana Club gratis",
+      "shot": "Shot gratis de Havana Club",
       "domino": "Mesa de dominó",
-      "music": "Timba · Reparto · Son · Rumba Cubana",
+      "music": "Timba · Reparto · Son · Rumba cubana",
       "dj": "DJ Alösha"
     },
-    "dresscode": "Código de vestir: Cuba 80s — Rojo y Azul",
     "organizer": "Organizado por Montuno Club",
-    "cta": "Entradas — 5€ online",
+    "cta": "Comprar entradas — 3€ online",
     "ctaUrl": "https://www.tickettailor.com/events/montunoclub/2189767/select-date?modal_widget=true&widget=true"
   },
   "location": {
@@ -141,7 +125,7 @@
     "title1": "Buena Vista",
     "title2": "Bar",
     "description": "Bailamos en Buena Vista Bar en Múnich. Un lugar social con la energía perfecta para aprender, conocer gente y pasarla bien. No es un estudio — a propósito.",
-    "time": "Clases cada jueves y domingo",
+    "time": "Clases todos los domingos",
     "address": "Buena Vista Bar, Am Einlaß 2A, 80469 Múnich",
     "price": "Clase para principiantes gratis (otras clases varían)"
   },
@@ -197,7 +181,7 @@
       "beginner": "Curso para principiantes",
       "intermediate": "Taller intermedio"
     },
-    "bottomInfo": "Cada domingo a las 18h \u00b7 Buena Vista Bar, Múnich \u00b7 Gratis y en inglés",
+    "bottomInfo": "Cada domingo a las 18h · Buena Vista Bar, Múnich · Gratis y en inglés",
     "seo": {
       "title": "Únete a Montuno Club"
     }

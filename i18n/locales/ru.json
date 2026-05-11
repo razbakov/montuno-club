@@ -10,7 +10,7 @@
     "joinFree": "Присоединиться бесплатно"
   },
   "hero": {
-    "subtitle": "Сальса Кубана \u00b7 Занятия и события \u00b7 Мюнхен",
+    "subtitle": "Сальса Кубана · Занятия и события · Мюнхен",
     "title1": "Сальса",
     "title2": "Кубана",
     "description": "Еженедельные занятия для любого уровня в Buena Vista Bar. От бесплатных занятий для начинающих до 2-месячных курсов. Без пары. Просто приходи и танцуй.",
@@ -76,12 +76,11 @@
     "label": "Расписание занятий",
     "title1": "Расписание",
     "title2": "занятий",
-    "description": "Четыре занятия каждую неделю в Buena Vista Bar. Для любого уровня — от первого шага до продвинутых движений касино.",
+    "description": "Воскресные занятия в Buena Vista Bar. Для любого уровня — от первого шага до продвинутого casino.",
     "day": "День",
     "time": "Время",
     "class": "Занятие",
     "instructor": "Преподаватель",
-    "thursday": "Четверг",
     "sunday": "Воскресенье",
     "repartoFromZero": "Reparto с нуля",
     "salsaFromZero": "Сальса с нуля",
@@ -92,48 +91,33 @@
     "venue": "Buena Vista Bar, Am Einlaß 2A, Мюнхен",
     "specialEvent": "Special",
     "ruedaFlashmob": "Rueda Flashmob",
-    "fridaThursday": "Сальса + Casino + Timba Party · Frida",
-    "fridaThursdayPrice": "5€",
     "djWhatsappTitle": "Анонсы вечеринок",
     "djWhatsappDesc": "Вступай в WhatsApp-группу DJ Alösha — узнавай о следующих вечеринках",
     "djWhatsappCta": "Вступить в WhatsApp"
   },
-  "thursdayEvent": {
-    "label": "В этот четверг — Спецсобытие",
-    "title1": "Jueves",
-    "title2": "de Timba",
-    "date": "Четверг, 30 апреля",
-    "time": "19:00 → open end",
-    "venue": "Frida Restaurant & Bar · Leopoldstr. 13, 80802 München",
-    "entry": "5€ онлайн · 8€ на входе · ваучер 1€ на бар",
-    "description": "Кубинский класс + Timba-вечеринка в Frida Schwabing. Salsa с нуля, Casino intermedio, и танцуем до закрытия. Без пары, без опыта.",
-    "instructors": "с Alösha и Michelle",
-    "slotSalsa": "19:00 — Salsa с нуля",
-    "slotCasino": "20:00 — Casino intermedio",
-    "slotParty": "21:00 — Timba Party · open end",
-    "slotVoucher": "Ваучер 1€ на бар",
-    "cta": "Билеты — 5€ онлайн",
-    "ctaUrl": "https://www.tickettailor.com/checkout/view-event/id/8179200/chk/fdc8/?modal_widget=true&widget=true"
-  },
   "event": {
-    "label": "Ближайшее событие",
+    "label": "Каждый понедельник в Frida",
     "title1": "La Frida",
     "title2": "Cubana",
     "date": "Каждый понедельник в Frida",
     "time": "19:00 – 23:00",
     "venue": "Frida Restaurant & Bar · Leopoldstr. 13, 80802 München",
-    "entry": "5€ онлайн · 8€ на входе · ваучер 1€ на бар",
+    "entry": "БЕСПЛАТНО до 20:00 · 3€ онлайн · 5€ на входе с 20:00",
     "dj": "DJ Alösha",
-    "description": "Кубинский вечер в Frida Мюнхен. Тимба, репарто, сон, кубинская румба. Бесплатный приветственный шот Havana Club, стол для домино. Организовано Montuno Club.",
+    "description": "Кубинские понедельники в Frida Schwabing. Бесплатный воркшоп в 19:00, потом кубинская вечеринка с DJ Alösha — тимба, репарто, сон, кубинская румба. Стол для домино, бесплатный приветственный шот Havana Club. Организовано Montuno Club.",
+    "weeklyLabel": "На этой неделе — Special Edition",
+    "weeklyTitle": "Bachata Dominicana Edition · Пн 11 мая",
+    "weeklyDesc": "19:00 бесплатный воркшоп Bachata Dominicana · 20:00 кубинская вечеринка, каждая третья песня = бачата. Без партнёра, без уровня.",
+    "slotWorkshop": "19:00 — Бесплатный воркшоп",
+    "slotParty": "20:00 — Кубинская вечеринка · DJ Alösha",
     "highlights": {
       "shot": "Бесплатный шот Havana Club",
       "domino": "Стол для домино",
       "music": "Тимба · Репарто · Сон · Кубинская румба",
       "dj": "DJ Alösha"
     },
-    "dresscode": "Дресс-код: Куба 80-х — Красный и Синий",
     "organizer": "Организовано Montuno Club",
-    "cta": "Билеты — 5€ онлайн",
+    "cta": "Билеты — 3€ онлайн",
     "ctaUrl": "https://www.tickettailor.com/events/montunoclub/2189767/select-date?modal_widget=true&widget=true"
   },
   "location": {
@@ -141,7 +125,7 @@
     "title1": "Buena Vista",
     "title2": "Bar",
     "description": "Мы танцуем в Buena Vista Bar в Мюнхене. Социальное место с нужной энергией для обучения, знакомств и хорошего времени. Не студия — намеренно.",
-    "time": "Занятия каждый четверг и воскресенье",
+    "time": "Занятия по воскресеньям",
     "address": "Buena Vista Bar, Am Einlaß 2A, 80469 Мюнхен",
     "price": "Бесплатное занятие для начинающих (другие варьируются)"
   },
@@ -197,7 +181,7 @@
       "beginner": "Курс для начинающих",
       "intermediate": "Мастер-класс среднего уровня"
     },
-    "bottomInfo": "Каждое воскресенье в 18:00 \u00b7 Buena Vista Bar, Мюнхен \u00b7 Бесплатно и на английском",
+    "bottomInfo": "Каждое воскресенье в 18:00 · Buena Vista Bar, Мюнхен · Бесплатно и на английском",
     "seo": {
       "title": "Присоединиться к Montuno Club"
     }
