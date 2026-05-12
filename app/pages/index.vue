@@ -307,7 +307,7 @@ function toggleFaq(index: number) {
             </div>
           </div>
           <a
-            href="https://chat.whatsapp.com/JlJrGUi89yj57GocNzRTCt"
+            href="https://chat.whatsapp.com/JXYyHPe1oBsBkLPJRLHq1A"
             target="_blank"
             rel="noopener"
             class="rounded-full bg-gold-500 px-6 py-2.5 text-sm font-semibold text-wine-950 hover:bg-gold-400 transition-colors shadow-lg shadow-gold-500/20 whitespace-nowrap"
