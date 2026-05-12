@@ -2,6 +2,7 @@
   "nav": {
     "about": "Sobre nosotros",
     "schedule": "Horario",
+    "rueda": "Rueda",
     "expect": "Qué esperar",
     "faq": "Preguntas",
     "location": "Ubicación",
@@ -94,6 +95,24 @@
     "djWhatsappTitle": "Recibe avisos de las fiestas",
     "djWhatsappDesc": "Únete al grupo de WhatsApp de DJ Alösha para las próximas fiestas",
     "djWhatsappCta": "Unirse a WhatsApp"
+  },
+  "rueda": {
+    "label": "La misión Rueda",
+    "headline1": "Una misión: traer la",
+    "headline2": "Rueda de Casino más grande a Múnich.",
+    "sub": "Una o dos veces al año tomamos Stachus. Cada semana practicamos al aire libre. Y a veces aparecemos donde menos lo esperas.",
+    "bigOneTag": "El gran evento",
+    "bigOneTitle": "Tomar Stachus",
+    "bigOneDesc": "Una o dos veces al año organizamos la Rueda de Casino más grande de Múnich — cientos de bailarines en círculo, en el corazón de la ciudad.",
+    "weeklyTag": "Cada sábado · 14:00",
+    "weeklyTitle": "Práctica al aire libre",
+    "weeklyDesc": "Lugar por defecto: Diana Tempel en el Jardín Inglés. Rotamos a diferentes parques y plazas de Múnich. Gratis, sin inscripción, simplemente ven.",
+    "flashTag": "Flash mobs",
+    "flashTitle": "Donde el momento lo pida",
+    "flashDesc": "A veces irrumpimos en una fiesta con una canción cubana. A veces convertimos un festival gastronómico en una Rueda. Donde sea, cuando sea — siempre casino.",
+    "ctaTitle": "¿Dónde bailamos este sábado?",
+    "ctaDesc": "Únete al grupo de WhatsApp — compartimos el lugar unos días antes.",
+    "ctaButton": "Unirse a WhatsApp"
   },
   "event": {
     "label": "Cada lunes en Frida",

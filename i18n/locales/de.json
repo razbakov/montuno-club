@@ -2,6 +2,7 @@
   "nav": {
     "about": "Über uns",
     "schedule": "Kursplan",
+    "rueda": "Rueda",
     "expect": "Was erwartet dich",
     "faq": "FAQ",
     "location": "Ort",
@@ -94,6 +95,24 @@
     "djWhatsappTitle": "Party-Updates erhalten",
     "djWhatsappDesc": "Tritt der WhatsApp-Gruppe von DJ Alösha bei für die nächsten Partys",
     "djWhatsappCta": "WhatsApp beitreten"
+  },
+  "rueda": {
+    "label": "Die Rueda-Mission",
+    "headline1": "Eine Mission: die größte",
+    "headline2": "Rueda de Casino nach München bringen.",
+    "sub": "Ein- bis zweimal im Jahr übernehmen wir den Stachus. Jede Woche trainieren wir draußen. Und manchmal tauchen wir dort auf, wo du es nicht erwartest.",
+    "bigOneTag": "Das Highlight",
+    "bigOneTitle": "Wir übernehmen den Stachus",
+    "bigOneDesc": "Ein- bis zweimal im Jahr organisieren wir die größte Rueda de Casino in München — hunderte Tänzer im Kreis, mitten in der Stadt.",
+    "weeklyTag": "Jeden Samstag · 14 Uhr",
+    "weeklyTitle": "Training draußen",
+    "weeklyDesc": "Standard-Ort: Diana-Tempel im Englischen Garten. Wir rotieren zu anderen Parks und Plätzen in München. Kostenlos, ohne Anmeldung, einfach kommen.",
+    "flashTag": "Flashmobs",
+    "flashTitle": "Da wo der Moment ruft",
+    "flashDesc": "Manchmal crashen wir eine Party mit einem kubanischen Song. Manchmal machen wir aus einem Streetfood-Festival eine Rueda. Wo und wann — immer Casino.",
+    "ctaTitle": "Erfahre, wo wir diesen Samstag tanzen",
+    "ctaDesc": "Tritt der WhatsApp-Gruppe bei — wir teilen den Ort ein paar Tage vorher.",
+    "ctaButton": "WhatsApp beitreten"
   },
   "event": {
     "label": "Jeden Montag bei Frida",

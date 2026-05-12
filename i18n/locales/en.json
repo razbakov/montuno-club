@@ -2,6 +2,7 @@
   "nav": {
     "about": "About",
     "schedule": "Schedule",
+    "rueda": "Rueda",
     "expect": "What to Expect",
     "faq": "FAQ",
     "location": "Location",
@@ -94,6 +95,24 @@
     "djWhatsappTitle": "Get party announcements",
     "djWhatsappDesc": "Join DJ Alösha's WhatsApp group for the next parties",
     "djWhatsappCta": "Join WhatsApp"
+  },
+  "rueda": {
+    "label": "The Rueda Mission",
+    "headline1": "One mission: bring the biggest",
+    "headline2": "Rueda de Casino to Munich.",
+    "sub": "Once or twice a year we take over Stachus. Every week, we practice in the wild. And sometimes we show up where you don't expect us.",
+    "bigOneTag": "The Big One",
+    "bigOneTitle": "Take over Stachus",
+    "bigOneDesc": "Once or twice a year we organise the biggest Rueda de Casino in Munich — hundreds of dancers in a circle, in the heart of the city.",
+    "weeklyTag": "Every Saturday · 2 PM",
+    "weeklyTitle": "Practice in the wild",
+    "weeklyDesc": "Default spot: Diana Tempel in the English Garden. We rotate to different parks and squares around Munich. Free, no signup, just show up.",
+    "flashTag": "Flash mobs",
+    "flashTitle": "Wherever the moment calls",
+    "flashDesc": "Sometimes we crash a party with one Cuban song. Sometimes we turn a food festival into a Rueda. Wherever, whenever — always casino.",
+    "ctaTitle": "Find out where we dance this Saturday",
+    "ctaDesc": "Join the WhatsApp group — we share the spot a few days before.",
+    "ctaButton": "Join WhatsApp"
   },
   "event": {
     "label": "Every Monday at Frida",
