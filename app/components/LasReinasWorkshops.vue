@@ -57,61 +57,32 @@ const waUrl = computed(
               <p class="text-xs font-bold uppercase tracking-wider text-gold-400 mb-3">
                 {{ $t('lasReinas.satTitle') }}
               </p>
-              <div class="space-y-3">
-                <div>
-                  <p class="text-[11px] uppercase tracking-[0.18em] text-gold-300/70 mb-1.5 flex items-center gap-1.5">
-                    <span class="w-1.5 h-1.5 rounded-full bg-gold-400" /> Eneris
-                  </p>
-                  <ul class="text-sm text-wine-200 space-y-1.5">
-                    <li><span class="text-gold-300">10:00</span> EneriStyle</li>
-                    <li><span class="text-gold-300">11:15</span> Salsa con Rumba</li>
-                  </ul>
-                </div>
-                <div>
-                  <p class="text-[11px] uppercase tracking-[0.18em] text-white/70 mb-1.5 flex items-center gap-1.5">
-                    <span class="w-1.5 h-1.5 rounded-full bg-white/80" /> Milaila
-                  </p>
-                  <ul class="text-sm text-wine-200 space-y-1.5">
-                    <li><span class="text-gold-300">14:00</span> Timba en Pareja</li>
-                    <li><span class="text-gold-300">15:15</span> Lady Styling tacones</li>
-                  </ul>
-                </div>
-                <ul class="text-sm text-wine-200 pt-2 border-t border-wine-800/40">
-                  <li><span class="text-gold-300">19:00</span> {{ $t('lasReinas.concert') }}</li>
-                </ul>
-              </div>
+              <ul class="text-sm text-wine-200 space-y-2">
+                <li>
+                  <div><span class="text-gold-300">10:00</span> EneriStyle <span class="text-wine-400 text-xs">(Eneris)</span></div>
+                  <div class="ml-12 text-xs text-wine-400">⇄ Men-Style <span class="text-wine-500">(Emanuel)</span></div>
+                </li>
+                <li><span class="text-gold-300">11:15</span> Salsa con Rumba <span class="text-wine-400 text-xs">(Eneris)</span></li>
+                <li><span class="text-gold-300">13:00</span> Elegua <span class="text-wine-400 text-xs">(Milaila)</span></li>
+                <li><span class="text-gold-300">14:15</span> Son Cubano <span class="text-wine-400 text-xs">(Milaila)</span></li>
+                <li class="pt-2 border-t border-wine-800/40">
+                  <span class="text-gold-300">19:00</span> {{ $t('lasReinas.concert') }}
+                </li>
+              </ul>
             </div>
             <div class="rounded-xl border border-gold-500/20 bg-gold-500/5 p-4">
               <p class="text-xs font-bold uppercase tracking-wider text-gold-400 mb-3">
                 {{ $t('lasReinas.sunTitle') }}
               </p>
-              <div class="space-y-3">
-                <div>
-                  <p class="text-[11px] uppercase tracking-[0.18em] text-gold-300/70 mb-1.5 flex items-center gap-1.5">
-                    <span class="w-1.5 h-1.5 rounded-full bg-gold-400" /> Eneris
-                  </p>
-                  <ul class="text-sm text-wine-200 space-y-1.5">
-                    <li><span class="text-gold-300">10:00</span> Timba con Eneris</li>
-                    <li><span class="text-gold-300">11:15</span> Salsa con Reparto</li>
-                  </ul>
-                </div>
-                <div>
-                  <p class="text-[11px] uppercase tracking-[0.18em] text-white/70 mb-1.5 flex items-center gap-1.5">
-                    <span class="w-1.5 h-1.5 rounded-full bg-white/80" /> Milaila
-                  </p>
-                  <ul class="text-sm text-wine-200 space-y-1.5">
-                    <li><span class="text-gold-300">14:00</span> Rueda de Casino</li>
-                    <li><span class="text-gold-300">15:15</span> Conga y Comparsa</li>
-                  </ul>
-                </div>
-                <ul class="text-sm text-wine-200 pt-2 border-t border-wine-800/40">
-                  <li class="flex items-baseline gap-1.5">
-                    <span class="text-gold-300">16:30</span>
-                    <span>👑 Las Reinas</span>
-                    <span class="text-[11px] text-wine-400">· Eneris + Milaila</span>
-                  </li>
-                </ul>
-              </div>
+              <ul class="text-sm text-wine-200 space-y-2">
+                <li><span class="text-gold-300">10:00</span> Timba <span class="text-wine-400 text-xs">(Eneris)</span></li>
+                <li><span class="text-gold-300">11:15</span> Salsa con Reparto <span class="text-wine-400 text-xs">(Eneris)</span></li>
+                <li><span class="text-gold-300">13:00</span> Rueda de Casino <span class="text-wine-400 text-xs">(Milaila)</span></li>
+                <li><span class="text-gold-300">14:15</span> Conga y Comparsa <span class="text-wine-400 text-xs">(Milaila)</span></li>
+                <li class="pt-2 border-t border-wine-800/40">
+                  <span class="text-gold-300">15:30</span> 👑 Las Reinas <span class="text-wine-400 text-xs">(Eneris + Milaila)</span>
+                </li>
+              </ul>
             </div>
           </div>
 
