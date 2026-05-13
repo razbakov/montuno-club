@@ -65,6 +65,9 @@ function toggleFaq(index: number) {
     <!-- Charanga Habanera Concert Banner (above fold) -->
     <CharangaHero />
 
+    <!-- Las Reinas Workshops (Cuban Queens weekend) -->
+    <LasReinasWorkshops />
+
     <!-- Hero -->
     <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
       <img

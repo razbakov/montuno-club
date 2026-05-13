@@ -216,6 +216,28 @@
     "credits": "Produced by Hummo Productions · enjoy 4Cubans",
     "imageAlt": "David Calzado & Charanga Habanera — Cuban timba band live at La Rumba Latin Club Munich, 23 May 2026"
   },
+  "lasReinas": {
+    "eyebrow": "CUBAN QUEENS WEEKEND · MAY 23–24",
+    "titleLeading": "Las ",
+    "titleHighlight": "Reinas",
+    "subtitle": "Milaila Capote + Eneris Mulgado · from Havana to Munich",
+    "body": "Two queens, one weekend. Eight workshops across Saturday and Sunday plus the exclusive Las Reinas joint masterclass on Sunday afternoon — only available with the Full Pass.",
+    "satTitle": "Saturday 23 May",
+    "sunTitle": "Sunday 24 May",
+    "concert": "Charanga Habanera Concert",
+    "fullPass": "Full Pass",
+    "withConcert": "Full Pass + Concert",
+    "dropIn": "Single workshop",
+    "cta": "Get tickets",
+    "credits": "Limited spots · single workshop drop-in also available",
+    "imageAlt": "Las Reinas — Milaila Capote and Eneris Mulgado, Cuban dance workshops in Munich, May 23–24 2026",
+    "privatesLabel": "Private lessons",
+    "solo": "solo",
+    "couple": "couple",
+    "privatesNote": "Same price with either queen",
+    "privatesBookCta": "Book on WhatsApp",
+    "privatesWaMessage": "Hi Alex, I'd like to book a private lesson — Las Reinas weekend (May 23–24)."
+  },
   "seo": {
     "title": "Montuno Club — Salsa Cubana Classes & Events in Munich",
     "description": "Salsa Cubana classes for every level in Munich. Free beginner sessions, casino courses, and Cuban events at Buena Vista Bar. English-friendly, no partner needed.",

@@ -216,6 +216,28 @@
     "credits": "Producer: Hummo Productions · enjoy 4Cubans",
     "imageAlt": "David Calzado & Charanga Habanera — кубинская тимба-группа в La Rumba Latin Club, Мюнхен, 23 мая 2026"
   },
+  "lasReinas": {
+    "eyebrow": "УИКЕНД КУБИНСКИХ КОРОЛЕВ · 23–24 МАЯ",
+    "titleLeading": "Las ",
+    "titleHighlight": "Reinas",
+    "subtitle": "Милайла Капоте + Энерис Мульгадо · из Гаваны в Мюнхен",
+    "body": "Две королевы, один уикенд. Восемь мастер-классов в субботу и воскресенье плюс эксклюзивный совместный мастер-класс Las Reinas в воскресенье днём — только во Full Pass.",
+    "satTitle": "Суббота 23 мая",
+    "sunTitle": "Воскресенье 24 мая",
+    "concert": "Концерт Charanga Habanera",
+    "fullPass": "Full Pass",
+    "withConcert": "Full Pass + Концерт",
+    "dropIn": "Один мастер-класс",
+    "cta": "Купить билеты",
+    "credits": "Мест ограничено · разовый билет на мастер-класс также доступен",
+    "imageAlt": "Las Reinas — Милайла Капоте и Энерис Мульгадо, кубинские танцевальные мастер-классы в Мюнхене, 23–24 мая 2026",
+    "privatesLabel": "Индивидуальные занятия",
+    "solo": "соло",
+    "couple": "пара",
+    "privatesNote": "Одинаковая цена с любой из королев",
+    "privatesBookCta": "Записаться в WhatsApp",
+    "privatesWaMessage": "Привет, Алекс! Хочу записаться на индивидуальное занятие — уикенд Las Reinas (23–24 мая)."
+  },
   "seo": {
     "title": "Montuno Club — Занятия и события Сальсы Кубана в Мюнхене",
     "description": "Занятия по Сальсе Кубана для любого уровня в Мюнхене. Бесплатные занятия для начинающих, курсы касино и кубинские события в Buena Vista Bar. На английском, без пары.",

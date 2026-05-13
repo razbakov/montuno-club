@@ -216,6 +216,28 @@
     "credits": "Producido por Hummo Productions · enjoy 4Cubans",
     "imageAlt": "David Calzado & Charanga Habanera — orquesta cubana de timba en vivo en La Rumba Latin Club Múnich, 23 de mayo de 2026"
   },
+  "lasReinas": {
+    "eyebrow": "FIN DE SEMANA REINAS CUBANAS · 23–24 MAYO",
+    "titleLeading": "Las ",
+    "titleHighlight": "Reinas",
+    "subtitle": "Milaila Capote + Eneris Mulgado · de La Habana a Múnich",
+    "body": "Dos reinas, un fin de semana. Ocho talleres entre sábado y domingo más la clase conjunta exclusiva Las Reinas el domingo por la tarde — solo disponible con el Full Pass.",
+    "satTitle": "Sábado 23 mayo",
+    "sunTitle": "Domingo 24 mayo",
+    "concert": "Concierto Charanga Habanera",
+    "fullPass": "Full Pass",
+    "withConcert": "Full Pass + Concierto",
+    "dropIn": "Taller suelto",
+    "cta": "Conseguir entradas",
+    "credits": "Cupos limitados · entrada suelta también disponible",
+    "imageAlt": "Las Reinas — Milaila Capote y Eneris Mulgado, talleres de baile cubano en Múnich, 23–24 mayo 2026",
+    "privatesLabel": "Clases privadas",
+    "solo": "solo",
+    "couple": "pareja",
+    "privatesNote": "Mismo precio con cualquiera de las reinas",
+    "privatesBookCta": "Reservar por WhatsApp",
+    "privatesWaMessage": "Hola Alex, quiero reservar una clase privada — fin de semana Las Reinas (23–24 mayo)."
+  },
   "seo": {
     "title": "Montuno Club — Clases y Eventos de Salsa Cubana en Múnich",
     "description": "Clases de Salsa Cubana para todos los niveles en Múnich. Sesiones gratuitas para principiantes, cursos de casino y eventos cubanos en Buena Vista Bar. En inglés, sin pareja.",
