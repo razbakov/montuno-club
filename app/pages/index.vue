@@ -16,9 +16,9 @@ useSeoMeta({
 
 useSchemaOrg([
   defineEvent({
-    name: 'La Frida Cubana · Bachata Dominicana Edition',
-    startDate: '2026-05-11T19:00:00+02:00',
-    endDate: '2026-05-11T23:00:00+02:00',
+    name: 'La Frida Cubana · Live Rumba with Felix',
+    startDate: '2026-05-18T19:00:00+02:00',
+    endDate: '2026-05-18T23:00:00+02:00',
     eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
     eventStatus: 'https://schema.org/EventScheduled',
     location: {
@@ -46,7 +46,7 @@ useSchemaOrg([
     },
     image: 'https://montuno.club/og.jpg',
     description:
-      'Cuban Mondays at Frida Munich. 19:00 free Bachata Dominicana workshop. 20:00 Cuban party with DJ Alösha — timba, reparto, son, Cuban rumba, every third song = bachata. Free entry until 20:00, then 3€ online / 5€ at the door. Domino table, free Havana Club welcome shot.',
+      'Cuban Mondays at Frida Munich. 19:00–20:00 All Drinks for Free (incl. Happy Hour cocktails up to 7,90 EUR). 20:00 Felix live — Cuban open rumba (rumba abierta). 21:00 DJ Alösha — timba, reparto, son, Cuban rumba. 3€ online / 5€ at the door. Doors 19:00–23:00.',
   }),
 ])
 
