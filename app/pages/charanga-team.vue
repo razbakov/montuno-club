@@ -6,17 +6,18 @@ const ticketUrl =
 
 interface Member {
   name: string
-  photo: string
+  photo: string | null
   roleKey: string
+  isAnonymous?: boolean
 }
 
 const team: Member[] = [
   { name: 'Alösha', photo: '/images/team/alosha.jpg', roleKey: 'organizer' },
   { name: 'Jenny', photo: '/images/team/jenny.jpg', roleKey: 'sponsorsPress' },
-  { name: 'Klaus', photo: '/images/team/klaus.jpg', roleKey: 'boxOfficeLegal' },
+  { name: 'K', photo: null, roleKey: 'boxOfficeLegal', isAnonymous: true },
   { name: 'Michael', photo: '/images/team/michael.jpg', roleKey: 'boxOffice' },
   { name: 'Nancy', photo: '/images/team/nancy.jpg', roleKey: 'facilities' },
-  { name: 'Sandra', photo: '/images/team/sandra.jpg', roleKey: 'hospitality' },
+  { name: 'S', photo: null, roleKey: 'hospitality', isAnonymous: true },
 ]
 
 useSeoMeta({
@@ -52,17 +53,26 @@ useSeoMeta({
           >
             <div
               class="relative aspect-[4/5] overflow-hidden rounded-2xl border border-wine-800/40 shadow-xl shadow-black/40"
+              :class="{ 'bg-wine-900 flex items-center justify-center': member.isAnonymous }"
             >
               <img
+                v-if="member.photo"
                 :src="member.photo"
                 :alt="member.name"
                 class="absolute inset-0 w-full h-full object-cover object-top"
                 loading="lazy"
               />
               <div
+                v-if="member.photo"
                 aria-hidden="true"
                 class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"
               />
+              <div
+                v-if="member.isAnonymous"
+                class="text-6xl sm:text-7xl font-display font-bold text-gold-400"
+              >
+                {{ member.name }}
+              </div>
             </div>
             <h2 class="mt-4 font-display text-xl sm:text-2xl">
               {{ member.name }}
