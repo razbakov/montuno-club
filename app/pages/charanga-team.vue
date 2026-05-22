@@ -18,6 +18,7 @@ const team: Member[] = [
   { name: 'Michael', photo: '/images/team/michael.jpg', roleKey: 'boxOffice' },
   { name: 'Nancy', photo: '/images/team/nancy.jpg', roleKey: 'facilities' },
   { name: 'S', photo: null, roleKey: 'hospitality', isAnonymous: true },
+  { name: 'G', photo: null, roleKey: 'hospitality', isAnonymous: true },
 ]
 
 useSeoMeta({
