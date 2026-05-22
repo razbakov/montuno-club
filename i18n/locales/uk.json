@@ -214,7 +214,24 @@
     "body": "Лідер гурту Давід Кальсадо та один з провідних кубинських тімба-гуртів — єдиний концерт у Мюнхені, у самому центрі, в клубі La Rumba Latin Club. Двері 19:00 · Концерт 21:00 · Афтепаті до 23:30. Super Early Bird від 40 €.",
     "cta": "Купити квитки",
     "credits": "Продакшн: Hummo Productions · enjoy 4Cubans",
-    "imageAlt": "David Calzado & Charanga Habanera — кубинський тімба-гурт у La Rumba Latin Club, Мюнхен, 23 травня 2026"
+    "imageAlt": "David Calzado & Charanga Habanera — кубинський тімба-гурт у La Rumba Latin Club, Мюнхен, 23 травня 2026",
+    "organizedBy": "Організовано командою Charanga у Мюнхені"
+  },
+  "charangaTeam": {
+    "eyebrow": "Charanga Habanera Мюнхен · 23 травня 2026",
+    "title": "Команда Charanga у Мюнхені",
+    "subtitle": "Люди, які привозять David Calzado & Charanga Habanera до Мюнхена.",
+    "ctaTickets": "Купити квитки на концерт",
+    "seoTitle": "Команда Charanga у Мюнхені — Montuno Club",
+    "seoDescription": "Команда концерту David Calzado & Charanga Habanera у Мюнхені 23 травня 2026.",
+    "roles": {
+      "organizer": "Організатор",
+      "sponsorsPress": "Спонсори та преса",
+      "boxOfficeLegal": "Каса та юр. питання",
+      "boxOffice": "Каса",
+      "facilities": "Санітарія, бар та прибирання",
+      "hospitality": "Гостинність"
+    }
   },
   "lasReinas": {
     "eyebrow": "ВІКЕНД КУБИНСЬКИХ КОРОЛЕВ · 23–24 ТРАВНЯ",

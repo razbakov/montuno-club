@@ -214,7 +214,24 @@
     "body": "Bandleader David Calzado und eine der größten Timba-Bands Kubas, live im La Rumba Latin Club mitten in München — nur an diesem einen Abend. Einlass 19:00 · Konzert 21:00 · After-Party bis 23:30. Super-Early-Bird-Tickets ab 40 €.",
     "cta": "Tickets sichern",
     "credits": "Produced by Hummo Productions · enjoy 4Cubans",
-    "imageAlt": "David Calzado & Charanga Habanera — kubanische Timba-Band live im La Rumba Latin Club München, 23. Mai 2026"
+    "imageAlt": "David Calzado & Charanga Habanera — kubanische Timba-Band live im La Rumba Latin Club München, 23. Mai 2026",
+    "organizedBy": "Organisiert vom Charanga München Team"
+  },
+  "charangaTeam": {
+    "eyebrow": "Charanga Habanera München · 23. Mai 2026",
+    "title": "Charanga München Team",
+    "subtitle": "Die Menschen, die David Calzado & Charanga Habanera nach München bringen.",
+    "ctaTickets": "Konzerttickets sichern",
+    "seoTitle": "Charanga München Team — Montuno Club",
+    "seoDescription": "Das Team hinter dem Konzert von David Calzado & Charanga Habanera in München am 23. Mai 2026.",
+    "roles": {
+      "organizer": "Organisation",
+      "sponsorsPress": "Sponsoren & Presse",
+      "boxOfficeLegal": "Kasse & Recht",
+      "boxOffice": "Kasse",
+      "facilities": "Sanitär, Bar & Reinigung",
+      "hospitality": "Gastlichkeit"
+    }
   },
   "lasReinas": {
     "eyebrow": "CUBAN QUEENS WEEKEND · 23.–24. MAI",

@@ -214,7 +214,24 @@
     "body": "Founder David Calzado and one of Cuba's defining timba bands, live at La Rumba Latin Club in central Munich for one night only. Doors 19:00 · Concert 21:00 · After-party until 23:30. Super Early Bird tickets from €40.",
     "cta": "Get tickets",
     "credits": "Produced by Hummo Productions · enjoy 4Cubans",
-    "imageAlt": "David Calzado & Charanga Habanera — Cuban timba band live at La Rumba Latin Club Munich, 23 May 2026"
+    "imageAlt": "David Calzado & Charanga Habanera — Cuban timba band live at La Rumba Latin Club Munich, 23 May 2026",
+    "organizedBy": "Organized by the Charanga Munich Team"
+  },
+  "charangaTeam": {
+    "eyebrow": "Charanga Habanera Munich · 23 May 2026",
+    "title": "Charanga Munich Team",
+    "subtitle": "The people bringing David Calzado & Charanga Habanera to Munich.",
+    "ctaTickets": "Get concert tickets",
+    "seoTitle": "Charanga Munich Team — Montuno Club",
+    "seoDescription": "Meet the team behind the David Calzado & Charanga Habanera concert in Munich, 23 May 2026.",
+    "roles": {
+      "organizer": "Organizer",
+      "sponsorsPress": "Sponsors & Press",
+      "boxOfficeLegal": "Box Office & Legal",
+      "boxOffice": "Box Office",
+      "facilities": "Facilities, Bar & Cleaning",
+      "hospitality": "Hospitality"
+    }
   },
   "lasReinas": {
     "eyebrow": "CUBAN QUEENS WEEKEND · MAY 23–24",

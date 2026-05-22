@@ -214,7 +214,24 @@
     "body": "El maestro David Calzado y una de las grandes orquestas de la timba cubana, en vivo en La Rumba Latin Club en pleno centro de Múnich, por una sola noche. Apertura 19:00 · Concierto 21:00 · After-party hasta 23:30. Entradas Super Early Bird desde 40 €.",
     "cta": "Conseguir entradas",
     "credits": "Producido por Hummo Productions · enjoy 4Cubans",
-    "imageAlt": "David Calzado & Charanga Habanera — orquesta cubana de timba en vivo en La Rumba Latin Club Múnich, 23 de mayo de 2026"
+    "imageAlt": "David Calzado & Charanga Habanera — orquesta cubana de timba en vivo en La Rumba Latin Club Múnich, 23 de mayo de 2026",
+    "organizedBy": "Organizado por el Equipo Charanga Múnich"
+  },
+  "charangaTeam": {
+    "eyebrow": "Charanga Habanera Múnich · 23 de mayo de 2026",
+    "title": "Equipo Charanga Múnich",
+    "subtitle": "Las personas que traen a David Calzado & Charanga Habanera a Múnich.",
+    "ctaTickets": "Comprar entradas",
+    "seoTitle": "Equipo Charanga Múnich — Montuno Club",
+    "seoDescription": "Conoce al equipo detrás del concierto de David Calzado & Charanga Habanera en Múnich, 23 de mayo de 2026.",
+    "roles": {
+      "organizer": "Organización",
+      "sponsorsPress": "Patrocinios y Prensa",
+      "boxOfficeLegal": "Taquilla y Legal",
+      "boxOffice": "Taquilla",
+      "facilities": "Instalaciones, Bar y Limpieza",
+      "hospitality": "Hospitalidad"
+    }
   },
   "lasReinas": {
     "eyebrow": "FIN DE SEMANA REINAS CUBANAS · 23–24 MAYO",

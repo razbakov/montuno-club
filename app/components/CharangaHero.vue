@@ -60,6 +60,28 @@ const ticketUrl = 'https://www.tickettailor.com/checkout/view-event/id/8158745/c
           <p class="mt-5 text-xs sm:text-sm text-wine-400 tracking-wide">
             {{ $t('charanga.credits') }}
           </p>
+          <p class="mt-2 text-xs sm:text-sm text-wine-400 tracking-wide">
+            <NuxtLink
+              to="/charanga-team"
+              class="inline-flex items-center gap-1 text-gold-400 hover:text-gold-300 underline underline-offset-4 transition-colors"
+            >
+              {{ $t('charanga.organizedBy') }}
+              <svg
+                class="w-3.5 h-3.5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </NuxtLink>
+          </p>
         </div>
 
         <!-- Image -->
