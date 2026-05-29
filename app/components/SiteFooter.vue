@@ -7,6 +7,9 @@
           <p class="text-sm text-wine-300 leading-relaxed">
             {{ $t('footer.description') }}
           </p>
+          <NuxtLink to="/past" class="mt-3 inline-block text-sm text-wine-400 hover:text-gold-400 transition-colors underline underline-offset-4">
+            {{ $t('past.title') }} &rarr;
+          </NuxtLink>
         </div>
 
         <div>
