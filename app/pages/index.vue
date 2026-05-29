@@ -16,9 +16,9 @@ useSeoMeta({
 
 useSchemaOrg([
   defineEvent({
-    name: 'La Frida Cubana · Salsa & Bachata with DJ DonMiguel',
-    startDate: '2026-05-25T19:00:00+02:00',
-    endDate: '2026-05-25T23:00:00+02:00',
+    name: 'La Frida Cubana · Salsa & Bachata with DJ Alösha',
+    startDate: '2026-06-01T19:00:00+02:00',
+    endDate: '2026-06-02T00:00:00+02:00',
     eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
     eventStatus: 'https://schema.org/EventScheduled',
     location: {
@@ -46,7 +46,7 @@ useSchemaOrg([
     },
     image: 'https://montuno.club/og.jpg',
     description:
-      'Cuban Mondays at Frida Munich. Salsa From Zero — free beginner class with Alösha. DJ DonMiguel — Salsa Cubana & Bachata Dominicana. Animation all night with Milaila. 8€ online / 10€ at the door (incl. 2€ drink voucher). Doors 19:00–23:00.',
+      'Cuban Mondays at Frida Munich. Salsa From Zero — beginner class included with Alösha. DJ Alösha — Salsa Cubana & Bachata Dominicana. Animation with Celeste. Open-Air dance floor (weather permitting). 8€ online / 10€ at the door (incl. 2€ drink voucher). 19:00–24:00.',
   }),
 ])
 
