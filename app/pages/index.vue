@@ -14,11 +14,24 @@ useSeoMeta({
   twitterCard: 'summary_large_image',
 })
 
+function nextMondayIso(hour: number) {
+  const now = new Date()
+  const day = now.getDay()
+  const daysUntilMonday = (8 - day) % 7 || 7
+  const target = new Date(now.getFullYear(), now.getMonth(), now.getDate() + daysUntilMonday, hour, 0, 0)
+  const pad = (n: number) => String(n).padStart(2, '0')
+  const tzMin = -target.getTimezoneOffset()
+  const sign = tzMin >= 0 ? '+' : '-'
+  const abs = Math.abs(tzMin)
+  const tz = `${sign}${pad(Math.floor(abs / 60))}:${pad(abs % 60)}`
+  return `${target.getFullYear()}-${pad(target.getMonth() + 1)}-${pad(target.getDate())}T${pad(target.getHours())}:${pad(target.getMinutes())}:00${tz}`
+}
+
 useSchemaOrg([
   defineEvent({
     name: 'La Frida Cubana · Salsa & Bachata with DJ Alösha',
-    startDate: '2026-06-01T19:00:00+02:00',
-    endDate: '2026-06-02T00:00:00+02:00',
+    startDate: nextMondayIso(19),
+    endDate: nextMondayIso(24),
     eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
     eventStatus: 'https://schema.org/EventScheduled',
     location: {
@@ -327,16 +340,6 @@ function toggleFaq(index: number) {
 
         <div class="mx-auto max-w-4xl rounded-2xl bg-wine-900/50 border border-wine-800/40 overflow-hidden">
           <div class="p-8 sm:p-12">
-            <!-- This Week's Special Edition -->
-            <div class="mb-8 rounded-2xl border-2 border-gold-500/40 bg-gold-500/10 p-5 sm:p-6">
-              <p class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-gold-400 mb-2">
-                <span class="w-2 h-2 rounded-full bg-gold-400 animate-pulse"></span>
-                {{ $t('event.weeklyLabel') }}
-              </p>
-              <h3 class="font-display text-2xl sm:text-3xl text-white">{{ $t('event.weeklyTitle') }}</h3>
-              <p class="mt-2 text-wine-200 text-sm sm:text-base">{{ $t('event.weeklyDesc') }}</p>
-            </div>
-
             <p class="text-wine-200 leading-relaxed text-lg mb-8">
               {{ $t('event.description') }}
             </p>
