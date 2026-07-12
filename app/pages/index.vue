@@ -66,160 +66,6 @@ function toggleFaq(index: number) {
   <div class="min-h-screen bg-wine-950 text-white">
     <SiteHeader />
 
-    
-const { t } = useI18n()
-
-function openUrl(url: string) {
-  window.open(url, '_blank', 'noopener')
-}
-
-useSeoMeta({
-  title: () => t('seo.title'),
-  ogTitle: () => t('seo.title'),
-  description: () => t('seo.description'),
-  ogDescription: () => t('seo.ogDescription'),
-  ogImage: 'https://montuno.club/og.jpg',
-  twitterCard: 'summary_large_image',
-})
-
-function nextMondayIso(hour: number) {
-  const now = new Date()
-  const day = now.getDay()
-  const daysUntilMonday = (8 - day) % 7 || 7
-  const target = new Date(now.getFullYear(), now.getMonth(), now.getDate() + daysUntilMonday, hour, 0, 0)
-  const pad = (n: number) => String(n).padStart(2, '0')
-  const tzMin = -target.getTimezoneOffset()
-  const sign = tzMin >= 0 ? '+' : '-'
-  const abs = Math.abs(tzMin)
-  const tz = `${sign}${pad(Math.floor(abs / 60))}:${pad(abs % 60)}`
-  return `${target.getFullYear()}-${pad(target.getMonth() + 1)}-${pad(target.getDate())}T${pad(target.getHours())}:${pad(target.getMinutes())}:00${tz}`
-}
-
-useSchemaOrg([
-  defineEvent({
-    name: 'Bikini Monday · Cuban Open-Air Salsa',
-    startDate: nextMondayIso(19),
-    endDate: nextMondayIso(24),
-    eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
-    eventStatus: 'https://schema.org/EventScheduled',
-    location: {
-      type: 'Place',
-      name: 'Englischer Garten',
-      address: {
-        type: 'PostalAddress',
-        addressLocality: 'Munich',
-        addressCountry: 'DE',
-      },
-    },
-    organizer: {
-      type: 'Organization',
-      name: 'Montuno Club',
-      url: 'https://montuno.club',
-    },
-    image: 'https://montuno.club/images/bikini-monday-2026-07-13.png',
-    description:
-      'Bikini Monday — Cuban Open-Air Salsa in the Englischer Garten, Munich. Bikini Party 19:00–20:00, Salsa From Zero 20:00–21:00, Party 20:00–24:00. Live percussion with Felix & Daniel. Organized by Montuno Club.',
-  }),
-])
-
-const faqKeys = [1, 2, 3, 4, 5, 6]
-const openFaq = ref<number | null>(null)
-
-function toggleFaq(index: number) {
-  openFaq.value = openFaq.value === index ? null : index
-}
-</script>
-
-<template>
-  <div class="min-h-screen bg-wine-950 text-white">
-    <SiteHeader />
-
-    <!-- Special Event Announcement: Paloma Duharte -->
-    <section class="relative py-12 sm:py-16 bg-gradient-to-b from-wine-950 via-wine-900/60 to-wine-950 border-t-4 border-gold-500">
-      <div class="mx-auto max-w-6xl px-4 sm:px-6">
-        <p class="text-center text-sm font-medium uppercase tracking-[0.2em] text-gold-500 mb-8">Special Event</p>
-        <div class="grid md:grid-cols-2 gap-8 lg:gap-12 items-center">
-          <!-- Flyer image -->
-          <div class="rounded-2xl overflow-hidden border border-wine-800/40 shadow-2xl shadow-gold-500/10">
-            <img
-              src="/images/paloma-2026-07-06.png"
-              alt="Paloma Duharte — Reparto Salsa Fusion workshop and party in Munich"
-              class="w-full h-auto"
-            />
-          </div>
-
-          <!-- Event details -->
-          <div>
-            <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl leading-tight">
-              Paloma Duharte<br />
-              <span class="text-gold-400">Reparto Salsa Fusion</span>
-            </h2>
-            <p class="mt-3 text-wine-200 text-base leading-relaxed">
-              Cuban dancer &amp; choreographer (Los Datway) — a Dance Gods Company &amp; Montuno Club production
-            </p>
-
-            <div class="mt-6 space-y-3">
-              <!-- Date -->
-              <div class="flex items-start gap-3">
-                <svg class="w-5 h-5 mt-0.5 text-gold-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                </svg>
-                <span class="text-wine-200 font-medium">Monday, 6 July 2026</span>
-              </div>
-
-              <!-- Schedule -->
-              <div class="flex items-start gap-3">
-                <svg class="w-5 h-5 mt-0.5 text-gold-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <span class="text-wine-200">19:30 Workshop · 20:30 Party</span>
-              </div>
-
-              <!-- Animation & percussion detail -->
-              <div class="flex items-start gap-3">
-                <svg class="w-5 h-5 mt-0.5 text-gold-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
-                </svg>
-                <span class="text-wine-300 text-sm">Animation by Amado &amp; Paloma · Live percussion by Felix &amp; Daniel</span>
-              </div>
-
-              <!-- Venue -->
-              <div class="flex items-start gap-3">
-                <svg class="w-5 h-5 mt-0.5 text-gold-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
-                <a href="https://maps.google.com/?q=Kult+Tanzschule%2C+Neuhauser+Str.+15A%2C+80331+M%C3%BCnchen" target="_blank" rel="noopener" class="text-wine-200 underline underline-offset-4 decoration-wine-700 hover:text-gold-400 hover:decoration-gold-400 transition-colors">Kult Tanzschule, Neuhauser Str. 15A, 80331 München</a>
-              </div>
-
-              <!-- Prices -->
-              <div class="flex items-start gap-3">
-                <svg class="w-5 h-5 mt-0.5 text-gold-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
-                </svg>
-                <div class="text-wine-200 text-sm">
-                  <p>Workshop + Party: 20€ online / 25€ door</p>
-                  <p>Party only: 8€ online / 10€ door</p>
-                </div>
-              </div>
-            </div>
-
-            <!-- Buy Tickets CTA -->
-            <div class="mt-8">
-              <a
-                href="https://www.tickettailor.com/checkout/view-event/id/8645014/chk/2e00f068c3b2d68a1e040c75f6cb2347/?modal_widget=true&widget=true"
-                target="_blank"
-                rel="noopener"
-                class="inline-block rounded-full bg-gold-500 px-8 py-3 font-semibold text-wine-950 hover:bg-gold-400 transition-colors shadow-lg shadow-gold-500/20"
-              >
-                Buy Tickets
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Hero -->
     <section class="relative min-h-screen flex items-center justify-center overflow-hidden">
       <img
@@ -349,7 +195,24 @@ function toggleFaq(index: number) {
                 <td class="py-5 pr-6">
                   <span class="font-medium text-white group-hover:text-gold-400 transition-colors">{{ $t('schedule.casinoIntermediate') }}</span>
                 </td>
-                <td class="py-5 text-wine-300">Alösha, Celeste &amp; Sasha</td>
+                <td class="py-5 text-wine-300">Alösha, Celeste</td>
+              </tr>
+              <tr class="group cursor-pointer hover:bg-wine-800/20 transition-colors" @click="openUrl('https://wedance.vip/MontunoClub?view=events#tabs')">
+                <td class="py-5 pr-6 text-wine-200 font-medium">{{ $t('schedule.monday') }}</td>
+                <td class="py-5 pr-6 text-wine-300">19:00</td>
+                <td class="py-5 pr-6">
+                  <span class="font-medium text-white group-hover:text-gold-400 transition-colors">{{ $t('schedule.salsaFromZero') }}</span>
+                  <span class="ml-2 inline-block rounded-full bg-gold-500/20 px-2.5 py-0.5 text-xs font-semibold text-gold-400">{{ $t('schedule.salsaFromZeroFree') }}</span>
+                </td>
+                <td class="py-5 text-wine-300">Alösha, Celeste</td>
+              </tr>
+              <tr class="group cursor-pointer hover:bg-wine-800/20 transition-colors" @click="openUrl('https://wedance.vip/MontunoClub?view=events#tabs')">
+                <td class="py-5 pr-6 text-wine-200 font-medium">{{ $t('schedule.thursday') }}</td>
+                <td class="py-5 pr-6 text-wine-300">20:00</td>
+                <td class="py-5 pr-6">
+                  <span class="font-medium text-white group-hover:text-gold-400 transition-colors">{{ $t('schedule.salsaFromZero') }}</span>
+                </td>
+                <td class="py-5 text-wine-300">Alösha, Celeste</td>
               </tr>
             </tbody>
           </table>

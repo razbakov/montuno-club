@@ -83,6 +83,8 @@
     "class": "Class",
     "instructor": "Instructor",
     "sunday": "Sunday",
+    "monday": "Monday",
+    "thursday": "Thursday",
     "repartoFromZero": "Reparto from Zero",
     "salsaFromZero": "Salsa from Zero",
     "salsaFromZeroFree": "FREE",
@@ -231,12 +233,34 @@
     "imageAlt": "David Calzado & Charanga Habanera — Cuban timba band live at La Rumba Latin Club Munich, 23 May 2026",
     "organizedBy": "Organized by the Charanga Munich Team"
   },
+  "paloma": {
+    "label": "Special Event",
+    "title1": "Paloma",
+    "title2": "Duharte",
+    "description": "Cuban dancer & choreographer (Los Datway) -- a Dance Gods Company & Montuno Club production. Reparto Salsa Fusion workshop and party in Munich.",
+    "date": "Monday, 6 July 2026",
+    "time": "19:30 Workshop · 20:30 Party",
+    "venue": "Kult Tanzschule, Neuhauser Str. 15A, 80331 München",
+    "entry": "Workshop + Party: 20€ online / 25€ door · Party only: 8€ online / 10€ door",
+    "animation": "Animation by Amado & Paloma · Live percussion by Felix & Daniel",
+    "highlights": {
+      "workshop": "Reparto Salsa Fusion workshop",
+      "percussion": "Live percussion",
+      "animation": "Animation by Amado & Paloma",
+      "venue": "Kult Tanzschule"
+    },
+    "slotWorkshop": "19:30 — Reparto Salsa Fusion workshop with Paloma",
+    "slotParty": "20:30 — Party · Animation by Amado & Paloma · Percussion by Felix & Daniel",
+    "photoNotice": "Heads up: we take photos and videos during the event for our social media. Let us know if you'd rather not be in them.",
+    "organizer": "A Dance Gods Company & Montuno Club production",
+    "imageAlt": "Paloma Duharte — Reparto Salsa Fusion workshop and party in Munich, 6 July 2026"
+  },
   "past": {
     "eyebrow": "Archive",
     "title": "Past Events",
     "intro": "Highlights from past Montuno events — for memory and for those who couldn't make it.",
     "seoTitle": "Past Events — Montuno Club",
-    "seoDescription": "Archive of past Montuno Club events: La Frida Cubana Mondays, Charanga Habanera concert, Las Reinas workshops, and more."
+    "seoDescription": "Archive of past Montuno Club events: Paloma Duharte Reparto Salsa Fusion, La Frida Cubana Mondays, Charanga Habanera concert, Las Reinas workshops, and more."
   },
   "charangaTeam": {
     "eyebrow": "Charanga Habanera Munich · 23 May 2026",
