@@ -114,6 +114,23 @@
     "ctaDesc": "Приєднуйся до WhatsApp-групи — ми ділимось місцем за кілька днів.",
     "ctaButton": "Приєднатися до WhatsApp"
   },
+  "bikiniMonday": {
+    "label": "Щопонеділка · Open Air",
+    "title1": "Bikini",
+    "title2": "Monday",
+    "subtitle": "Cuban Open-Air Salsa",
+    "date": "Щопонеділка (найближчий: 13 липня 2026)",
+    "time": "19:00 – 24:00",
+    "venue": "Englischer Garten, München",
+    "description": "Кубинська сальса переїжджає в парк. Bikini Monday — літня open-air версія нашого понеділкового social — музика, танці та жива перкусія під деревами в Англійському саду.",
+    "programLabel": "Програма",
+    "programBikini": "Bikini Party",
+    "programSalsaFromZero": "Salsa From Zero · музика не зупиняється",
+    "programParty": "Party",
+    "programPercussion": "Жива перкусія з Felix & Daniel",
+    "organizer": "Організовано Montuno Club",
+    "imageAlt": "Bikini Monday — Cuban Open-Air Salsa в Англійському саду, Мюнхен"
+  },
   "event": {
     "label": "Щопонеділка в Frida",
     "title1": "La Frida",

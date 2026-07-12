@@ -114,6 +114,23 @@
     "ctaDesc": "Join the WhatsApp group — we share the spot a few days before.",
     "ctaButton": "Join WhatsApp"
   },
+  "bikiniMonday": {
+    "label": "Every Monday · Open Air",
+    "title1": "Bikini",
+    "title2": "Monday",
+    "subtitle": "Cuban Open-Air Salsa",
+    "date": "Every Monday (next: 13 July 2026)",
+    "time": "19:00 – 24:00",
+    "venue": "Englischer Garten, München",
+    "description": "Cuban salsa moves to the park. Bikini Monday is the open-air summer edition of our Monday social — music, dancing, and live percussion under the trees in the Englischer Garten.",
+    "programLabel": "Program",
+    "programBikini": "Bikini Party",
+    "programSalsaFromZero": "Salsa From Zero · music never stops",
+    "programParty": "Party",
+    "programPercussion": "Live Percussion with Felix & Daniel",
+    "organizer": "Organized by Montuno Club",
+    "imageAlt": "Bikini Monday — Cuban Open-Air Salsa in the Englischer Garten, Munich"
+  },
   "event": {
     "label": "Every Monday at Frida",
     "title1": "La Frida",
@@ -219,7 +236,7 @@
     "title": "Past Events",
     "intro": "Highlights from past Montuno events — for memory and for those who couldn't make it.",
     "seoTitle": "Past Events — Montuno Club",
-    "seoDescription": "Archive of past Montuno Club events: Charanga Habanera concert, Las Reinas workshops, and more."
+    "seoDescription": "Archive of past Montuno Club events: La Frida Cubana Mondays, Charanga Habanera concert, Las Reinas workshops, and more."
   },
   "charangaTeam": {
     "eyebrow": "Charanga Habanera Munich · 23 May 2026",
