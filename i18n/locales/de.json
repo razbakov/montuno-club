@@ -114,6 +114,23 @@
     "ctaDesc": "Tritt der WhatsApp-Gruppe bei — wir teilen den Ort ein paar Tage vorher.",
     "ctaButton": "WhatsApp beitreten"
   },
+  "bikiniMonday": {
+    "label": "Jeden Montag · Open Air",
+    "title1": "Bikini",
+    "title2": "Monday",
+    "subtitle": "Cuban Open-Air Salsa",
+    "date": "Jeden Montag (nächster: 13. Juli 2026)",
+    "time": "19:00 – 24:00",
+    "venue": "Englischer Garten, München",
+    "description": "Kubanische Salsa zieht in den Park. Bikini Monday ist die Open-Air Sommer-Edition unseres Montags-Socials — Musik, Tanzen und Live-Percussion unter den Bäumen im Englischen Garten.",
+    "programLabel": "Programm",
+    "programBikini": "Bikini Party",
+    "programSalsaFromZero": "Salsa From Zero · Musik hört nie auf",
+    "programParty": "Party",
+    "programPercussion": "Live Percussion mit Felix & Daniel",
+    "organizer": "Organisiert von Montuno Club",
+    "imageAlt": "Bikini Monday — Cuban Open-Air Salsa im Englischen Garten, München"
+  },
   "event": {
     "label": "Jeden Montag bei Frida",
     "title1": "La Frida",

@@ -26,6 +26,9 @@ useSeoMeta({
       </div>
     </main>
 
+    <!-- La Frida Cubana — Mondays at Frida (ended July 2026) -->
+    <LaFridaCubana />
+
     <!-- Charanga Habanera Concert (May 23, 2026) -->
     <CharangaHero />
 
