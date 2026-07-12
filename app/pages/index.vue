@@ -66,6 +66,74 @@ function toggleFaq(index: number) {
   <div class="min-h-screen bg-wine-950 text-white">
     <SiteHeader />
 
+    
+const { t } = useI18n()
+
+function openUrl(url: string) {
+  window.open(url, '_blank', 'noopener')
+}
+
+useSeoMeta({
+  title: () => t('seo.title'),
+  ogTitle: () => t('seo.title'),
+  description: () => t('seo.description'),
+  ogDescription: () => t('seo.ogDescription'),
+  ogImage: 'https://montuno.club/og.jpg',
+  twitterCard: 'summary_large_image',
+})
+
+function nextMondayIso(hour: number) {
+  const now = new Date()
+  const day = now.getDay()
+  const daysUntilMonday = (8 - day) % 7 || 7
+  const target = new Date(now.getFullYear(), now.getMonth(), now.getDate() + daysUntilMonday, hour, 0, 0)
+  const pad = (n: number) => String(n).padStart(2, '0')
+  const tzMin = -target.getTimezoneOffset()
+  const sign = tzMin >= 0 ? '+' : '-'
+  const abs = Math.abs(tzMin)
+  const tz = `${sign}${pad(Math.floor(abs / 60))}:${pad(abs % 60)}`
+  return `${target.getFullYear()}-${pad(target.getMonth() + 1)}-${pad(target.getDate())}T${pad(target.getHours())}:${pad(target.getMinutes())}:00${tz}`
+}
+
+useSchemaOrg([
+  defineEvent({
+    name: 'Bikini Monday · Cuban Open-Air Salsa',
+    startDate: nextMondayIso(19),
+    endDate: nextMondayIso(24),
+    eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+    eventStatus: 'https://schema.org/EventScheduled',
+    location: {
+      type: 'Place',
+      name: 'Englischer Garten',
+      address: {
+        type: 'PostalAddress',
+        addressLocality: 'Munich',
+        addressCountry: 'DE',
+      },
+    },
+    organizer: {
+      type: 'Organization',
+      name: 'Montuno Club',
+      url: 'https://montuno.club',
+    },
+    image: 'https://montuno.club/images/bikini-monday-2026-07-13.png',
+    description:
+      'Bikini Monday — Cuban Open-Air Salsa in the Englischer Garten, Munich. Bikini Party 19:00–20:00, Salsa From Zero 20:00–21:00, Party 20:00–24:00. Live percussion with Felix & Daniel. Organized by Montuno Club.',
+  }),
+])
+
+const faqKeys = [1, 2, 3, 4, 5, 6]
+const openFaq = ref<number | null>(null)
+
+function toggleFaq(index: number) {
+  openFaq.value = openFaq.value === index ? null : index
+}
+</script>
+
+<template>
+  <div class="min-h-screen bg-wine-950 text-white">
+    <SiteHeader />
+
     <!-- Special Event Announcement: Paloma Duharte -->
     <section class="relative py-12 sm:py-16 bg-gradient-to-b from-wine-950 via-wine-900/60 to-wine-950 border-t-4 border-gold-500">
       <div class="mx-auto max-w-6xl px-4 sm:px-6">
