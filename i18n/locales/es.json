@@ -231,12 +231,34 @@
     "imageAlt": "David Calzado & Charanga Habanera — orquesta cubana de timba en vivo en La Rumba Latin Club Múnich, 23 de mayo de 2026",
     "organizedBy": "Organizado por el Equipo Charanga Múnich"
   },
+  "paloma": {
+    "label": "Evento especial",
+    "title1": "Paloma",
+    "title2": "Duharte",
+    "description": "Bailarina y coreógrafa cubana (Los Datway) -- una producción de Dance Gods Company & Montuno Club. Taller y fiesta Reparto Salsa Fusion en Múnich.",
+    "date": "Lunes, 6 de julio de 2026",
+    "time": "19:30 Taller · 20:30 Fiesta",
+    "venue": "Kult Tanzschule, Neuhauser Str. 15A, 80331 München",
+    "entry": "Taller + Fiesta: 20€ online / 25€ en puerta · Solo fiesta: 8€ online / 10€ en puerta",
+    "animation": "Animación por Amado y Paloma · Percusión en vivo por Felix y Daniel",
+    "highlights": {
+      "workshop": "Taller Reparto Salsa Fusion",
+      "percussion": "Percusión en vivo",
+      "animation": "Animación por Amado y Paloma",
+      "venue": "Kult Tanzschule"
+    },
+    "slotWorkshop": "19:30 — Taller Reparto Salsa Fusion con Paloma",
+    "slotParty": "20:30 — Fiesta · Animación por Amado y Paloma · Percusión por Felix y Daniel",
+    "photoNotice": "Aviso: durante el evento hacemos fotos y videos para nuestras redes sociales. Avísanos si prefieres no aparecer.",
+    "organizer": "Una producción de Dance Gods Company & Montuno Club",
+    "imageAlt": "Paloma Duharte — Taller y fiesta Reparto Salsa Fusion en Múnich, 6 de julio de 2026"
+  },
   "past": {
     "eyebrow": "Archivo",
     "title": "Eventos pasados",
     "intro": "Lo más destacado de los eventos anteriores de Montuno — para el recuerdo y para quienes no pudieron asistir.",
     "seoTitle": "Eventos pasados — Montuno Club",
-    "seoDescription": "Archivo de eventos pasados de Montuno Club: concierto de Charanga Habanera, talleres Las Reinas y más."
+    "seoDescription": "Archivo de eventos pasados de Montuno Club: Paloma Duharte Reparto Salsa Fusion, lunes La Frida Cubana, concierto de Charanga Habanera, talleres Las Reinas y más."
   },
   "charangaTeam": {
     "eyebrow": "Charanga Habanera Múnich · 23 de mayo de 2026",

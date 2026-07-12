@@ -26,6 +26,9 @@ useSeoMeta({
       </div>
     </main>
 
+    <!-- Paloma Duharte — Reparto Salsa Fusion (6 July 2026) -->
+    <PalomaDuharte />
+
     <!-- La Frida Cubana — Mondays at Frida (ended July 2026) -->
     <LaFridaCubana />
 
