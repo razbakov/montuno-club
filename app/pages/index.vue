@@ -197,6 +197,23 @@ function toggleFaq(index: number) {
                 </td>
                 <td class="py-5 text-wine-300">Alösha, Celeste</td>
               </tr>
+              <tr class="group cursor-pointer hover:bg-wine-800/20 transition-colors" @click="openUrl('https://wedance.vip/MontunoClub?view=events#tabs')">
+                <td class="py-5 pr-6 text-wine-200 font-medium">{{ $t('schedule.monday') }}</td>
+                <td class="py-5 pr-6 text-wine-300">19:00</td>
+                <td class="py-5 pr-6">
+                  <span class="font-medium text-white group-hover:text-gold-400 transition-colors">{{ $t('schedule.salsaFromZero') }}</span>
+                  <span class="ml-2 inline-block rounded-full bg-gold-500/20 px-2.5 py-0.5 text-xs font-semibold text-gold-400">{{ $t('schedule.salsaFromZeroFree') }}</span>
+                </td>
+                <td class="py-5 text-wine-300">Alösha, Celeste</td>
+              </tr>
+              <tr class="group cursor-pointer hover:bg-wine-800/20 transition-colors" @click="openUrl('https://wedance.vip/MontunoClub?view=events#tabs')">
+                <td class="py-5 pr-6 text-wine-200 font-medium">{{ $t('schedule.thursday') }}</td>
+                <td class="py-5 pr-6 text-wine-300">20:00</td>
+                <td class="py-5 pr-6">
+                  <span class="font-medium text-white group-hover:text-gold-400 transition-colors">{{ $t('schedule.salsaFromZero') }}</span>
+                </td>
+                <td class="py-5 text-wine-300">Alösha, Celeste</td>
+              </tr>
             </tbody>
           </table>
         </div>

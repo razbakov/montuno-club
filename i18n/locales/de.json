@@ -83,6 +83,8 @@
     "class": "Kurs",
     "instructor": "Lehrer",
     "sunday": "Sonntag",
+    "monday": "Montag",
+    "thursday": "Donnerstag",
     "repartoFromZero": "Reparto von Null",
     "salsaFromZero": "Salsa von Null",
     "salsaFromZeroFree": "GRATIS",

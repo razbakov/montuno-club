@@ -83,6 +83,8 @@
     "class": "Class",
     "instructor": "Instructor",
     "sunday": "Sunday",
+    "monday": "Monday",
+    "thursday": "Thursday",
     "repartoFromZero": "Reparto from Zero",
     "salsaFromZero": "Salsa from Zero",
     "salsaFromZeroFree": "FREE",
