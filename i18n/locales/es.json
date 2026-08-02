@@ -116,22 +116,22 @@
     "ctaDesc": "Únete al grupo de WhatsApp — compartimos el lugar unos días antes.",
     "ctaButton": "Unirse a WhatsApp"
   },
-  "bikiniMonday": {
+  "havanaBeach": {
     "label": "Cada lunes · Open Air",
-    "title1": "Bikini",
-    "title2": "Monday",
+    "title1": "Havana",
+    "title2": "Beach Party",
     "subtitle": "Cuban Open-Air Salsa",
-    "date": "Cada lunes (próximo: 13 julio 2026)",
+    "date": "Cada lunes",
     "time": "19:00 – 24:00",
     "venue": "Englischer Garten, München",
-    "description": "La salsa cubana se muda al parque. Bikini Monday es la edición veraniega open-air de nuestro social de los lunes — música, baile y percusión en vivo bajo los árboles del Englischer Garten.",
+    "description": "La salsa cubana se muda al parque. Havana Beach Party es la edición veraniega open-air de nuestro social de los lunes — música, baile y percusión en vivo bajo los árboles del Englischer Garten.",
     "programLabel": "Programa",
-    "programBikini": "Bikini Party",
+    "programBeachParty": "Beach Party",
     "programSalsaFromZero": "Salsa From Zero · la música no para",
     "programParty": "Party",
     "programPercussion": "Percusión en vivo con Felix & Daniel",
     "organizer": "Organizado por Montuno Club",
-    "imageAlt": "Bikini Monday — Cuban Open-Air Salsa en el Englischer Garten, Munich"
+    "imageAlt": "Havana Beach Party — Cuban Open-Air Salsa en el Englischer Garten, Munich"
   },
   "event": {
     "label": "Cada lunes en Frida",
