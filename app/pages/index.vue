@@ -336,6 +336,71 @@ function toggleFaq(index: number) {
       </div>
     </section>
 
+    <!-- From Hofbräuhaus to Havana — free Sunday bar crawl (QR landing target) -->
+    <section id="havana" class="py-24 sm:py-32 bg-wine-900/30 scroll-mt-20">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6">
+        <div class="text-center mb-12">
+          <p class="text-sm font-medium uppercase tracking-[0.2em] text-gold-500 mb-4">{{ $t('havanaCrawl.label') }}</p>
+          <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl leading-tight">
+            {{ $t('havanaCrawl.title1') }}<br />
+            <span class="text-gold-400">{{ $t('havanaCrawl.title2') }}</span>
+          </h2>
+          <p class="mt-6 text-wine-200 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed italic">
+            {{ $t('havanaCrawl.hook') }}
+          </p>
+        </div>
+
+        <!-- The five stops -->
+        <ol class="list-none mx-auto max-w-2xl space-y-5 mb-12">
+          <li v-for="n in 5" :key="n" class="flex gap-5">
+            <span
+              class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-gold-500/40 bg-gold-500/10 font-display text-xl text-gold-400"
+            >
+              {{ n }}
+            </span>
+            <div class="pt-1">
+              <h3 class="font-display text-xl text-white">{{ $t(`havanaCrawl.stop${n}Title`) }}</h3>
+              <p class="mt-1 text-sm text-wine-200 leading-relaxed">{{ $t(`havanaCrawl.stop${n}Desc`) }}</p>
+            </div>
+          </li>
+        </ol>
+
+        <!-- Practical facts -->
+        <div class="mx-auto max-w-2xl grid sm:grid-cols-3 gap-4 mb-10">
+          <div class="rounded-2xl border border-wine-800/50 bg-wine-950/50 p-5 text-center">
+            <p class="text-xs font-bold uppercase tracking-[0.18em] text-gold-400 mb-1">{{ $t('havanaCrawl.whenLabel') }}</p>
+            <p class="text-sm text-white">{{ $t('havanaCrawl.when') }}</p>
+          </div>
+          <div class="rounded-2xl border border-wine-800/50 bg-wine-950/50 p-5 text-center">
+            <p class="text-xs font-bold uppercase tracking-[0.18em] text-gold-400 mb-1">{{ $t('havanaCrawl.whereLabel') }}</p>
+            <p class="text-sm text-white">{{ $t('havanaCrawl.where') }}</p>
+          </div>
+          <div class="rounded-2xl border-2 border-gold-500/40 bg-gold-500/10 p-5 text-center">
+            <p class="text-xs font-bold uppercase tracking-[0.18em] text-gold-400 mb-1">{{ $t('havanaCrawl.priceLabel') }}</p>
+            <p class="text-sm text-white">{{ $t('havanaCrawl.price') }}</p>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div
+          class="mx-auto max-w-2xl rounded-2xl border border-gold-500/30 bg-gold-500/5 p-5 sm:p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4"
+        >
+          <div>
+            <p class="font-semibold text-white">{{ $t('havanaCrawl.ctaTitle') }}</p>
+            <p class="text-sm text-wine-300 mt-0.5">{{ $t('havanaCrawl.ctaDesc') }}</p>
+          </div>
+          <a
+            href="https://chat.whatsapp.com/JXYyHPe1oBsBkLPJRLHq1A"
+            target="_blank"
+            rel="noopener"
+            class="rounded-full bg-gold-500 px-6 py-2.5 text-sm font-semibold text-wine-950 hover:bg-gold-400 transition-colors shadow-lg shadow-gold-500/20 whitespace-nowrap"
+          >
+            {{ $t('havanaCrawl.ctaButton') }}
+          </a>
+        </div>
+      </div>
+    </section>
+
     <!-- Havana Beach Party Event -->
     <section id="events" class="py-24 sm:py-32">
       <div class="mx-auto max-w-6xl px-4 sm:px-6">
