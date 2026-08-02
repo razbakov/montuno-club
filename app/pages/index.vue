@@ -29,7 +29,7 @@ function nextMondayIso(hour: number) {
 
 useSchemaOrg([
   defineEvent({
-    name: 'Bikini Monday · Cuban Open-Air Salsa',
+    name: 'Havana Beach Party · Cuban Open-Air Salsa',
     startDate: nextMondayIso(19),
     endDate: nextMondayIso(24),
     eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
@@ -48,9 +48,9 @@ useSchemaOrg([
       name: 'Montuno Club',
       url: 'https://montuno.club',
     },
-    image: 'https://montuno.club/images/bikini-monday-2026-07-13.png',
+    image: 'https://montuno.club/images/havana-beach-party.png',
     description:
-      'Bikini Monday — Cuban Open-Air Salsa in the Englischer Garten, Munich. Bikini Party 19:00–20:00, Salsa From Zero 20:00–21:00, Party 20:00–24:00. Live percussion with Felix & Daniel. Organized by Montuno Club.',
+      'Havana Beach Party — Cuban Open-Air Salsa in the Englischer Garten, Munich. Beach Party 19:00–20:00, Salsa From Zero 20:00–21:00, Party 20:00–24:00. Live percussion with Felix & Daniel. Organized by Montuno Club.',
   }),
 ])
 
@@ -336,13 +336,13 @@ function toggleFaq(index: number) {
       </div>
     </section>
 
-    <!-- Bikini Monday Event -->
+    <!-- Havana Beach Party Event -->
     <section id="events" class="py-24 sm:py-32">
       <div class="mx-auto max-w-6xl px-4 sm:px-6">
         <div class="text-center mb-16">
-          <p class="text-sm font-medium uppercase tracking-[0.2em] text-gold-500 mb-4">{{ $t('bikiniMonday.label') }}</p>
+          <p class="text-sm font-medium uppercase tracking-[0.2em] text-gold-500 mb-4">{{ $t('havanaBeach.label') }}</p>
           <h2 class="font-display text-4xl sm:text-5xl lg:text-6xl leading-tight">
-            {{ $t('bikiniMonday.title1') }} <span class="text-gold-400">{{ $t('bikiniMonday.title2') }}</span>
+            {{ $t('havanaBeach.title1') }} <span class="text-gold-400">{{ $t('havanaBeach.title2') }}</span>
           </h2>
         </div>
 
@@ -350,8 +350,8 @@ function toggleFaq(index: number) {
           <!-- Flyer image -->
           <div class="rounded-2xl overflow-hidden border border-wine-800/40 shadow-2xl shadow-gold-500/10">
             <img
-              src="/images/bikini-monday-2026-07-13.png"
-              :alt="$t('bikiniMonday.imageAlt')"
+              src="/images/havana-beach-party.png"
+              :alt="$t('havanaBeach.imageAlt')"
               class="w-full h-auto"
             />
           </div>
@@ -359,11 +359,11 @@ function toggleFaq(index: number) {
           <!-- Event details -->
           <div>
             <h3 class="font-display text-3xl sm:text-4xl leading-tight text-white mb-2">
-              {{ $t('bikiniMonday.subtitle') }}
+              {{ $t('havanaBeach.subtitle') }}
             </h3>
 
             <p class="text-wine-200 leading-relaxed text-lg mb-8">
-              {{ $t('bikiniMonday.description') }}
+              {{ $t('havanaBeach.description') }}
             </p>
 
             <div class="space-y-3 mb-8">
@@ -372,7 +372,7 @@ function toggleFaq(index: number) {
                 <svg class="w-5 h-5 mt-0.5 text-gold-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
-                <span class="text-wine-200 font-medium">{{ $t('bikiniMonday.date') }}</span>
+                <span class="text-wine-200 font-medium">{{ $t('havanaBeach.date') }}</span>
               </div>
 
               <!-- Time -->
@@ -380,7 +380,7 @@ function toggleFaq(index: number) {
                 <svg class="w-5 h-5 mt-0.5 text-gold-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                <span class="text-wine-200">{{ $t('bikiniMonday.time') }}</span>
+                <span class="text-wine-200">{{ $t('havanaBeach.time') }}</span>
               </div>
 
               <!-- Venue -->
@@ -389,37 +389,37 @@ function toggleFaq(index: number) {
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
-                <a href="https://maps.google.com/?q=Englischer+Garten+M%C3%BCnchen" target="_blank" rel="noopener" class="text-wine-200 underline underline-offset-4 decoration-wine-700 hover:text-gold-400 hover:decoration-gold-400 transition-colors">{{ $t('bikiniMonday.venue') }}</a>
+                <a href="https://maps.google.com/?q=Englischer+Garten+M%C3%BCnchen" target="_blank" rel="noopener" class="text-wine-200 underline underline-offset-4 decoration-wine-700 hover:text-gold-400 hover:decoration-gold-400 transition-colors">{{ $t('havanaBeach.venue') }}</a>
               </div>
             </div>
 
             <!-- Program -->
             <div class="space-y-3 mb-8">
-              <p class="text-xs font-bold uppercase tracking-[0.18em] text-gold-400 mb-2">{{ $t('bikiniMonday.programLabel') }}</p>
+              <p class="text-xs font-bold uppercase tracking-[0.18em] text-gold-400 mb-2">{{ $t('havanaBeach.programLabel') }}</p>
               <div class="space-y-2">
                 <div class="flex items-center gap-3">
                   <span class="text-sm text-gold-400 font-medium w-24 shrink-0">19:00–20:00</span>
-                  <span class="text-wine-200">{{ $t('bikiniMonday.programBikini') }}</span>
+                  <span class="text-wine-200">{{ $t('havanaBeach.programBeachParty') }}</span>
                 </div>
                 <div class="flex items-center gap-3">
                   <span class="text-sm text-gold-400 font-medium w-24 shrink-0">20:00–21:00</span>
-                  <span class="text-wine-200">{{ $t('bikiniMonday.programSalsaFromZero') }}</span>
+                  <span class="text-wine-200">{{ $t('havanaBeach.programSalsaFromZero') }}</span>
                 </div>
                 <div class="flex items-center gap-3">
                   <span class="text-sm text-gold-400 font-medium w-24 shrink-0">20:00–24:00</span>
-                  <span class="text-wine-200">{{ $t('bikiniMonday.programParty') }}</span>
+                  <span class="text-wine-200">{{ $t('havanaBeach.programParty') }}</span>
                 </div>
                 <div class="flex items-center gap-3">
                   <svg class="w-5 h-5 text-gold-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
                   </svg>
-                  <span class="text-wine-200">{{ $t('bikiniMonday.programPercussion') }}</span>
+                  <span class="text-wine-200">{{ $t('havanaBeach.programPercussion') }}</span>
                 </div>
               </div>
             </div>
 
             <div class="flex flex-col sm:flex-row items-center gap-4">
-              <p class="text-sm text-wine-400">{{ $t('bikiniMonday.organizer') }}</p>
+              <p class="text-sm text-wine-400">{{ $t('havanaBeach.organizer') }}</p>
             </div>
           </div>
         </div>
