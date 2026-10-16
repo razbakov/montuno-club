@@ -78,26 +78,19 @@
     "label": "Horario semanal",
     "title1": "Horario de",
     "title2": "clases",
-    "description": "Clases los domingos en Buena Vista Bar. Para todos los niveles — desde el primer paso hasta el casino avanzado.",
+    "description": "Todas las clases y fiestas, directo de Montuno Club en WeDance. Elige una fecha e inscríbete allí — es gratis.",
     "day": "Día",
     "time": "Hora",
     "class": "Clase",
     "instructor": "Instructor",
-    "sunday": "Domingo",
-    "monday": "Lunes",
-    "thursday": "Jueves",
-    "repartoFromZero": "Reparto desde Cero",
-    "salsaFromZero": "Salsa desde Cero",
     "salsaFromZeroFree": "GRATIS",
-    "casinoBeginner": "Casino Principiante",
-    "casinoBeginnerNote": "Curso de 2 meses",
-    "casinoIntermediate": "Casino Intermedio",
-    "venue": "Buena Vista Bar, Am Einlaß 2A, Múnich",
-    "specialEvent": "Special",
-    "ruedaFlashmob": "Rueda Flashmob",
     "djWhatsappTitle": "Recibe avisos de las fiestas",
     "djWhatsappDesc": "Únete al grupo de WhatsApp de DJ Alösha para las próximas fiestas",
-    "djWhatsappCta": "Unirse a WhatsApp"
+    "djWhatsappCta": "Unirse a WhatsApp",
+    "signUp": "Inscribirme",
+    "empty": "Aún no hay fechas publicadas para las próximas semanas.",
+    "followOnWeDance": "Sigue a Montuno Club en WeDance",
+    "registerNote": "La inscripción a todas las clases es en WeDance."
   },
   "rueda": {
     "label": "La misión Rueda",
@@ -224,6 +217,7 @@
     "eyebrow": "¿Nos viste bailar en Buena Vista?",
     "subtitle": "¿Eres nuevo aquí? Escanea el QR grande para ver qué es Montuno Club, cuándo son las clases y cómo unirte.",
     "tonight": "Esta noche",
+    "next": "Próximas clases",
     "everySunday": "Cada domingo en Buena Vista Bar",
     "englishFriendly": "En inglés",
     "noPartner": "No necesitas pareja",
@@ -238,12 +232,7 @@
     "discover": "Quiero saber más",
     "discoverSub": "¿Primera vez? Descubre nuestras clases gratuitas de salsa",
     "or": "o",
-    "classes": {
-      "taster": "Clase de prueba gratuita",
-      "beginner": "Curso para principiantes",
-      "intermediate": "Taller intermedio"
-    },
-    "bottomInfo": "Cada domingo a las 18h · Buena Vista Bar, Múnich · Gratis y en inglés",
+    "bottomInfo": "Montuno Club · Múnich · Inscripción en WeDance · En inglés",
     "seo": {
       "title": "Únete a Montuno Club"
     }

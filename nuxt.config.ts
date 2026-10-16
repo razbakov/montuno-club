@@ -57,6 +57,8 @@ export default defineNuxtConfig({
       // silently breaks PostHog (the SDK rejects the malformed token and drops
       // every event). See razbakov/montuno-club#9.
       posthogKey: (process.env.NUXT_PUBLIC_POSTHOG_KEY || '').trim(),
+      // Where Montuno Club's events live (useMontunoEvents): the MontunoClub profile on WeDance.
+      wedanceUrl: process.env.NUXT_PUBLIC_WEDANCE_URL || 'https://2026.wedance.vip',
     },
   },
   ogImage: { enabled: false },

@@ -78,26 +78,19 @@
     "label": "Расписание занятий",
     "title1": "Расписание",
     "title2": "занятий",
-    "description": "Воскресные занятия в Buena Vista Bar. Для любого уровня — от первого шага до продвинутого casino.",
+    "description": "Все занятия и вечеринки — напрямую из профиля Montuno Club на WeDance. Выберите дату и запишитесь там — это бесплатно.",
     "day": "День",
     "time": "Время",
     "class": "Занятие",
     "instructor": "Преподаватель",
-    "sunday": "Воскресенье",
-    "monday": "Понедельник",
-    "thursday": "Четверг",
-    "repartoFromZero": "Reparto с нуля",
-    "salsaFromZero": "Сальса с нуля",
     "salsaFromZeroFree": "БЕСПЛАТНО",
-    "casinoBeginner": "Касино для начинающих",
-    "casinoBeginnerNote": "2-месячный курс",
-    "casinoIntermediate": "Касино средний уровень",
-    "venue": "Buena Vista Bar, Am Einlaß 2A, Мюнхен",
-    "specialEvent": "Special",
-    "ruedaFlashmob": "Rueda Flashmob",
     "djWhatsappTitle": "Анонсы вечеринок",
     "djWhatsappDesc": "Вступай в WhatsApp-группу DJ Alösha — узнавай о следующих вечеринках",
-    "djWhatsappCta": "Вступить в WhatsApp"
+    "djWhatsappCta": "Вступить в WhatsApp",
+    "signUp": "Записаться",
+    "empty": "На ближайшие недели даты пока не опубликованы.",
+    "followOnWeDance": "Подпишитесь на Montuno Club в WeDance",
+    "registerNote": "Запись на все занятия — через WeDance."
   },
   "rueda": {
     "label": "Миссия Rueda",
@@ -224,6 +217,7 @@
     "eyebrow": "Видели, как мы танцуем в Buena Vista?",
     "subtitle": "Вы здесь впервые? Отсканируйте большой QR-код, чтобы узнать, что такое Montuno Club, когда проходят занятия и как присоединиться.",
     "tonight": "Сегодня",
+    "next": "Ближайшие занятия",
     "everySunday": "Каждое воскресенье в Buena Vista Bar",
     "englishFriendly": "На английском",
     "noPartner": "Партнер не нужен",
@@ -238,12 +232,7 @@
     "discover": "Узнать больше",
     "discoverSub": "Впервые? Узнайте о наших бесплатных уроках сальсы",
     "or": "или",
-    "classes": {
-      "taster": "Бесплатный пробный урок",
-      "beginner": "Курс для начинающих",
-      "intermediate": "Мастер-класс среднего уровня"
-    },
-    "bottomInfo": "Каждое воскресенье в 18:00 · Buena Vista Bar, Мюнхен · Бесплатно и на английском",
+    "bottomInfo": "Montuno Club · Мюнхен · Запись через WeDance · Занятия на английском",
     "seo": {
       "title": "Присоединиться к Montuno Club"
     }

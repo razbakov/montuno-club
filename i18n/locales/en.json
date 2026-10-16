@@ -78,26 +78,19 @@
     "label": "Weekly Schedule",
     "title1": "Class",
     "title2": "Schedule",
-    "description": "Sunday classes at Buena Vista Bar. Something for every level — from your first step to advanced casino moves.",
+    "description": "Every class and party, straight from Montuno Club on WeDance. Pick a date and sign up there — it’s free to join.",
     "day": "Day",
     "time": "Time",
     "class": "Class",
     "instructor": "Instructor",
-    "sunday": "Sunday",
-    "monday": "Monday",
-    "thursday": "Thursday",
-    "repartoFromZero": "Reparto from Zero",
-    "salsaFromZero": "Salsa from Zero",
     "salsaFromZeroFree": "FREE",
-    "casinoBeginner": "Casino Beginner",
-    "casinoBeginnerNote": "2-month course",
-    "casinoIntermediate": "Casino Intermediate",
-    "venue": "Buena Vista Bar, Am Einlaß 2A, Munich",
-    "specialEvent": "Special",
-    "ruedaFlashmob": "Rueda Flashmob",
     "djWhatsappTitle": "Get party announcements",
     "djWhatsappDesc": "Join DJ Alösha's WhatsApp group for the next parties",
-    "djWhatsappCta": "Join WhatsApp"
+    "djWhatsappCta": "Join WhatsApp",
+    "signUp": "Sign up",
+    "empty": "No dates published for the next weeks yet.",
+    "followOnWeDance": "Follow Montuno Club on WeDance",
+    "registerNote": "Sign-up for every class runs on WeDance."
   },
   "rueda": {
     "label": "The Rueda Mission",
@@ -224,6 +217,7 @@
     "eyebrow": "Saw us dancing at Buena Vista?",
     "subtitle": "New here? Scan to see what this is and how to join tonight.",
     "tonight": "Tonight",
+    "next": "Next classes",
     "everySunday": "Every Sunday at Buena Vista Bar",
     "englishFriendly": "English-friendly",
     "noPartner": "No partner needed",
@@ -238,12 +232,7 @@
     "discover": "Tell Me More",
     "discoverSub": "First time? Learn about our free salsa classes",
     "or": "or",
-    "classes": {
-      "taster": "Free Taster",
-      "beginner": "Beginner Course",
-      "intermediate": "Intermediate Workshop"
-    },
-    "bottomInfo": "Every Sunday at 6 PM · Buena Vista Bar, Munich · Free & English-friendly",
+    "bottomInfo": "Montuno Club · Munich · Sign up on WeDance · English-friendly",
     "seo": {
       "title": "Join Montuno Club"
     }

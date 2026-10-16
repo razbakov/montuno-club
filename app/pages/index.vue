@@ -14,45 +14,28 @@ useSeoMeta({
   twitterCard: 'summary_large_image',
 })
 
-function nextMondayIso(hour: number) {
-  const now = new Date()
-  const day = now.getDay()
-  const daysUntilMonday = (8 - day) % 7 || 7
-  const target = new Date(now.getFullYear(), now.getMonth(), now.getDate() + daysUntilMonday, hour, 0, 0)
-  const pad = (n: number) => String(n).padStart(2, '0')
-  const tzMin = -target.getTimezoneOffset()
-  const sign = tzMin >= 0 ? '+' : '-'
-  const abs = Math.abs(tzMin)
-  const tz = `${sign}${pad(Math.floor(abs / 60))}:${pad(abs % 60)}`
-  return `${target.getFullYear()}-${pad(target.getMonth() + 1)}-${pad(target.getDate())}T${pad(target.getHours())}:${pad(target.getMinutes())}:00${tz}`
-}
+// Every event comes from the MontunoClub profile on WeDance (RAZ-412).
+const { locale } = useI18n()
+const { events, profileUrl } = useMontunoEvents()
+const schedule = computed(() => events.value.map(e => ({ ...e, ...eventParts(e, locale.value), free: isFree(e.price), signup: withUtm(e.url, 'schedule') })))
 
-useSchemaOrg([
-  defineEvent({
-    name: 'Havana Beach Party · Cuban Open-Air Salsa',
-    startDate: nextMondayIso(19),
-    endDate: nextMondayIso(24),
-    eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
-    eventStatus: 'https://schema.org/EventScheduled',
-    location: {
-      type: 'Place',
-      name: 'Englischer Garten',
-      address: {
-        type: 'PostalAddress',
-        addressLocality: 'Munich',
-        addressCountry: 'DE',
-      },
-    },
-    organizer: {
-      type: 'Organization',
-      name: 'Montuno Club',
-      url: 'https://montuno.club',
-    },
-    image: 'https://montuno.club/images/havana-beach-party.png',
-    description:
-      'Havana Beach Party — Cuban Open-Air Salsa in the Englischer Garten, Munich. Beach Party 19:00–20:00, Salsa From Zero 20:00–21:00, Party 20:00–24:00. Live percussion with Felix & Daniel. Organized by Montuno Club.',
-  }),
-])
+useSchemaOrg(computed(() => events.value.map(e => defineEvent({
+  '@id': `https://montuno.club/#event-${e.id}`,
+  name: e.name,
+  description: [e.name, e.venueName, e.artists.map(a => a.name).join(', ')].filter(Boolean).join(' · '),
+  startDate: e.startDate,
+  ...(e.endDate ? { endDate: e.endDate } : {}),
+  eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+  eventStatus: 'https://schema.org/EventScheduled',
+  location: {
+    '@type': 'Place',
+    name: e.venueName || 'Munich',
+    address: { '@type': 'PostalAddress', streetAddress: e.venueAddress || undefined, addressLocality: 'Munich', addressCountry: 'DE' },
+  },
+  organizer: { type: 'Organization', name: 'Montuno Club', url: 'https://montuno.club' },
+  ...(e.cover ? { image: e.cover } : {}),
+  url: e.url,
+}))))
 
 const faqKeys = [1, 2, 3, 4, 5, 6]
 const openFaq = ref<number | null>(null)
@@ -167,52 +150,32 @@ function toggleFaq(index: number) {
                 <th class="pb-4 pr-6 text-sm font-semibold uppercase tracking-wider text-gold-500">{{ $t('schedule.day') }}</th>
                 <th class="pb-4 pr-6 text-sm font-semibold uppercase tracking-wider text-gold-500">{{ $t('schedule.time') }}</th>
                 <th class="pb-4 pr-6 text-sm font-semibold uppercase tracking-wider text-gold-500">{{ $t('schedule.class') }}</th>
-                <th class="pb-4 text-sm font-semibold uppercase tracking-wider text-gold-500">{{ $t('schedule.instructor') }}</th>
+                <th class="pb-4 pr-6 text-sm font-semibold uppercase tracking-wider text-gold-500">{{ $t('schedule.instructor') }}</th>
+                <th class="pb-4"><span class="sr-only">{{ $t('schedule.signUp') }}</span></th>
               </tr>
             </thead>
             <tbody class="divide-y divide-wine-800/30">
-              <tr class="group cursor-pointer hover:bg-wine-800/20 transition-colors" @click="openUrl('https://wedance.vip/MontunoClub?view=events#tabs')">
-                <td class="py-5 pr-6 text-wine-200 font-medium">{{ $t('schedule.sunday') }}</td>
-                <td class="py-5 pr-6 text-wine-300">18:00</td>
-                <td class="py-5 pr-6">
-                  <span class="font-medium text-white group-hover:text-gold-400 transition-colors">{{ $t('schedule.salsaFromZero') }}</span>
-                  <span class="ml-2 inline-block rounded-full bg-gold-500/20 px-2.5 py-0.5 text-xs font-semibold text-gold-400">{{ $t('schedule.salsaFromZeroFree') }}</span>
+              <tr v-for="e in schedule" :key="e.id" class="group cursor-pointer hover:bg-wine-800/20 transition-colors" @click="openUrl(e.signup)">
+                <td class="py-5 pr-6 text-wine-200 font-medium">
+                  {{ e.weekday }}
+                  <span class="block text-xs font-normal text-wine-400">{{ e.date }}</span>
                 </td>
-                <td class="py-5 text-wine-300">Alösha, Celeste</td>
+                <td class="py-5 pr-6 text-wine-300">{{ e.time }}</td>
+                <td class="py-5 pr-6">
+                  <a :href="e.signup" target="_blank" rel="noopener" class="font-medium text-white group-hover:text-gold-400 transition-colors" @click.stop>{{ e.name }}</a>
+                  <span v-if="e.free" class="ml-2 inline-block rounded-full bg-gold-500/20 px-2.5 py-0.5 text-xs font-semibold text-gold-400">{{ $t('schedule.salsaFromZeroFree') }}</span>
+                  <span v-if="e.venueName" class="block text-xs text-wine-400">{{ e.venueName }}</span>
+                </td>
+                <td class="py-5 pr-6 text-wine-300">{{ e.artists.map(a => a.name).join(', ') }}</td>
+                <td class="py-5 text-right">
+                  <span class="inline-block rounded-full border border-gold-500/40 px-3 py-1 text-xs font-semibold text-gold-400 group-hover:bg-gold-500/10 whitespace-nowrap">{{ $t('schedule.signUp') }}</span>
+                </td>
               </tr>
-              <tr class="group cursor-pointer hover:bg-wine-800/20 transition-colors" @click="openUrl('https://wedance.vip/MontunoClub?view=events#tabs')">
-                <td class="py-5 pr-6 text-wine-200 font-medium">{{ $t('schedule.sunday') }}</td>
-                <td class="py-5 pr-6 text-wine-300">19:00</td>
-                <td class="py-5 pr-6">
-                  <span class="font-medium text-white group-hover:text-gold-400 transition-colors">{{ $t('schedule.casinoBeginner') }}</span>
-                  <span class="ml-2 text-xs text-wine-400">({{ $t('schedule.casinoBeginnerNote') }})</span>
+              <tr v-if="!schedule.length">
+                <td colspan="5" class="py-8 text-center text-wine-300">
+                  {{ $t('schedule.empty') }}
+                  <a :href="withUtm(profileUrl, 'schedule-empty')" target="_blank" rel="noopener" class="ml-1 text-gold-400 underline underline-offset-4">{{ $t('schedule.followOnWeDance') }}</a>
                 </td>
-                <td class="py-5 text-wine-300">Alösha, Celeste</td>
-              </tr>
-              <tr class="group cursor-pointer hover:bg-wine-800/20 transition-colors" @click="openUrl('https://wedance.vip/MontunoClub?view=events#tabs')">
-                <td class="py-5 pr-6 text-wine-200 font-medium">{{ $t('schedule.sunday') }}</td>
-                <td class="py-5 pr-6 text-wine-300">20:00</td>
-                <td class="py-5 pr-6">
-                  <span class="font-medium text-white group-hover:text-gold-400 transition-colors">{{ $t('schedule.casinoIntermediate') }}</span>
-                </td>
-                <td class="py-5 text-wine-300">Alösha, Celeste</td>
-              </tr>
-              <tr class="group cursor-pointer hover:bg-wine-800/20 transition-colors" @click="openUrl('https://wedance.vip/MontunoClub?view=events#tabs')">
-                <td class="py-5 pr-6 text-wine-200 font-medium">{{ $t('schedule.monday') }}</td>
-                <td class="py-5 pr-6 text-wine-300">19:00</td>
-                <td class="py-5 pr-6">
-                  <span class="font-medium text-white group-hover:text-gold-400 transition-colors">{{ $t('schedule.salsaFromZero') }}</span>
-                  <span class="ml-2 inline-block rounded-full bg-gold-500/20 px-2.5 py-0.5 text-xs font-semibold text-gold-400">{{ $t('schedule.salsaFromZeroFree') }}</span>
-                </td>
-                <td class="py-5 text-wine-300">Alösha, Celeste</td>
-              </tr>
-              <tr class="group cursor-pointer hover:bg-wine-800/20 transition-colors" @click="openUrl('https://wedance.vip/MontunoClub?view=events#tabs')">
-                <td class="py-5 pr-6 text-wine-200 font-medium">{{ $t('schedule.thursday') }}</td>
-                <td class="py-5 pr-6 text-wine-300">20:00</td>
-                <td class="py-5 pr-6">
-                  <span class="font-medium text-white group-hover:text-gold-400 transition-colors">{{ $t('schedule.salsaFromZero') }}</span>
-                </td>
-                <td class="py-5 text-wine-300">Alösha, Celeste</td>
               </tr>
             </tbody>
           </table>
@@ -223,7 +186,7 @@ function toggleFaq(index: number) {
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
           </svg>
-          <span>{{ $t('schedule.venue') }}</span>
+          <span>{{ $t('schedule.registerNote') }}</span>
         </div>
 
         <!-- DJ Alösha WhatsApp — party announcements -->

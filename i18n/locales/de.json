@@ -78,26 +78,19 @@
     "label": "Wöchentlicher Kursplan",
     "title1": "Kurs-",
     "title2": "plan",
-    "description": "Sonntags-Kurse in der Buena Vista Bar. Für jedes Level — vom ersten Schritt bis zu fortgeschrittenen Casino-Moves.",
+    "description": "Alle Kurse und Partys, direkt von Montuno Club auf WeDance. Termin wählen und dort anmelden — kostenlos.",
     "day": "Tag",
     "time": "Uhrzeit",
     "class": "Kurs",
     "instructor": "Lehrer",
-    "sunday": "Sonntag",
-    "monday": "Montag",
-    "thursday": "Donnerstag",
-    "repartoFromZero": "Reparto von Null",
-    "salsaFromZero": "Salsa von Null",
     "salsaFromZeroFree": "GRATIS",
-    "casinoBeginner": "Casino Anfänger",
-    "casinoBeginnerNote": "2-Monats-Kurs",
-    "casinoIntermediate": "Casino Mittelstufe",
-    "venue": "Buena Vista Bar, Am Einlaß 2A, München",
-    "specialEvent": "Special",
-    "ruedaFlashmob": "Rueda Flashmob",
     "djWhatsappTitle": "Party-Updates erhalten",
     "djWhatsappDesc": "Tritt der WhatsApp-Gruppe von DJ Alösha bei für die nächsten Partys",
-    "djWhatsappCta": "WhatsApp beitreten"
+    "djWhatsappCta": "WhatsApp beitreten",
+    "signUp": "Anmelden",
+    "empty": "Für die nächsten Wochen sind noch keine Termine veröffentlicht.",
+    "followOnWeDance": "Montuno Club auf WeDance folgen",
+    "registerNote": "Die Anmeldung zu allen Kursen läuft über WeDance."
   },
   "rueda": {
     "label": "Die Rueda-Mission",
@@ -224,6 +217,7 @@
     "eyebrow": "Hast du uns im Buena Vista tanzen sehen?",
     "subtitle": "Neu hier? Scanne den großen QR-Code und schau dir an, was Montuno Club ist, wann wir tanzen und wie du mitmachen kannst.",
     "tonight": "Heute Abend",
+    "next": "Nächste Kurse",
     "everySunday": "Jeden Sonntag in der Buena Vista Bar",
     "englishFriendly": "Englischfreundlich",
     "noPartner": "Kein Tanzpartner nötig",
@@ -238,12 +232,7 @@
     "discover": "Mehr erfahren",
     "discoverSub": "Erstes Mal? Erfahre mehr über unsere kostenlosen Salsa-Kurse",
     "or": "oder",
-    "classes": {
-      "taster": "Kostenlose Schnupperstunde",
-      "beginner": "Anfängerkurs",
-      "intermediate": "Mittelstufe Workshop"
-    },
-    "bottomInfo": "Jeden Sonntag um 18 Uhr · Buena Vista Bar, München · Kostenlos & auf Englisch",
+    "bottomInfo": "Montuno Club · München · Anmeldung über WeDance · Englischsprachig",
     "seo": {
       "title": "Montuno Club beitreten"
     }
