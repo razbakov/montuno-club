@@ -1,50 +1,62 @@
 <script setup lang="ts">
-const { t, locale } = useI18n()
+// Sign-ups go to MontunoClub's contacts on WeDance (RAZ-412), which also sends
+// the welcome email and tells the team.
+const props = defineProps<{ contactsUrl?: string }>()
+const { locale } = useI18n()
 const route = useRoute()
 const { $posthog } = useNuxtApp()
+const base = useRuntimeConfig().public.wedanceUrl as string
 
 const name = ref('')
 const email = ref('')
 const phone = ref('')
 const promoCode = ref('')
+// Honeypot: people never see it, bots fill it in.
+const website = ref('')
 const status = ref<'idle' | 'submitting' | 'success' | 'error'>('idle')
+const errorMessage = ref('')
+
+const UTM = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'] as const
 
 async function submit() {
   if (!email.value || !name.value || !phone.value) return
   status.value = 'submitting'
+  errorMessage.value = ''
 
   const query = route.query
+  const utm = Object.fromEntries(UTM.map(k => [k, typeof query[k] === 'string' ? query[k] : '']))
+  const source: Record<string, string> = Object.fromEntries(Object.entries({
+    ...utm,
+    referrer: document.referrer || '',
+    promo_code: promoCode.value.trim(),
+    page: route.path,
+    form: 'montuno.club',
+  }).filter(([, v]) => v))
+
   try {
-    await $fetch('/api/subscribe', {
+    await $fetch(props.contactsUrl || `${base}/api/profiles/${MONTUNO_PROFILE}/contacts`, {
       method: 'POST',
       body: {
         name: name.value,
         email: email.value,
         phone: phone.value,
-        promo_code: promoCode.value,
-        language: locale.value,
-        utm_source: query.utm_source || '',
-        utm_medium: query.utm_medium || '',
-        utm_campaign: query.utm_campaign || '',
-        utm_term: query.utm_term || '',
-        utm_content: query.utm_content || '',
-        referrer: document.referrer || '',
+        locale: locale.value,
+        source,
+        website: website.value,
       },
     })
     status.value = 'success'
-    $posthog()?.capture('form_submitted', {
+    $posthog?.()?.capture('form_submitted', {
       language: locale.value,
       promo_code: promoCode.value || undefined,
-      utm_source: query.utm_source || '',
-      utm_medium: query.utm_medium || '',
-      utm_campaign: query.utm_campaign || '',
-      utm_term: query.utm_term || '',
-      utm_content: query.utm_content || '',
+      ...utm,
       referrer: document.referrer || '',
     })
-  } catch {
+  } catch (e: any) {
     status.value = 'error'
-    $posthog()?.capture('form_error')
+    // 400 (bad input) and 429 (too many sign-ups) carry a readable message.
+    errorMessage.value = e?.statusCode < 500 ? e?.data?.statusMessage || '' : ''
+    $posthog?.()?.capture('form_error', { status: e?.statusCode })
   }
 }
 </script>
@@ -53,9 +65,12 @@ async function submit() {
   <div>
     <form
       v-if="status !== 'success'"
-      class="flex flex-col gap-3 max-w-md mx-auto"
+      class="relative flex flex-col gap-3 max-w-md mx-auto"
       @submit.prevent="submit"
     >
+      <div aria-hidden="true" class="absolute -left-[10000px] top-0 h-px w-px overflow-hidden">
+        <input v-model="website" name="website" type="text" tabindex="-1" autocomplete="off" />
+      </div>
       <input
         v-model="name"
         name="name"
@@ -115,7 +130,7 @@ async function submit() {
     </div>
 
     <p v-if="status === 'error'" class="mt-3 text-sm text-red-400 text-center">
-      {{ $t('form.error') }}
+      {{ errorMessage || $t('form.error') }}
     </p>
     <p v-if="status !== 'success'" class="mt-3 text-xs text-wine-500 text-center">
       {{ $t('form.privacy') }}
