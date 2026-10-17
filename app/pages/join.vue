@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import type { WeDanceEvent } from '~/composables/useMontunoEvents'
 const { t } = useI18n()
 
 definePageMeta({
@@ -13,29 +14,14 @@ useSeoMeta({
 interface ClassInfo {
   key: string
   time: string
+  name: string
   wedanceUrl: string
 }
 
-const classes: ClassInfo[] = [
-  {
-    key: 'taster',
-    time: '18:00',
-    wedanceUrl:
-      'https://wedance.vip/events/OJqIEHlQqudtz0gL2F7L?utm_source=kiosk&utm_medium=ipad',
-  },
-  {
-    key: 'beginner',
-    time: '19:00',
-    wedanceUrl:
-      'https://wedance.vip/events/wUaku5z3EKlM0UOISPVB?utm_source=kiosk&utm_medium=ipad',
-  },
-  {
-    key: 'intermediate',
-    time: '20:00',
-    wedanceUrl:
-      'https://wedance.vip/events/SvrZGLcSIpgU2hUs09Dv?utm_source=kiosk&utm_medium=ipad',
-  },
-]
+// Tonight's classes come from the MontunoClub profile on WeDance (RAZ-412);
+// check-in is the class's WeDance page.
+const { locale } = useI18n()
+const { events, profileUrl } = useMontunoEvents({ days: 14 })
 
 const now = ref(new Date())
 let interval: ReturnType<typeof setInterval> | null = null
@@ -50,22 +36,32 @@ onUnmounted(() => {
   if (interval) clearInterval(interval)
 })
 
-const currentClassIndex = computed(() => {
-  const h = now.value.getHours()
-  const m = now.value.getMinutes()
-  const minutes = h * 60 + m
-
-  // 17:30–18:44 → taster / salsa from zero (6 PM)
-  // 18:45–19:44 → beginner (7 PM)
-  // 19:45+       → intermediate (8 PM)
-  // before 18:45 → taster (default for early setup)
-  if (minutes < 18 * 60 + 45) return 0
-  if (minutes < 19 * 60 + 45) return 1
-  return 2
+const toClass = (e: WeDanceEvent): ClassInfo => ({
+  key: e.id,
+  time: eventParts(e, locale.value).time,
+  name: e.name,
+  wedanceUrl: withUtm(e.url, 'kiosk'),
 })
 
-const currentClass = computed<ClassInfo>(() => classes[currentClassIndex.value])
-const upcomingClasses = computed(() => classes.slice(currentClassIndex.value))
+// Tonight's classes; on a day without classes, the next ones.
+const ahead = computed(() => events.value.filter(e => new Date(e.endDate ?? e.startDate).getTime() > now.value.getTime()))
+const tonight = computed(() => {
+  const today = eventParts({ startDate: now.value.toISOString(), timezone: null } as WeDanceEvent, 'en').day
+  return ahead.value.filter(e => eventParts(e, 'en').day === today)
+})
+const classes = computed<ClassInfo[]>(() => (tonight.value.length ? tonight.value : ahead.value.slice(0, 3)).map(toClass))
+
+// The class about to start or running: the last one starting within 15 minutes.
+const currentClassIndex = computed(() => {
+  const soon = now.value.getTime() + 15 * 60_000
+  const starts = events.value.filter(e => classes.value.some(c => c.key === e.id)).map(e => new Date(e.startDate).getTime())
+  const i = starts.findLastIndex(t => t <= soon)
+  return Math.max(0, i)
+})
+
+const fallback = computed<ClassInfo>(() => ({ key: 'profile', time: '', name: 'Montuno Club', wedanceUrl: withUtm(profileUrl.value, 'kiosk') }))
+const currentClass = computed<ClassInfo>(() => classes.value[currentClassIndex.value] ?? fallback.value)
+const upcomingClasses = computed(() => classes.value.slice(currentClassIndex.value))
 const checkInUrl = computed(() => currentClass.value.wedanceUrl)
 const discoverUrl = 'https://montuno.club'
 </script>
@@ -114,11 +110,12 @@ const discoverUrl = 'https://montuno.club'
         </div>
 
         <div
+          v-if="upcomingClasses.length"
           data-kiosk-role="schedule"
           class="mt-4 rounded-[1.75rem] border border-white/10 bg-black/20 p-4 backdrop-blur md:absolute md:right-0 md:top-0 md:mt-0 md:w-56"
         >
           <p class="text-[11px] font-semibold uppercase tracking-[0.28em] text-gold-300/80">
-            {{ $t('join.tonight') }}
+            {{ tonight.length ? $t('join.tonight') : $t('join.next') }}
           </p>
           <div class="mt-3 space-y-2">
             <div
@@ -137,7 +134,7 @@ const discoverUrl = 'https://montuno.club'
                 <span>{{ session.time }}</span>
               </div>
               <p class="mt-1 text-sm font-medium">
-                {{ $t(`join.classes.${session.key}`) }}
+                {{ session.name }}
               </p>
             </div>
           </div>
@@ -200,7 +197,7 @@ const discoverUrl = 'https://montuno.club'
           </div>
 
           <div class="mt-4 inline-flex rounded-full border border-gold-400/20 bg-gold-400/10 px-3 py-1.5 text-sm text-gold-100/90">
-            {{ $t(`join.classes.${currentClass.key}`) }} &middot; {{ currentClass.time }}
+            {{ currentClass.name }}<template v-if="currentClass.time"> &middot; {{ currentClass.time }}</template>
           </div>
           <p class="mt-3 text-[11px] uppercase tracking-[0.22em] text-wine-400">
             {{ $t('join.checkInHint') }}

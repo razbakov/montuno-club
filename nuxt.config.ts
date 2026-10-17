@@ -51,12 +51,13 @@ export default defineNuxtConfig({
     },
   },
   runtimeConfig: {
-    resendApiKey: process.env.RESEND_API_KEY || '',
     public: {
       // Trim to defend against env values pasted with a trailing newline, which
       // silently breaks PostHog (the SDK rejects the malformed token and drops
       // every event). See razbakov/montuno-club#9.
       posthogKey: (process.env.NUXT_PUBLIC_POSTHOG_KEY || '').trim(),
+      // WeDance: the homepage's content, events and sign-ups (useWeDanceSite, useMontunoEvents).
+      wedanceUrl: process.env.NUXT_PUBLIC_WEDANCE_URL || 'https://2026.wedance.vip',
     },
   },
   ogImage: { enabled: false },

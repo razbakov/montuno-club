@@ -1,163 +1,24 @@
 {
   "nav": {
-    "about": "About",
-    "schedule": "Schedule",
-    "rueda": "Rueda",
-    "havana": "Bar Crawl",
-    "expect": "What to Expect",
-    "faq": "FAQ",
-    "location": "Location",
-    "events": "Events",
-    "joinWhatsApp": "Join WhatsApp Group",
     "joinFree": "Join Free"
   },
+  "site": {
+    "unavailable": "Our page is taking a short break. All classes, parties and sign-ups are on WeDance."
+  },
   "hero": {
-    "subtitle": "Salsa Cubana · Classes & Events · Munich",
     "title1": "Salsa",
-    "title2": "Cubana",
-    "description": "Weekly classes for every level at Buena Vista Bar. From free beginner sessions to 2-month courses. No partner needed. Just show up and dance.",
-    "cta": "Join WhatsApp Group",
-    "learnMore": "See the schedule"
-  },
-  "about": {
-    "label": "About",
-    "title1": "Dance is social.",
-    "title2": "We keep it that way.",
-    "p1": "Montuno Club is a community-driven Salsa Cubana class for beginners in Munich. We believe that dance should be accessible to everyone — regardless of budget, language, or experience level.",
-    "p2": "Our class happens in a bar, not a studio. The vibe is relaxed. People grab a drink, learn a move, meet someone new, and dance. That is the whole point.",
-    "free": "Free",
-    "freeDesc": "Donation-based",
-    "lang": "EN",
-    "langDesc": "English-friendly",
-    "solo": "Solo",
-    "soloDesc": "No partner needed",
-    "exp": "7+",
-    "expDesc": "Years of experience"
-  },
-  "expect": {
-    "label": "What to Expect",
-    "title1": "Your first class in",
-    "title2": "3 steps",
-    "step1Title": "Show Up",
-    "step1Text": "Walk into Buena Vista Bar on Sunday at 6 PM. Grab a drink if you like. No sign-up stress, no dress code, no awkward waiting.",
-    "step2Title": "Learn One Move",
-    "step2Text": "Each week we teach one Salsa Cubana move from scratch. We rotate partners so you practice with different people. No one gets left out.",
-    "step3Title": "Social Dance",
-    "step3Text": "After the lesson, the music stays on. Practice what you learned, try it with different partners, or just hang out and enjoy the vibe."
-  },
-  "instructor": {
-    "label": "Your Instructor",
-    "title": "Meet",
-    "name": "Alex",
-    "p1": "Alex has been dancing Salsa Cubana for over 7 years, including training in Cuba where the dance was born. He started Montuno Club because he believes everyone deserves a low-pressure way to start dancing — no expensive studio packages required.",
-    "p2": "His teaching style focuses on having fun first. One move per class, lots of repetition with different partners, and a social atmosphere where mistakes are just part of the dance."
-  },
-  "video": {
-    "label": "See the Vibe",
-    "title1": "Feel the",
-    "title2": "energy"
-  },
-  "faq": {
-    "label": "FAQ",
-    "title1": "Common",
-    "title2": "questions",
-    "q1": "Do I need a dance partner?",
-    "a1": "No! We rotate partners throughout the class so everyone dances with everyone. Come solo or bring friends — either way works.",
-    "q2": "Is it really free?",
-    "a2": "Yes. The class is free and always will be. We accept donations to help cover costs, but there is zero pressure. Come as you are.",
-    "q3": "What should I wear?",
-    "a3": "Comfortable clothes you can move in. Any shoes work — sneakers, dance shoes, whatever feels good. No special gear needed.",
-    "q4": "I have zero dance experience. Is that okay?",
-    "a4": "That is exactly who this class is for. We teach one move per session from scratch. Absolute beginners are our people.",
-    "q5": "What happens in a typical class?",
-    "a5": "Quick warm-up, learn one new move with partner rotation, then social dancing where you practice what you learned. The whole thing is about 60 minutes.",
-    "q6": "What language is the class in?",
-    "a6": "English. Munich has a huge international community and we want everyone to feel welcome regardless of their German level."
+    "title2": "Cubana"
   },
   "schedule": {
-    "label": "Weekly Schedule",
-    "title1": "Class",
-    "title2": "Schedule",
-    "description": "Sunday classes at Buena Vista Bar. Something for every level — from your first step to advanced casino moves.",
     "day": "Day",
     "time": "Time",
     "class": "Class",
     "instructor": "Instructor",
-    "sunday": "Sunday",
-    "monday": "Monday",
-    "thursday": "Thursday",
-    "repartoFromZero": "Reparto from Zero",
-    "salsaFromZero": "Salsa from Zero",
     "salsaFromZeroFree": "FREE",
-    "casinoBeginner": "Casino Beginner",
-    "casinoBeginnerNote": "2-month course",
-    "casinoIntermediate": "Casino Intermediate",
-    "venue": "Buena Vista Bar, Am Einlaß 2A, Munich",
-    "specialEvent": "Special",
-    "ruedaFlashmob": "Rueda Flashmob",
-    "djWhatsappTitle": "Get party announcements",
-    "djWhatsappDesc": "Join DJ Alösha's WhatsApp group for the next parties",
-    "djWhatsappCta": "Join WhatsApp"
-  },
-  "rueda": {
-    "label": "The Rueda Mission",
-    "headline1": "One mission: bring the biggest",
-    "headline2": "Rueda de Casino to Munich.",
-    "sub": "Once or twice a year we take over Stachus. Every week, we practice in the wild. And sometimes we show up where you don't expect us.",
-    "bigOneTag": "The Big One",
-    "bigOneTitle": "Take over Stachus",
-    "bigOneDesc": "Once or twice a year we organise the biggest Rueda de Casino in Munich — hundreds of dancers in a circle, in the heart of the city.",
-    "weeklyTag": "Every Saturday · 2 PM",
-    "weeklyTitle": "Practice in the wild",
-    "weeklyDesc": "Default spot: Diana Tempel in the Hofgarten (Odeonsplatz). We rotate to different parks and squares around Munich. Free, no signup, just show up.",
-    "flashTag": "Flash mobs",
-    "flashTitle": "Wherever the moment calls",
-    "flashDesc": "Sometimes we crash a party with one Cuban song. Sometimes we turn a food festival into a Rueda. Wherever, whenever — always casino.",
-    "ctaTitle": "Find out where we dance this Saturday",
-    "ctaDesc": "Join the WhatsApp group — we share the spot a few days before.",
-    "ctaButton": "Join WhatsApp"
-  },
-  "havanaCrawl": {
-    "label": "Free Sunday Bar Crawl",
-    "title1": "From Hofbräuhaus",
-    "title2": "to Havana",
-    "hook": "Havana swears Hemingway left his mojito in one bar and his daiquiri in another. We will do both. He might show up.",
-    "stop1Title": "The Meeting",
-    "stop1Desc": "Outside the most famous beer hall in the world. We do not go in.",
-    "stop2Title": "One Song",
-    "stop2Desc": "A circle forms in the old town for exactly three minutes. Then it is gone.",
-    "stop3Title": "The Mojito",
-    "stop3Desc": "Your first rum, and your first salsa steps. No partner needed.",
-    "stop4Title": "The Daiquiri",
-    "stop4Desc": "The drink Hemingway made famous, in Hemingway's hour.",
-    "stop5Title": "The Cuba Libre",
-    "stop5Desc": "The last one, back where we started.",
-    "whenLabel": "When",
-    "when": "Sundays 17:00",
-    "whereLabel": "Where",
-    "where": "Outside Hofbräuhaus, Platzl 9",
-    "priceLabel": "Price",
-    "price": "Free — you buy your own drinks",
-    "ctaTitle": "Walking with us on Sunday?",
-    "ctaDesc": "Join the WhatsApp group so you know where we are.",
-    "ctaButton": "Join WhatsApp Group"
-  },
-  "havanaBeach": {
-    "label": "Every Monday · Open Air",
-    "title1": "Havana",
-    "title2": "Beach Party",
-    "subtitle": "Cuban Open-Air Salsa",
-    "date": "Every Monday",
-    "time": "19:00 – 24:00",
-    "venue": "Englischer Garten, München",
-    "description": "Cuban salsa moves to the park. Havana Beach Party is the open-air summer edition of our Monday social — music, dancing, and live percussion under the trees in the Englischer Garten.",
-    "programLabel": "Program",
-    "programBeachParty": "Beach Party",
-    "programSalsaFromZero": "Salsa From Zero · music never stops",
-    "programParty": "Party",
-    "programPercussion": "Live Percussion with Felix & Daniel",
-    "organizer": "Organized by Montuno Club",
-    "imageAlt": "Havana Beach Party — Cuban Open-Air Salsa in the Englischer Garten, Munich"
+    "signUp": "Sign up",
+    "empty": "No dates published for the next weeks yet.",
+    "followOnWeDance": "Follow Montuno Club on WeDance",
+    "registerNote": "Sign-up for every class runs on WeDance."
   },
   "event": {
     "label": "Every Monday at Frida",
@@ -181,22 +42,6 @@
     "photoNotice": "Heads up: we take photos and videos during the event for our social media. Let us know if you'd rather not be in them.",
     "cta": "Get tickets — 8€ online",
     "ctaUrl": "https://www.tickettailor.com/events/montunoclub/2189767/select-date?modal_widget=true&widget=true"
-  },
-  "location": {
-    "label": "Location",
-    "title1": "Buena Vista",
-    "title2": "Bar",
-    "description": "We dance at Buena Vista Bar in Munich. A social venue with the right energy for learning, meeting people, and having a good time. Not a studio — on purpose.",
-    "time": "Classes every Sunday",
-    "address": "Buena Vista Bar, Am Einlaß 2A, 80469 Munich",
-    "price": "Free beginner class (other classes vary)"
-  },
-  "cta": {
-    "title1": "Ready to",
-    "title2": "dance",
-    "description": "No experience needed. No partner needed. No excuses needed.",
-    "descLine2": "Just show up this Sunday.",
-    "button": "Join WhatsApp Group"
   },
   "footer": {
     "description": "Salsa Cubana classes and events in Munich. Free beginner classes, casino courses, and Cuban parties.",
@@ -224,6 +69,7 @@
     "eyebrow": "Saw us dancing at Buena Vista?",
     "subtitle": "New here? Scan to see what this is and how to join tonight.",
     "tonight": "Tonight",
+    "next": "Next classes",
     "everySunday": "Every Sunday at Buena Vista Bar",
     "englishFriendly": "English-friendly",
     "noPartner": "No partner needed",
@@ -238,12 +84,7 @@
     "discover": "Tell Me More",
     "discoverSub": "First time? Learn about our free salsa classes",
     "or": "or",
-    "classes": {
-      "taster": "Free Taster",
-      "beginner": "Beginner Course",
-      "intermediate": "Intermediate Workshop"
-    },
-    "bottomInfo": "Every Sunday at 6 PM · Buena Vista Bar, Munich · Free & English-friendly",
+    "bottomInfo": "Montuno Club · Munich · Sign up on WeDance · English-friendly",
     "seo": {
       "title": "Join Montuno Club"
     }
@@ -326,10 +167,5 @@
     "privatesNote": "Same price with either queen",
     "privatesBookCta": "Book on WhatsApp",
     "privatesWaMessage": "Hi Alex, I'd like to book a private lesson — Las Reinas weekend (May 23–24)."
-  },
-  "seo": {
-    "title": "Montuno Club — Salsa Cubana Classes & Events in Munich",
-    "description": "Salsa Cubana classes for every level in Munich. Free beginner sessions, casino courses, and Cuban events at Buena Vista Bar. English-friendly, no partner needed.",
-    "ogDescription": "Salsa Cubana classes and events in Munich. Free beginner sessions every Sunday, casino courses, and Cuban parties. English-friendly, no partner needed. Come dance with us!"
   }
 }
