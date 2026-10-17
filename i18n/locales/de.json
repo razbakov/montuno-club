@@ -1,156 +1,24 @@
 {
   "nav": {
-    "about": "Über uns",
-    "schedule": "Kursplan",
-    "rueda": "Rueda",
-    "havana": "Bartour",
-    "expect": "Was erwartet dich",
-    "faq": "FAQ",
-    "location": "Ort",
-    "events": "Events",
-    "joinWhatsApp": "WhatsApp-Gruppe beitreten",
     "joinFree": "Kostenlos beitreten"
   },
+  "site": {
+    "unavailable": "Unsere Seite macht gerade eine kurze Pause. Alle Kurse, Partys und Anmeldungen findest du auf WeDance."
+  },
   "hero": {
-    "subtitle": "Salsa Cubana · Kurse & Events · München",
     "title1": "Salsa",
-    "title2": "Cubana",
-    "description": "Wöchentliche Kurse für jedes Level in der Buena Vista Bar. Von kostenlosen Anfängerstunden bis zu 2-Monats-Kursen. Kein Partner nötig. Einfach vorbeikommen und tanzen.",
-    "cta": "WhatsApp-Gruppe beitreten",
-    "learnMore": "Zum Kursplan"
-  },
-  "about": {
-    "label": "Über uns",
-    "title1": "Tanzen ist sozial.",
-    "title2": "Das soll so bleiben.",
-    "p1": "Montuno Club ist ein Community-getriebener Salsa Cubana Kurs für Anfänger in München. Wir glauben, dass Tanzen für alle zugänglich sein sollte — unabhängig von Budget, Sprache oder Erfahrung.",
-    "p2": "Unser Kurs findet in einer Bar statt, nicht in einem Studio. Die Atmosphäre ist entspannt. Leute holen sich einen Drink, lernen einen Move, lernen jemanden kennen und tanzen. Genau darum geht es.",
-    "free": "Gratis",
-    "freeDesc": "Auf Spendenbasis",
-    "lang": "EN",
-    "langDesc": "Auf Englisch",
-    "solo": "Solo",
-    "soloDesc": "Kein Partner nötig",
-    "exp": "7+",
-    "expDesc": "Jahre Erfahrung"
-  },
-  "expect": {
-    "label": "Was erwartet dich",
-    "title1": "Dein erster Kurs in",
-    "title2": "3 Schritten",
-    "step1Title": "Komm vorbei",
-    "step1Text": "Komm am Sonntag um 18 Uhr in die Buena Vista Bar. Hol dir einen Drink, wenn du magst. Keine Anmeldung, kein Dresscode, kein peinliches Warten.",
-    "step2Title": "Lerne einen Move",
-    "step2Text": "Jede Woche bringen wir einen Salsa Cubana Move von Grund auf bei. Wir wechseln die Partner, damit du mit verschiedenen Leuten übst. Niemand wird ausgelassen.",
-    "step3Title": "Social Dance",
-    "step3Text": "Nach der Stunde läuft die Musik weiter. Übe was du gelernt hast, tanz mit verschiedenen Partnern oder genieß einfach die Stimmung."
-  },
-  "instructor": {
-    "label": "Dein Lehrer",
-    "title": "Das ist",
-    "name": "Alex",
-    "p1": "Alex tanzt seit über 7 Jahren Salsa Cubana und hat auch in Kuba trainiert, wo der Tanz geboren wurde. Er hat Montuno Club gegründet, weil er glaubt, dass jeder einen entspannten Einstieg ins Tanzen verdient — ohne teure Studiokurse.",
-    "p2": "Sein Unterrichtsstil setzt auf Spaß zuerst. Ein Move pro Stunde, viel Wiederholung mit verschiedenen Partnern und eine gesellige Atmosphäre, in der Fehler einfach zum Tanzen dazugehören."
-  },
-  "video": {
-    "label": "Erlebe die Stimmung",
-    "title1": "Spür die",
-    "title2": "Energie"
-  },
-  "faq": {
-    "label": "FAQ",
-    "title1": "Häufige",
-    "title2": "Fragen",
-    "q1": "Brauche ich einen Tanzpartner?",
-    "a1": "Nein! Wir wechseln während des Kurses die Partner, sodass jeder mit jedem tanzt. Komm allein oder bring Freunde mit — beides geht.",
-    "q2": "Ist es wirklich kostenlos?",
-    "a2": "Ja. Der Kurs ist kostenlos und wird es immer bleiben. Wir nehmen Spenden an, um die Kosten zu decken, aber es gibt keinerlei Druck. Komm wie du bist.",
-    "q3": "Was soll ich anziehen?",
-    "a3": "Bequeme Kleidung, in der du dich gut bewegen kannst. Jede Art von Schuhen geht — Sneakers, Tanzschuhe, was sich gut anfühlt. Keine spezielle Ausrüstung nötig.",
-    "q4": "Ich habe null Tanzerfahrung. Ist das okay?",
-    "a4": "Genau für dich ist der Kurs gemacht. Wir bringen pro Stunde einen Move von Grund auf bei. Absolute Anfänger sind unser Ding.",
-    "q5": "Was passiert in einem typischen Kurs?",
-    "a5": "Kurzes Aufwärmen, einen neuen Move lernen mit Partnerwechsel, dann Social Dancing wo du das Gelernte übst. Das Ganze dauert etwa 60 Minuten.",
-    "q6": "In welcher Sprache ist der Kurs?",
-    "a6": "Englisch. München hat eine riesige internationale Community und wir möchten, dass sich jeder willkommen fühlt — unabhängig vom Deutschniveau."
+    "title2": "Cubana"
   },
   "schedule": {
-    "label": "Wöchentlicher Kursplan",
-    "title1": "Kurs-",
-    "title2": "plan",
-    "description": "Alle Kurse und Partys, direkt von Montuno Club auf WeDance. Termin wählen und dort anmelden — kostenlos.",
     "day": "Tag",
     "time": "Uhrzeit",
     "class": "Kurs",
     "instructor": "Lehrer",
     "salsaFromZeroFree": "GRATIS",
-    "djWhatsappTitle": "Party-Updates erhalten",
-    "djWhatsappDesc": "Tritt der WhatsApp-Gruppe von DJ Alösha bei für die nächsten Partys",
-    "djWhatsappCta": "WhatsApp beitreten",
     "signUp": "Anmelden",
     "empty": "Für die nächsten Wochen sind noch keine Termine veröffentlicht.",
     "followOnWeDance": "Montuno Club auf WeDance folgen",
     "registerNote": "Die Anmeldung zu allen Kursen läuft über WeDance."
-  },
-  "rueda": {
-    "label": "Die Rueda-Mission",
-    "headline1": "Eine Mission: die größte",
-    "headline2": "Rueda de Casino nach München bringen.",
-    "sub": "Ein- bis zweimal im Jahr übernehmen wir den Stachus. Jede Woche trainieren wir draußen. Und manchmal tauchen wir dort auf, wo du es nicht erwartest.",
-    "bigOneTag": "Das Highlight",
-    "bigOneTitle": "Wir übernehmen den Stachus",
-    "bigOneDesc": "Ein- bis zweimal im Jahr organisieren wir die größte Rueda de Casino in München — hunderte Tänzer im Kreis, mitten in der Stadt.",
-    "weeklyTag": "Jeden Samstag · 14 Uhr",
-    "weeklyTitle": "Training draußen",
-    "weeklyDesc": "Standard-Ort: Diana-Tempel im Hofgarten (Odeonsplatz). Wir rotieren zu anderen Parks und Plätzen in München. Kostenlos, ohne Anmeldung, einfach kommen.",
-    "flashTag": "Flashmobs",
-    "flashTitle": "Da wo der Moment ruft",
-    "flashDesc": "Manchmal crashen wir eine Party mit einem kubanischen Song. Manchmal machen wir aus einem Streetfood-Festival eine Rueda. Wo und wann — immer Casino.",
-    "ctaTitle": "Erfahre, wo wir diesen Samstag tanzen",
-    "ctaDesc": "Tritt der WhatsApp-Gruppe bei — wir teilen den Ort ein paar Tage vorher.",
-    "ctaButton": "WhatsApp beitreten"
-  },
-  "havanaCrawl": {
-    "label": "Kostenlose Sonntags-Bartour",
-    "title1": "Vom Hofbräuhaus",
-    "title2": "nach Havanna",
-    "hook": "In Havanna heißt es, Hemingway habe seinen Mojito in der einen Bar gelassen und seinen Daiquiri in der anderen. Wir machen beides. Vielleicht taucht er auf.",
-    "stop1Title": "Das Treffen",
-    "stop1Desc": "Vor dem berühmtesten Bierhaus der Welt. Wir gehen nicht hinein.",
-    "stop2Title": "Ein Lied",
-    "stop2Desc": "In der Altstadt bildet sich ein Kreis, für genau drei Minuten. Dann ist er verschwunden.",
-    "stop3Title": "Der Mojito",
-    "stop3Desc": "Dein erster Rum und deine ersten Salsa-Schritte. Ohne Partner.",
-    "stop4Title": "Der Daiquiri",
-    "stop4Desc": "Der Drink, den Hemingway berühmt machte, zu Hemingways Stunde.",
-    "stop5Title": "Der Cuba Libre",
-    "stop5Desc": "Der letzte, dort wo wir angefangen haben.",
-    "whenLabel": "Wann",
-    "when": "Sonntags 17:00",
-    "whereLabel": "Wo",
-    "where": "Vor dem Hofbräuhaus, Platzl 9",
-    "priceLabel": "Preis",
-    "price": "Kostenlos — Getränke zahlst du selbst",
-    "ctaTitle": "Sonntag dabei?",
-    "ctaDesc": "Tritt der WhatsApp-Gruppe bei, damit du weißt, wo wir sind.",
-    "ctaButton": "WhatsApp-Gruppe beitreten"
-  },
-  "havanaBeach": {
-    "label": "Jeden Montag · Open Air",
-    "title1": "Havana",
-    "title2": "Beach Party",
-    "subtitle": "Cuban Open-Air Salsa",
-    "date": "Jeden Montag",
-    "time": "19:00 – 24:00",
-    "venue": "Englischer Garten, München",
-    "description": "Kubanische Salsa zieht in den Park. Die Havana Beach Party ist die Open-Air Sommer-Edition unseres Montags-Socials — Musik, Tanzen und Live-Percussion unter den Bäumen im Englischen Garten.",
-    "programLabel": "Programm",
-    "programBeachParty": "Beach Party",
-    "programSalsaFromZero": "Salsa From Zero · Musik hört nie auf",
-    "programParty": "Party",
-    "programPercussion": "Live Percussion mit Felix & Daniel",
-    "organizer": "Organisiert von Montuno Club",
-    "imageAlt": "Havana Beach Party — Cuban Open-Air Salsa im Englischen Garten, München"
   },
   "event": {
     "label": "Jeden Montag bei Frida",
@@ -174,22 +42,6 @@
     "photoNotice": "Hinweis: Bei der Veranstaltung werden Foto- und Videoaufnahmen für unsere Social Media gemacht. Sag uns Bescheid, wenn du nicht aufgenommen werden möchtest.",
     "cta": "Tickets sichern — 8€ online",
     "ctaUrl": "https://www.tickettailor.com/events/montunoclub/2189767/select-date?modal_widget=true&widget=true"
-  },
-  "location": {
-    "label": "Ort",
-    "title1": "Buena Vista",
-    "title2": "Bar",
-    "description": "Wir tanzen in der Buena Vista Bar in München. Ein geselliger Ort mit der richtigen Energie zum Lernen, Leute kennenlernen und Spaß haben. Kein Studio — mit Absicht.",
-    "time": "Kurse jeden Sonntag",
-    "address": "Buena Vista Bar, Am Einlaß 2A, 80469 München",
-    "price": "Gratis Anfängerkurs (andere Kurse variieren)"
-  },
-  "cta": {
-    "title1": "Bereit zu",
-    "title2": "tanzen",
-    "description": "Keine Erfahrung nötig. Kein Partner nötig. Keine Ausreden nötig.",
-    "descLine2": "Komm einfach diesen Sonntag.",
-    "button": "WhatsApp-Gruppe beitreten"
   },
   "footer": {
     "description": "Salsa Cubana Kurse und Events in München. Kostenlose Anfängerkurse, Casino-Kurse und kubanische Partys.",
@@ -315,10 +167,5 @@
     "privatesNote": "Gleicher Preis bei beiden Königinnen",
     "privatesBookCta": "Per WhatsApp buchen",
     "privatesWaMessage": "Hi Alex, ich möchte eine Privatstunde buchen — Las Reinas Wochenende (23.–24. Mai)."
-  },
-  "seo": {
-    "title": "Montuno Club — Salsa Cubana Kurse & Events in München",
-    "description": "Salsa Cubana Kurse für jedes Level in München. Kostenlose Anfängerstunden, Casino-Kurse und kubanische Events in der Buena Vista Bar. Auf Englisch, kein Partner nötig.",
-    "ogDescription": "Salsa Cubana Kurse und Events in München. Kostenlose Anfängerstunden jeden Sonntag, Casino-Kurse und kubanische Partys. Auf Englisch, kein Partner nötig. Komm tanzen!"
   }
 }

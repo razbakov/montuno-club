@@ -1,156 +1,24 @@
 {
   "nav": {
-    "about": "Sobre nosotros",
-    "schedule": "Horario",
-    "rueda": "Rueda",
-    "havana": "Ruta de bares",
-    "expect": "Qué esperar",
-    "faq": "Preguntas",
-    "location": "Ubicación",
-    "events": "Eventos",
-    "joinWhatsApp": "Únete al grupo de WhatsApp",
     "joinFree": "Únete gratis"
   },
+  "site": {
+    "unavailable": "Nuestra página se está tomando un pequeño descanso. Todas las clases, fiestas e inscripciones están en WeDance."
+  },
   "hero": {
-    "subtitle": "Salsa Cubana · Clases y Eventos · Múnich",
     "title1": "Salsa",
-    "title2": "Cubana",
-    "description": "Clases semanales para todos los niveles en Buena Vista Bar. Desde sesiones gratuitas para principiantes hasta cursos de 2 meses. Sin pareja. Solo ven y baila.",
-    "cta": "Únete al grupo de WhatsApp",
-    "learnMore": "Ver el horario"
-  },
-  "about": {
-    "label": "Sobre nosotros",
-    "title1": "El baile es social.",
-    "title2": "Así lo mantenemos.",
-    "p1": "Montuno Club es una clase comunitaria de Salsa Cubana para principiantes en Múnich. Creemos que el baile debe ser accesible para todos — sin importar presupuesto, idioma o nivel de experiencia.",
-    "p2": "Nuestra clase es en un bar, no en un estudio. El ambiente es relajado. La gente toma algo, aprende un paso, conoce a alguien nuevo y baila. Esa es la idea.",
-    "free": "Gratis",
-    "freeDesc": "Basado en donaciones",
-    "lang": "EN",
-    "langDesc": "En inglés",
-    "solo": "Solo",
-    "soloDesc": "Sin pareja",
-    "exp": "7+",
-    "expDesc": "Años de experiencia"
-  },
-  "expect": {
-    "label": "Qué esperar",
-    "title1": "Tu primera clase en",
-    "title2": "3 pasos",
-    "step1Title": "Ven",
-    "step1Text": "Llega a Buena Vista Bar el domingo a las 18:00. Pide algo si quieres. Sin inscripción, sin código de vestimenta, sin esperas incómodas.",
-    "step2Title": "Aprende un paso",
-    "step2Text": "Cada semana enseñamos un paso de Salsa Cubana desde cero. Rotamos parejas para que practiques con diferentes personas. Nadie se queda fuera.",
-    "step3Title": "Baile social",
-    "step3Text": "Después de la clase, la música sigue. Practica lo que aprendiste, pruébalo con diferentes parejas o simplemente disfruta del ambiente."
-  },
-  "instructor": {
-    "label": "Tu instructor",
-    "title": "Conoce a",
-    "name": "Alex",
-    "p1": "Alex lleva más de 7 años bailando Salsa Cubana, incluyendo entrenamiento en Cuba donde nació el baile. Fundó Montuno Club porque cree que todos merecen una forma relajada de empezar a bailar — sin paquetes caros de estudio.",
-    "p2": "Su estilo de enseñanza se enfoca primero en divertirse. Un paso por clase, mucha repetición con diferentes parejas y un ambiente social donde los errores son simplemente parte del baile."
-  },
-  "video": {
-    "label": "Siente el ambiente",
-    "title1": "Siente la",
-    "title2": "energía"
-  },
-  "faq": {
-    "label": "Preguntas",
-    "title1": "Preguntas",
-    "title2": "frecuentes",
-    "q1": "¿Necesito pareja de baile?",
-    "a1": "¡No! Rotamos parejas durante la clase para que todos bailen con todos. Ven solo o trae amigos — las dos opciones funcionan.",
-    "q2": "¿Es realmente gratis?",
-    "a2": "Sí. La clase es gratuita y siempre lo será. Aceptamos donaciones para cubrir costos, pero no hay ninguna presión. Ven como estés.",
-    "q3": "¿Qué debo ponerme?",
-    "a3": "Ropa cómoda con la que puedas moverte. Cualquier zapato sirve — tenis, zapatos de baile, lo que te sea cómodo. No necesitas equipo especial.",
-    "q4": "No tengo experiencia en baile. ¿Está bien?",
-    "a4": "Para eso es exactamente esta clase. Enseñamos un paso por sesión desde cero. Los principiantes absolutos son nuestra gente.",
-    "q5": "¿Qué pasa en una clase típica?",
-    "a5": "Calentamiento rápido, aprender un nuevo paso con rotación de parejas, luego baile social donde practicas lo aprendido. Todo dura unos 60 minutos.",
-    "q6": "¿En qué idioma es la clase?",
-    "a6": "Inglés. Múnich tiene una enorme comunidad internacional y queremos que todos se sientan bienvenidos sin importar su nivel de alemán."
+    "title2": "Cubana"
   },
   "schedule": {
-    "label": "Horario semanal",
-    "title1": "Horario de",
-    "title2": "clases",
-    "description": "Todas las clases y fiestas, directo de Montuno Club en WeDance. Elige una fecha e inscríbete allí — es gratis.",
     "day": "Día",
     "time": "Hora",
     "class": "Clase",
     "instructor": "Instructor",
     "salsaFromZeroFree": "GRATIS",
-    "djWhatsappTitle": "Recibe avisos de las fiestas",
-    "djWhatsappDesc": "Únete al grupo de WhatsApp de DJ Alösha para las próximas fiestas",
-    "djWhatsappCta": "Unirse a WhatsApp",
     "signUp": "Inscribirme",
     "empty": "Aún no hay fechas publicadas para las próximas semanas.",
     "followOnWeDance": "Sigue a Montuno Club en WeDance",
     "registerNote": "La inscripción a todas las clases es en WeDance."
-  },
-  "rueda": {
-    "label": "La misión Rueda",
-    "headline1": "Una misión: traer la",
-    "headline2": "Rueda de Casino más grande a Múnich.",
-    "sub": "Una o dos veces al año tomamos Stachus. Cada semana practicamos al aire libre. Y a veces aparecemos donde menos lo esperas.",
-    "bigOneTag": "El gran evento",
-    "bigOneTitle": "Tomar Stachus",
-    "bigOneDesc": "Una o dos veces al año organizamos la Rueda de Casino más grande de Múnich — cientos de bailarines en círculo, en el corazón de la ciudad.",
-    "weeklyTag": "Cada sábado · 14:00",
-    "weeklyTitle": "Práctica al aire libre",
-    "weeklyDesc": "Lugar por defecto: Diana Tempel en el Hofgarten (Odeonsplatz). Rotamos a diferentes parques y plazas de Múnich. Gratis, sin inscripción, simplemente ven.",
-    "flashTag": "Flash mobs",
-    "flashTitle": "Donde el momento lo pida",
-    "flashDesc": "A veces irrumpimos en una fiesta con una canción cubana. A veces convertimos un festival gastronómico en una Rueda. Donde sea, cuando sea — siempre casino.",
-    "ctaTitle": "¿Dónde bailamos este sábado?",
-    "ctaDesc": "Únete al grupo de WhatsApp — compartimos el lugar unos días antes.",
-    "ctaButton": "Unirse a WhatsApp"
-  },
-  "havanaCrawl": {
-    "label": "Ruta de bares gratuita los domingos",
-    "title1": "Del Hofbräuhaus",
-    "title2": "a La Habana",
-    "hook": "En La Habana dicen que Hemingway dejó su mojito en un bar y su daiquirí en otro. Nosotros haremos los dos. Puede que aparezca.",
-    "stop1Title": "El encuentro",
-    "stop1Desc": "Frente a la cervecería más famosa del mundo. No entramos.",
-    "stop2Title": "Una canción",
-    "stop2Desc": "En el casco antiguo se forma una rueda durante exactamente tres minutos. Después desaparece.",
-    "stop3Title": "El mojito",
-    "stop3Desc": "Tu primer ron y tus primeros pasos de salsa. Sin pareja.",
-    "stop4Title": "El daiquirí",
-    "stop4Desc": "La bebida que Hemingway hizo famosa, a la hora de Hemingway.",
-    "stop5Title": "El Cuba Libre",
-    "stop5Desc": "El último, de vuelta donde empezamos.",
-    "whenLabel": "Cuándo",
-    "when": "Domingos 17:00",
-    "whereLabel": "Dónde",
-    "where": "Frente al Hofbräuhaus, Platzl 9",
-    "priceLabel": "Precio",
-    "price": "Gratis — cada uno paga sus bebidas",
-    "ctaTitle": "¿Vienes el domingo?",
-    "ctaDesc": "Únete al grupo de WhatsApp para saber dónde estamos.",
-    "ctaButton": "Unirse al grupo de WhatsApp"
-  },
-  "havanaBeach": {
-    "label": "Cada lunes · Open Air",
-    "title1": "Havana",
-    "title2": "Beach Party",
-    "subtitle": "Cuban Open-Air Salsa",
-    "date": "Cada lunes",
-    "time": "19:00 – 24:00",
-    "venue": "Englischer Garten, München",
-    "description": "La salsa cubana se muda al parque. Havana Beach Party es la edición veraniega open-air de nuestro social de los lunes — música, baile y percusión en vivo bajo los árboles del Englischer Garten.",
-    "programLabel": "Programa",
-    "programBeachParty": "Beach Party",
-    "programSalsaFromZero": "Salsa From Zero · la música no para",
-    "programParty": "Party",
-    "programPercussion": "Percusión en vivo con Felix & Daniel",
-    "organizer": "Organizado por Montuno Club",
-    "imageAlt": "Havana Beach Party — Cuban Open-Air Salsa en el Englischer Garten, Munich"
   },
   "event": {
     "label": "Cada lunes en Frida",
@@ -174,22 +42,6 @@
     "photoNotice": "Aviso: durante el evento hacemos fotos y videos para nuestras redes sociales. Avísanos si prefieres no aparecer.",
     "cta": "Comprar entradas — 8€ online",
     "ctaUrl": "https://www.tickettailor.com/events/montunoclub/2189767/select-date?modal_widget=true&widget=true"
-  },
-  "location": {
-    "label": "Ubicación",
-    "title1": "Buena Vista",
-    "title2": "Bar",
-    "description": "Bailamos en Buena Vista Bar en Múnich. Un lugar social con la energía perfecta para aprender, conocer gente y pasarla bien. No es un estudio — a propósito.",
-    "time": "Clases todos los domingos",
-    "address": "Buena Vista Bar, Am Einlaß 2A, 80469 Múnich",
-    "price": "Clase para principiantes gratis (otras clases varían)"
-  },
-  "cta": {
-    "title1": "¿Listo para",
-    "title2": "bailar",
-    "description": "Sin experiencia. Sin pareja. Sin excusas.",
-    "descLine2": "Solo ven este domingo.",
-    "button": "Únete al grupo de WhatsApp"
   },
   "footer": {
     "description": "Clases y eventos de Salsa Cubana en Múnich. Clases gratuitas para principiantes, cursos de casino y fiestas cubanas.",
@@ -315,10 +167,5 @@
     "privatesNote": "Mismo precio con cualquiera de las reinas",
     "privatesBookCta": "Reservar por WhatsApp",
     "privatesWaMessage": "Hola Alex, quiero reservar una clase privada — fin de semana Las Reinas (23–24 mayo)."
-  },
-  "seo": {
-    "title": "Montuno Club — Clases y Eventos de Salsa Cubana en Múnich",
-    "description": "Clases de Salsa Cubana para todos los niveles en Múnich. Sesiones gratuitas para principiantes, cursos de casino y eventos cubanos en Buena Vista Bar. En inglés, sin pareja.",
-    "ogDescription": "Clases y eventos de Salsa Cubana en Múnich. Sesiones gratuitas para principiantes cada domingo, cursos de casino y fiestas cubanas. En inglés, sin pareja. ¡Ven a bailar!"
   }
 }
