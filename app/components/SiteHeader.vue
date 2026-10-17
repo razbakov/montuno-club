@@ -1,22 +1,28 @@
 <script setup lang="ts">
 const { t } = useI18n()
+const localePath = useLocalePath()
+const route = useRoute()
 const mobileOpen = ref(false)
 
-const links = computed(() => [
-  { label: t('nav.about'), href: '#about' },
-  { label: t('nav.schedule'), href: '#schedule' },
-  { label: t('nav.rueda'), href: '#rueda' },
-  { label: t('nav.havana'), href: '#havana' },
-  { label: t('nav.events'), href: '#events' },
-  { label: t('nav.faq'), href: '#faq' },
-  { label: t('nav.location'), href: '#location' },
-])
+// The menu is the homepage's sections that have an anchor and a menu label
+// (managed on WeDance). Shared cache with the homepage, so no extra request there.
+const { sections } = useWeDanceSite()
+const onHome = computed(() => route.path === localePath('/'))
+const href = (anchor: string) => (onHome.value ? `#${anchor}` : `${localePath('/')}#${anchor}`)
+
+const links = computed(() => sections.value
+  .filter(s => s.anchor && s.navLabel)
+  .map(s => ({ label: s.navLabel!, href: href(s.anchor!) })))
+const join = computed(() => ({
+  label: sections.value.find(s => s.kind === 'hero')?.buttons?.[0]?.label || t('nav.joinFree'),
+  href: href('join'),
+}))
 </script>
 
 <template>
   <header class="fixed top-0 left-0 right-0 z-50 bg-wine-950/95 backdrop-blur-sm border-b border-wine-800/50">
     <div class="mx-auto max-w-6xl px-4 sm:px-6 flex items-center justify-between h-16">
-      <a href="/" class="flex items-center gap-2" aria-label="Montuno Club home">
+      <a :href="localePath('/')" class="flex items-center gap-2" aria-label="Montuno Club home">
         <img src="/logo-white.png" alt="Montuno Club" class="h-8" />
       </a>
 
@@ -31,10 +37,10 @@ const links = computed(() => [
         </a>
         <LangSwitcher />
         <a
-          href="#join"
+          :href="join.href"
           class="rounded-full bg-gold-500 px-5 py-2 text-sm font-semibold text-wine-950 hover:bg-gold-400 transition-colors"
         >
-          {{ $t('nav.joinFree') }}
+          {{ join.label }}
         </a>
       </nav>
 
@@ -72,11 +78,11 @@ const links = computed(() => [
           {{ link.label }}
         </a>
         <a
-          href="#join"
+          :href="join.href"
           class="mt-2 block text-center rounded-full bg-gold-500 px-5 py-3 font-semibold text-wine-950 hover:bg-gold-400 transition-colors"
           @click="mobileOpen = false"
         >
-          {{ $t('nav.joinFree') }}
+          {{ join.label }}
         </a>
       </div>
     </Transition>
