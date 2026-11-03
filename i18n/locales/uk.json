@@ -10,15 +10,7 @@
     "title2": "Кубана"
   },
   "schedule": {
-    "day": "День",
-    "time": "Час",
-    "class": "Заняття",
-    "instructor": "Викладач",
-    "salsaFromZeroFree": "БЕЗКОШТОВНО",
-    "signUp": "Записатися",
-    "empty": "На найближчі тижні дати ще не опубліковані.",
-    "followOnWeDance": "Стежте за Montuno Club у WeDance",
-    "registerNote": "Запис на всі заняття — через WeDance."
+    "followOnWeDance": "Стежте за Montuno Club у WeDance"
   },
   "event": {
     "label": "Щопонеділка в Frida",
@@ -55,16 +47,7 @@
     "madeBy": "Зроблено"
   },
   "form": {
-    "namePlaceholder": "Твоє повне ім'я",
-    "emailPlaceholder": "Твій email",
-    "phonePlaceholder": "Телефон (+49...)",
-    "promoCodePlaceholder": "Промокод (необов'язково)",
-    "submit": "Приєднатися безкоштовно",
-    "submitting": "Надсилаємо...",
-    "success": "Ти з нами! Перевір пошту.",
-    "successWhatsApp": "Приєднуйся і до нашої WhatsApp-групи",
-    "error": "Щось пішло не так. Спробуй ще раз.",
-    "privacy": "Ми поважаємо твою конфіденційність. Відписатися можна будь-коли."
+    "successWhatsApp": "Приєднуйся і до нашої WhatsApp-групи"
   },
   "join": {
     "title1": "Ласкаво просимо до",
@@ -170,5 +153,29 @@
     "privatesNote": "Однакова ціна з будь-якою з королев",
     "privatesBookCta": "Записатися у WhatsApp",
     "privatesWaMessage": "Привіт, Алексе! Хочу записатися на індивідуальне заняття — вікенд Las Reinas (23–24 травня)."
+  },
+  "wedanceSite": {
+    "schedule": {
+      "day": "День",
+      "time": "Час",
+      "class": "Заняття",
+      "instructor": "Викладач",
+      "signUp": "Записатися",
+      "empty": "На найближчі тижні дати ще не опубліковані.",
+      "registerNote": "Запис на всі заняття — через WeDance.",
+      "followOnWeDance": "Стежте за Montuno Club у WeDance",
+      "free": "БЕЗКОШТОВНО"
+    },
+    "form": {
+      "namePlaceholder": "Твоє повне ім'я",
+      "emailPlaceholder": "Твій email",
+      "phonePlaceholder": "Телефон (+49...)",
+      "promoCodePlaceholder": "Промокод (необов'язково)",
+      "submit": "Приєднатися безкоштовно",
+      "submitting": "Надсилаємо...",
+      "success": "Ти з нами! Перевір пошту.",
+      "error": "Щось пішло не так. Спробуй ще раз.",
+      "privacy": "Ми поважаємо твою конфіденційність. Відписатися можна будь-коли."
+    }
   }
 }

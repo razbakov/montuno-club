@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { WeDanceEvent } from '~/composables/useMontunoEvents'
+import type { WeDanceEvent } from '#wedance-site'
 const { t } = useI18n()
 
 definePageMeta({
@@ -21,7 +21,7 @@ interface ClassInfo {
 // Tonight's classes come from the MontunoClub profile on WeDance (RAZ-412);
 // check-in is the class's WeDance page.
 const { locale } = useI18n()
-const { events, profileUrl } = useMontunoEvents({ days: 14 })
+const { events, profileUrl } = useWeDanceEvents({ days: 14 })
 
 const now = ref(new Date())
 let interval: ReturnType<typeof setInterval> | null = null
