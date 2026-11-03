@@ -10,15 +10,7 @@
     "title2": "Кубана"
   },
   "schedule": {
-    "day": "День",
-    "time": "Время",
-    "class": "Занятие",
-    "instructor": "Преподаватель",
-    "salsaFromZeroFree": "БЕСПЛАТНО",
-    "signUp": "Записаться",
-    "empty": "На ближайшие недели даты пока не опубликованы.",
-    "followOnWeDance": "Подпишитесь на Montuno Club в WeDance",
-    "registerNote": "Запись на все занятия — через WeDance."
+    "followOnWeDance": "Подпишитесь на Montuno Club в WeDance"
   },
   "event": {
     "label": "Каждый понедельник в Frida",
@@ -52,16 +44,7 @@
     "madeBy": "Сделано"
   },
   "form": {
-    "namePlaceholder": "Твоё полное имя",
-    "emailPlaceholder": "Твой email",
-    "phonePlaceholder": "Телефон (+49...)",
-    "promoCodePlaceholder": "Промокод (необязательно)",
-    "submit": "Присоединиться бесплатно",
-    "submitting": "Отправляем...",
-    "success": "Ты в деле! Проверь почту.",
-    "successWhatsApp": "Присоединяйся и к нашей WhatsApp-группе",
-    "error": "Что-то пошло не так. Попробуй ещё раз.",
-    "privacy": "Мы уважаем твою конфиденциальность. Отписаться можно в любой момент."
+    "successWhatsApp": "Присоединяйся и к нашей WhatsApp-группе"
   },
   "join": {
     "title1": "Добро пожаловать в",
@@ -167,5 +150,29 @@
     "privatesNote": "Одинаковая цена с любой из королев",
     "privatesBookCta": "Записаться в WhatsApp",
     "privatesWaMessage": "Привет, Алекс! Хочу записаться на индивидуальное занятие — уикенд Las Reinas (23–24 мая)."
+  },
+  "wedanceSite": {
+    "schedule": {
+      "day": "День",
+      "time": "Время",
+      "class": "Занятие",
+      "instructor": "Преподаватель",
+      "signUp": "Записаться",
+      "empty": "На ближайшие недели даты пока не опубликованы.",
+      "registerNote": "Запись на все занятия — через WeDance.",
+      "followOnWeDance": "Подпишитесь на Montuno Club в WeDance",
+      "free": "БЕСПЛАТНО"
+    },
+    "form": {
+      "namePlaceholder": "Твоё полное имя",
+      "emailPlaceholder": "Твой email",
+      "phonePlaceholder": "Телефон (+49...)",
+      "promoCodePlaceholder": "Промокод (необязательно)",
+      "submit": "Присоединиться бесплатно",
+      "submitting": "Отправляем...",
+      "success": "Ты в деле! Проверь почту.",
+      "error": "Что-то пошло не так. Попробуй ещё раз.",
+      "privacy": "Мы уважаем твою конфиденциальность. Отписаться можно в любой момент."
+    }
   }
 }

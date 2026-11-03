@@ -10,15 +10,7 @@
     "title2": "Cubana"
   },
   "schedule": {
-    "day": "Día",
-    "time": "Hora",
-    "class": "Clase",
-    "instructor": "Instructor",
-    "salsaFromZeroFree": "GRATIS",
-    "signUp": "Inscribirme",
-    "empty": "Aún no hay fechas publicadas para las próximas semanas.",
-    "followOnWeDance": "Sigue a Montuno Club en WeDance",
-    "registerNote": "La inscripción a todas las clases es en WeDance."
+    "followOnWeDance": "Sigue a Montuno Club en WeDance"
   },
   "event": {
     "label": "Cada lunes en Frida",
@@ -52,16 +44,7 @@
     "madeBy": "Hecho por"
   },
   "form": {
-    "namePlaceholder": "Tu nombre completo",
-    "emailPlaceholder": "Tu correo electrónico",
-    "phonePlaceholder": "Teléfono (+49...)",
-    "promoCodePlaceholder": "Código promocional (opcional)",
-    "submit": "Únete gratis",
-    "submitting": "Enviando...",
-    "success": "¡Estás dentro! Revisa tu bandeja de entrada.",
-    "successWhatsApp": "Únete también a nuestro grupo de WhatsApp",
-    "error": "Algo salió mal. Inténtalo de nuevo.",
-    "privacy": "Respetamos tu privacidad. Cancela en cualquier momento."
+    "successWhatsApp": "Únete también a nuestro grupo de WhatsApp"
   },
   "join": {
     "title1": "Bienvenido a",
@@ -167,5 +150,29 @@
     "privatesNote": "Mismo precio con cualquiera de las reinas",
     "privatesBookCta": "Reservar por WhatsApp",
     "privatesWaMessage": "Hola Alex, quiero reservar una clase privada — fin de semana Las Reinas (23–24 mayo)."
+  },
+  "wedanceSite": {
+    "schedule": {
+      "day": "Día",
+      "time": "Hora",
+      "class": "Clase",
+      "instructor": "Instructor",
+      "signUp": "Inscribirme",
+      "empty": "Aún no hay fechas publicadas para las próximas semanas.",
+      "registerNote": "La inscripción a todas las clases es en WeDance.",
+      "followOnWeDance": "Sigue a Montuno Club en WeDance",
+      "free": "GRATIS"
+    },
+    "form": {
+      "namePlaceholder": "Tu nombre completo",
+      "emailPlaceholder": "Tu correo electrónico",
+      "phonePlaceholder": "Teléfono (+49...)",
+      "promoCodePlaceholder": "Código promocional (opcional)",
+      "submit": "Únete gratis",
+      "submitting": "Enviando...",
+      "success": "¡Estás dentro! Revisa tu bandeja de entrada.",
+      "error": "Algo salió mal. Inténtalo de nuevo.",
+      "privacy": "Respetamos tu privacidad. Cancela en cualquier momento."
+    }
   }
 }

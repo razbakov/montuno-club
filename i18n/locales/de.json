@@ -10,15 +10,7 @@
     "title2": "Cubana"
   },
   "schedule": {
-    "day": "Tag",
-    "time": "Uhrzeit",
-    "class": "Kurs",
-    "instructor": "Lehrer",
-    "salsaFromZeroFree": "GRATIS",
-    "signUp": "Anmelden",
-    "empty": "Für die nächsten Wochen sind noch keine Termine veröffentlicht.",
-    "followOnWeDance": "Montuno Club auf WeDance folgen",
-    "registerNote": "Die Anmeldung zu allen Kursen läuft über WeDance."
+    "followOnWeDance": "Montuno Club auf WeDance folgen"
   },
   "event": {
     "label": "Jeden Montag bei Frida",
@@ -52,16 +44,7 @@
     "madeBy": "Erstellt von"
   },
   "form": {
-    "namePlaceholder": "Dein vollständiger Name",
-    "emailPlaceholder": "Deine E-Mail-Adresse",
-    "phonePlaceholder": "Telefon (+49...)",
-    "promoCodePlaceholder": "Aktionscode (optional)",
-    "submit": "Kostenlos beitreten",
-    "submitting": "Wird gesendet...",
-    "success": "Du bist dabei! Schau in dein Postfach.",
-    "successWhatsApp": "Tritt auch unserer WhatsApp-Gruppe bei",
-    "error": "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
-    "privacy": "Wir respektieren deine Privatsphäre. Jederzeit abmeldbar."
+    "successWhatsApp": "Tritt auch unserer WhatsApp-Gruppe bei"
   },
   "join": {
     "title1": "Willkommen beim",
@@ -167,5 +150,29 @@
     "privatesNote": "Gleicher Preis bei beiden Königinnen",
     "privatesBookCta": "Per WhatsApp buchen",
     "privatesWaMessage": "Hi Alex, ich möchte eine Privatstunde buchen — Las Reinas Wochenende (23.–24. Mai)."
+  },
+  "wedanceSite": {
+    "schedule": {
+      "day": "Tag",
+      "time": "Uhrzeit",
+      "class": "Kurs",
+      "instructor": "Lehrer",
+      "signUp": "Anmelden",
+      "empty": "Für die nächsten Wochen sind noch keine Termine veröffentlicht.",
+      "registerNote": "Die Anmeldung zu allen Kursen läuft über WeDance.",
+      "followOnWeDance": "Montuno Club auf WeDance folgen",
+      "free": "GRATIS"
+    },
+    "form": {
+      "namePlaceholder": "Dein vollständiger Name",
+      "emailPlaceholder": "Deine E-Mail-Adresse",
+      "phonePlaceholder": "Telefon (+49...)",
+      "promoCodePlaceholder": "Aktionscode (optional)",
+      "submit": "Kostenlos beitreten",
+      "submitting": "Wird gesendet...",
+      "success": "Du bist dabei! Schau in dein Postfach.",
+      "error": "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
+      "privacy": "Wir respektieren deine Privatsphäre. Jederzeit abmeldbar."
+    }
   }
 }

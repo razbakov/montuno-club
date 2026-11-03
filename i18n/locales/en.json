@@ -10,15 +10,7 @@
     "title2": "Cubana"
   },
   "schedule": {
-    "day": "Day",
-    "time": "Time",
-    "class": "Class",
-    "instructor": "Instructor",
-    "salsaFromZeroFree": "FREE",
-    "signUp": "Sign up",
-    "empty": "No dates published for the next weeks yet.",
-    "followOnWeDance": "Follow Montuno Club on WeDance",
-    "registerNote": "Sign-up for every class runs on WeDance."
+    "followOnWeDance": "Follow Montuno Club on WeDance"
   },
   "event": {
     "label": "Every Monday at Frida",
@@ -52,16 +44,7 @@
     "madeBy": "Made by"
   },
   "form": {
-    "namePlaceholder": "Your full name",
-    "emailPlaceholder": "Your email address",
-    "phonePlaceholder": "Phone (+49...)",
-    "promoCodePlaceholder": "Promo code (optional)",
-    "submit": "Join Free",
-    "submitting": "Joining...",
-    "success": "You're in! Check your inbox.",
-    "successWhatsApp": "Join our WhatsApp group too",
-    "error": "Something went wrong. Please try again.",
-    "privacy": "We respect your privacy. Unsubscribe anytime."
+    "successWhatsApp": "Join our WhatsApp group too"
   },
   "join": {
     "title1": "Welcome to",
@@ -167,5 +150,29 @@
     "privatesNote": "Same price with either queen",
     "privatesBookCta": "Book on WhatsApp",
     "privatesWaMessage": "Hi Alex, I'd like to book a private lesson — Las Reinas weekend (May 23–24)."
+  },
+  "wedanceSite": {
+    "schedule": {
+      "day": "Day",
+      "time": "Time",
+      "class": "Class",
+      "instructor": "Instructor",
+      "signUp": "Sign up",
+      "empty": "No dates published for the next weeks yet.",
+      "registerNote": "Sign-up for every class runs on WeDance.",
+      "followOnWeDance": "Follow Montuno Club on WeDance",
+      "free": "FREE"
+    },
+    "form": {
+      "namePlaceholder": "Your full name",
+      "emailPlaceholder": "Your email address",
+      "phonePlaceholder": "Phone (+49...)",
+      "promoCodePlaceholder": "Promo code (optional)",
+      "submit": "Join Free",
+      "submitting": "Joining...",
+      "success": "You're in! Check your inbox.",
+      "error": "Something went wrong. Please try again.",
+      "privacy": "We respect your privacy. Unsubscribe anytime."
+    }
   }
 }
