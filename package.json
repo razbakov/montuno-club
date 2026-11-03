@@ -15,7 +15,8 @@
     "nuxt-og-image": "^6.3.3",
     "posthog-js": "^1.364.7",
     "vue": "^3.5.31",
-    "vue-router": "^5.0.4"
+    "vue-router": "^5.0.4",
+    "wedance-site-kit": "github:razbakov/wedance-site-kit#v0.1.0"
   },
   "devDependencies": {
     "@nuxtjs/seo": "^5.1.0",
