@@ -10,7 +10,9 @@
     "title2": "Кубана"
   },
   "schedule": {
-    "followOnWeDance": "Подпишитесь на Montuno Club в WeDance"
+    "followOnWeDance": "Подпишитесь на Montuno Club в WeDance",
+    "cancelled": "Отменено",
+    "details": "Подробнее"
   },
   "event": {
     "label": "Каждый понедельник в Frida",
