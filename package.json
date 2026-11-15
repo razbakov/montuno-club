@@ -16,7 +16,7 @@
     "posthog-js": "^1.364.7",
     "vue": "^3.5.31",
     "vue-router": "^5.0.4",
-    "wedance-site-kit": "github:razbakov/wedance-site-kit#v0.1.0"
+    "wedance-site-kit": "github:razbakov/wedance-site-kit#v0.2.3"
   },
   "devDependencies": {
     "@nuxtjs/seo": "^5.1.0",
