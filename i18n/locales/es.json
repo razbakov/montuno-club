@@ -10,7 +10,9 @@
     "title2": "Cubana"
   },
   "schedule": {
-    "followOnWeDance": "Sigue a Montuno Club en WeDance"
+    "followOnWeDance": "Sigue a Montuno Club en WeDance",
+    "cancelled": "Cancelado",
+    "details": "Detalles"
   },
   "event": {
     "label": "Cada lunes en Frida",

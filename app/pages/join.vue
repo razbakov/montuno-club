@@ -43,8 +43,9 @@ const toClass = (e: WeDanceEvent): ClassInfo => ({
   wedanceUrl: withUtm(e.url, 'kiosk'),
 })
 
-// Tonight's classes; on a day without classes, the next ones.
-const ahead = computed(() => events.value.filter(e => new Date(e.endDate ?? e.startDate).getTime() > now.value.getTime()))
+// Tonight's classes; on a day without classes, the next ones. Cancelled
+// classes (RAZ-947) have no check-in, so the kiosk skips them.
+const ahead = computed(() => events.value.filter(e => !isCancelled(e) && new Date(e.endDate ?? e.startDate).getTime() > now.value.getTime()))
 const tonight = computed(() => {
   const today = eventParts({ startDate: now.value.toISOString(), timezone: null } as WeDanceEvent, 'en').day
   return ahead.value.filter(e => eventParts(e, 'en').day === today)

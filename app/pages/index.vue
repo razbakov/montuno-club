@@ -20,7 +20,7 @@ useSchemaOrg(computed(() => events.value.map(e => defineEvent({
   startDate: e.startDate,
   ...(e.endDate ? { endDate: e.endDate } : {}),
   eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
-  eventStatus: 'https://schema.org/EventScheduled',
+  eventStatus: schemaEventStatus(e),
   location: {
     '@type': 'Place',
     name: e.venueName || 'Munich',
