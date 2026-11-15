@@ -1,15 +1,16 @@
 import { describe, expect, test } from 'bun:test'
-import { readFileSync } from 'node:fs'
+import { existsSync, readFileSync } from 'node:fs'
 import { resolve } from 'node:path'
 
-import { cancelReason, isCancelled, schemaEventStatus, type SiteEvent } from '../app/utils/eventStatus'
-import de from '../i18n/locales/de.json'
-import en from '../i18n/locales/en.json'
-import es from '../i18n/locales/es.json'
-import ru from '../i18n/locales/ru.json'
-import uk from '../i18n/locales/uk.json'
+// Cancelled classes come from wedance-site-kit since v0.2.3 (RAZ-968, RAZ-971):
+// the kit's SiteEvents draws them, its helpers mark them for search engines and
+// the kiosk. These tests check montuno.club still relies on the kit for it.
+import { siteCopy } from 'wedance-site-kit/app/utils/siteCopy'
+import { cancelReason, isCancelled, schemaEventStatus, type WeDanceEvent } from 'wedance-site-kit/app/utils/wedanceSite'
 
-const event = (extra: Partial<SiteEvent> = {}): SiteEvent => ({
+const read = (path: string) => readFileSync(resolve(process.cwd(), path), 'utf8')
+
+const event = (extra: Partial<WeDanceEvent> = {}): WeDanceEvent => ({
   id: 'e1',
   name: 'Salsa From Zero',
   type: 'class',
@@ -26,43 +27,41 @@ const event = (extra: Partial<SiteEvent> = {}): SiteEvent => ({
   ...extra,
 })
 
-describe('cancelled events (RAZ-947)', () => {
-  test('an event without the field is scheduled, so older WeDance feeds keep working', () => {
-    expect(isCancelled(event())).toBe(false)
-    expect(cancelReason(event())).toBe('')
-    expect(schemaEventStatus(event())).toBe('https://schema.org/EventScheduled')
+describe('cancelled events (RAZ-971)', () => {
+  test('the site pins wedance-site-kit v0.2.3 and has no copy of its schedule', () => {
+    expect(JSON.parse(read('package.json')).dependencies['wedance-site-kit']).toBe('github:razbakov/wedance-site-kit#v0.2.3')
+    expect(existsSync(resolve(process.cwd(), 'app/components/site/SiteEvents.vue'))).toBe(false)
+    expect(existsSync(resolve(process.cwd(), 'app/utils/eventStatus.ts'))).toBe(false)
   })
 
-  test('a cancelled event is marked cancelled for people and search engines', () => {
+  test('the kit marks a cancelled class for people and search engines', () => {
+    expect(isCancelled(event())).toBe(false)
+    expect(schemaEventStatus(event())).toBe('https://schema.org/EventScheduled')
     const e = event({ cancelled: true, cancelReason: '  Tanzverbot today — public holiday.  ' })
     expect(isCancelled(e)).toBe(true)
     expect(cancelReason(e)).toBe('Tanzverbot today — public holiday.')
     expect(schemaEventStatus(e)).toBe('https://schema.org/EventCancelled')
   })
 
-  test('a reason on an event that is not cancelled is ignored', () => {
-    expect(cancelReason(event({ cancelled: false, cancelReason: 'stale' }))).toBe('')
-  })
-
-  test('every language has the cancelled label and the details link', () => {
-    for (const locale of [en, de, es, ru, uk]) {
-      expect(locale.schedule.cancelled.length).toBeGreaterThan(0)
-      expect(locale.schedule.details.length).toBeGreaterThan(0)
-    }
-  })
-
-  test('the schedule keeps cancelled dates in the list, crossed out, without a sign-up button', () => {
-    const source = readFileSync(resolve(process.cwd(), 'app/components/site/SiteEvents.vue'), 'utf8')
+  test("the kit's schedule keeps cancelled dates, crossed out, with the reason and no sign-up button", () => {
+    const source = read('node_modules/wedance-site-kit/app/components/site/SiteEvents.vue')
     expect(source).toContain(':data-cancelled')
-    expect(source).toContain("t('schedule.cancelled')")
+    expect(source).toContain("'line-through'")
+    expect(source).toContain("st('schedule.cancelled')")
     expect(source).toContain('e.reason')
-    expect(source).toMatch(/v-if="e\.cancelled"[^>]*>\{\{ t\('schedule\.details'\) \}\}/)
+    expect(source).toMatch(/v-if="e\.cancelled"[^>]*>\{\{ st\('schedule\.details'\) \}\}/)
+  })
+
+  test('every site language has the cancelled label and the details link in the kit', () => {
+    for (const lang of ['en', 'de', 'es', 'ru', 'uk']) {
+      expect(siteCopy[lang]!.schedule.cancelled!.length).toBeGreaterThan(0)
+      expect(siteCopy[lang]!.schedule.details!.length).toBeGreaterThan(0)
+    }
+    expect(siteCopy.de!.schedule.cancelled).toBe('Fällt aus')
   })
 
   test('the homepage structured data and the kiosk respect cancellations', () => {
-    const index = readFileSync(resolve(process.cwd(), 'app/pages/index.vue'), 'utf8')
-    expect(index).toContain('eventStatus: schemaEventStatus(e)')
-    const join = readFileSync(resolve(process.cwd(), 'app/pages/join.vue'), 'utf8')
-    expect(join).toContain('!isCancelled(e)')
+    expect(read('app/pages/index.vue')).toContain('eventStatus: schemaEventStatus(e)')
+    expect(read('app/pages/join.vue')).toContain('!isCancelled(e)')
   })
 })
