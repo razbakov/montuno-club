@@ -28,8 +28,10 @@ const event = (extra: Partial<WeDanceEvent> = {}): WeDanceEvent => ({
 })
 
 describe('cancelled events (RAZ-971)', () => {
-  test('the site pins wedance-site-kit v0.2.3 and has no copy of its schedule', () => {
-    expect(JSON.parse(read('package.json')).dependencies['wedance-site-kit']).toBe('github:razbakov/wedance-site-kit#v0.2.3')
+  test('the site pins wedance-site-kit v0.2.3 or later and has no copy of its schedule', () => {
+    const pin = JSON.parse(read('package.json')).dependencies['wedance-site-kit'] as string
+    const [, major, minor, patch] = pin.match(/^github:razbakov\/wedance-site-kit#v(\d+)\.(\d+)\.(\d+)$/)!.map(Number)
+    expect(major * 1e6 + minor * 1e3 + patch).toBeGreaterThanOrEqual(2003)
     expect(existsSync(resolve(process.cwd(), 'app/components/site/SiteEvents.vue'))).toBe(false)
     expect(existsSync(resolve(process.cwd(), 'app/utils/eventStatus.ts'))).toBe(false)
   })
